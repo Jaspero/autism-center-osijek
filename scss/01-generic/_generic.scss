@@ -1,0 +1,39 @@
+/**
+ * Generic
+ *
+ * Style for generic & low-spec HTML elements.
+ *
+ *============================================================================*/
+
+
+
+/* HTML
+ *============================================================================*/
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background: var(--backdrop-theme);
+  color: var(--backdrop-primary);
+}
+
+
+
+/* Headings
+ *============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+h1 { font-size: 80px; }
+h2 { font-size: 40px; }
+h3 { font-size: 30px; }
+h4 { font-size: 20px; }
+h5 { font-size: 16px; }
+h6 { font-size: 16px; }
