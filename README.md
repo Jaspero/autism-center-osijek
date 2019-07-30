@@ -12,4 +12,4 @@ We don't have the required manpower and experties to build frameworks and tools 
 
 ## License 
 
-The source code is publised under MIT © [Jaspero Ltd](mailto:info@jaspero.co) and all media assets are property of [Autism Center Osijek](ured@centar-autizam-os.skole.hr).
+The source code is publised under MIT © [Jaspero Ltd](mailto:info@jaspero.co) and all media assets are property of Autism Center Osijek.
