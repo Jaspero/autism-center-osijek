@@ -129,15 +129,17 @@
 
 <header class="cza-header">
 	<nav class="cza-header-inner">
-		<a class="cza-header-inner-logo {segment === undefined ? 'active' : ''}" href="."><img src="assets/logo-dark.svg" alt="Centar za autizam Osijek." width="64"></a>
+		<a class="cza-header-inner-logo {segment === undefined ? 'active' : ''}" href=".">
+			<img src="assets/logo-dark.svg" alt="Centar za autizam Osijek." width="64">
+		</a>
 		<div class="flex-1"></div>
 		<div class="cza-header-inner-items {menuExpanded ? 'active' : ''}">
-			<a class="cza-header-inner-item {segment === 'o-nama' ? 'active' : ''}" href="o-nama">O nama</a>
-			<a class="cza-header-inner-item {segment === 'programi' ? 'active' : ''}" href="programi">Programi</a>
-			<a class="cza-header-inner-item {segment === 'projekti' ? 'active' : ''}" href="projekti">Projekti</a>
-			<a class="cza-header-inner-item {segment === 'novosti' ? 'active' : ''}" href="novosti">Novosti</a>
-			<a class="cza-header-inner-item {segment === 'galerija' ? 'active' : ''}" href="galerija">Galerija</a>
-			<a class="cza-header-inner-item {segment === 'kontakt' ? 'active' : ''}" href="kontakt">Kontakt</a>
+			<a class="cza-header-inner-item {segment === 'o-nama' ? 'active' : ''}" href="o-nama" on:click={toggleMenu}>O nama</a>
+			<a class="cza-header-inner-item {segment === 'programi' ? 'active' : ''}" href="programi" on:click={toggleMenu}>Programi</a>
+			<a class="cza-header-inner-item {segment === 'projekti' ? 'active' : ''}" href="projekti" on:click={toggleMenu}>Projekti</a>
+			<a class="cza-header-inner-item {segment === 'novosti' ? 'active' : ''}" href="novosti" on:click={toggleMenu}>Novosti</a>
+			<a class="cza-header-inner-item {segment === 'galerija' ? 'active' : ''}" href="galerija" on:click={toggleMenu}>Galerija</a>
+			<a class="cza-header-inner-item {segment === 'kontakt' ? 'active' : ''}" href="kontakt" on:click={toggleMenu}>Kontakt</a>
 		</div>
 		<button class="cza-header-inner-menu" on:click={toggleMenu}>Sadržaj</button>
 	</nav>
@@ -156,7 +158,7 @@
 			</a>
 		</div>
 		<div class="col-4 col-m-5 col-s-10 col-xs-12">
-			<h6 class="m-b-s">Kontakt</h6>
+			<h6 class="m-b-m">Kontakt</h6>
 			<table class="m-b-l">
 				<tbody>
 				<tr>
@@ -177,7 +179,7 @@
 				</tr>
 				</tbody>
 			</table>
-			<h6 class="m-b-s">Radno vrijeme</h6>
+			<h6 class="m-b-m">Radno vrijeme</h6>
 			<table class="m-b-l">
 				<tbody>
 				<tr>
@@ -190,13 +192,13 @@
 				</tr>
 				</tbody>
 			</table>
-			<h6 class="m-b-s">Društvene mreže</h6>
+			<h6 class="m-b-m">Društvene mreže</h6>
 			<p class="m-b-s fg-secondary"><a href=".">Facebook</a></p>
 			<p class="m-b-s fg-secondary"><a href=".">Instagram</a></p>
 			<p class="m-b-l fg-secondary"><a href=".">Twitter</a></p>
 		</div>
 		<div class="col-4 col-m-5 col-s-10 col-xs-12">
-			<h6 class="m-b-s">Dokumentacija</h6>
+			<h6 class="m-b-m">Dokumentacija</h6>
 			<p class="m-b-s fg-secondary"><a href=".">Godišnji plan i program Centra</a></p>
 			<p class="m-b-s fg-secondary"><a href=".">Kurikulum Centra</a></p>
 			<p class="m-b-s fg-secondary"><a href=".">Pravilnik o načinu i postupku zapošljavanja</a></p>
@@ -205,7 +207,7 @@
 			<p class="m-b-s fg-secondary"><a href=".">Zahtjev za pristup informacijama (Obrazac br. 1)</a></p>
 			<p class="m-b-s fg-secondary"><a href=".">Zahtjev za dopunu ili ispravak informacije (Obrazac br. 2)</a></p>
 			<p class="m-b-l fg-secondary"><a href=".">Zahtjev za ponovnu uporabu informacija (Obrazac br. 3)</a></p>
-			<h6 class="m-b-s">Broj posjetitelja</h6>
+			<h6 class="m-b-m">Broj posjetitelja</h6>
 			<p class="m-b-l fg-secondary">Devet</p>
 		</div>
 	</div>
