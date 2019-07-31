@@ -1,6 +1,6 @@
 <script context="module">
 	export function preload({ params, query }) {
-		return this.fetch('projekti')
+		return this.fetch('projekti.json')
 		    .then(r => r.json());
 	}
 </script>
@@ -15,7 +15,7 @@
 	}
 
     export function loadMore() {
-        fetch(`projects?cursor=${hasMore}`)
+        fetch(`projekti.json?cursor=${hasMore}`)
             .then(r => r.json())
             .then(data => {
                 projects = [...projects, ...data.projects];
@@ -32,9 +32,9 @@
 	<div class="col-3 col-m-4 col-s-10 col-xs-12">
 		<nav class="page-content" data-content="Projekti:">
 		    {#each projects as project}
-		        <a href="/{project.url}" class:active="{activeProject.id === project.id}" on:click={() => activeProject = project}>
+		        <span class:active="{activeProject.id === project.id}" on:click={() => activeProject = project}>
 		            {project.name}
-		        </a>
+		        </span>
 		    {/each}
 		</nav>
 	</div>
