@@ -5,10 +5,10 @@
 <section class="grid p-y-l">
 	<div class="col-3 col-m-4 col-s-10 col-xs-12">
 		<nav class="page-content" data-content="Projekti:">
-			<a href="/projekti">Volontiranje</a>
-			<a href="/projekti">Asistent u nastavi</a>
-			<a href="/projekti">OSIgurajmo im JEdnaKost</a>
-			<a href="/projekti">Primjena tehnologije 21. stoljeća za promociju komunikacije, obrazovanja i socijalnog uključivanja djece rane dobi s teškoćama u razvoju</a>
+			<a href="/projekti">todo</a>
+			<a href="/projekti">todo</a>
+			<a href="/projekti">todo</a>
+			<a href="/projekti">todo</a>
 		</nav>
 	</div>
 	<div class="col-6 col-m-8 col-s-10 col-xs-12">

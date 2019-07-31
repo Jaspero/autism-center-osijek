@@ -5,22 +5,15 @@
 <section class="grid p-y-l">
 	<div class="col-3 col-m-4 col-s-10 col-xs-12">
 		<nav class="page-content" data-content="Programi:">
-			<h1>Osnovni programi</h1>
-			<a href="/programi">Vrtićki program</a>
-			<a href="/programi">Posebni program uz individualizirane postupke</a>
-			<a href="/programi">Posebni program za stjecanje kompetencija u aktivnostima svakodnevnog života i rada uz individualizirane postupke</a>
-			<a href="/programi">Produženi stručni postupak</a>
-			<h1>Terapijski postupci</h1>
-			<a href="/programi">Logopedska terapija</a>
-			<a href="/programi">Muzikoterapija</a>
-			<a href="/programi">Senzorna integracija</a>
-			<a href="/programi">Plivanje</a>
-			<a href="/programi">Likovna terapija</a>
-			<h1>Izvannastavne aktivnosti</h1>
-			<a href="/programi">Domaćinstvo</a>
-			<a href="/programi">Mali englezi</a>
-			<a href="/programi">Radno kreativne radionice</a>
-			<a href="/programi">Vrtlarstvo</a>
+			<h1>section</h1>
+			<a href="/programi">todo</a>
+			<a href="/programi">todo</a>
+			<h1>section</h1>
+			<a href="/programi">todo</a>
+			<a href="/programi">todo</a>
+			<h1>section</h1>
+			<a href="/programi">todo</a>
+			<a href="/programi">todo</a>
 		</nav>
 	</div>
 	<div class="col-6 col-m-8 col-s-10 col-xs-12">
