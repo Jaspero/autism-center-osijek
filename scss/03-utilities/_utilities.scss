@@ -100,6 +100,17 @@
 
 
 
+/* Fonts
+ *============================================================================*/
+
+@each $group-name, $group in $fonts {
+  .font-#{$group-name} {
+    font-family: var(--font-#{$group-name});
+  }
+}
+
+
+
 /* Text aligns
  *============================================================================*/
 
@@ -123,6 +134,14 @@
 
 .fs-small { font-size: 0.8em; }
 .fs-large { font-size: 1.3em; }
+
+
+
+/* Font weight
+ *============================================================================*/
+
+.fw-bold   { font-weight: bold; }
+.fw-normal { font-weight: normal; }
 
 
 
