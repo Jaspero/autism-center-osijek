@@ -141,7 +141,7 @@
 			<a class="cza-header-inner-item {segment === 'galerija' ? 'active' : ''}" href="galerija" on:click={toggleMenu}>Galerija</a>
 			<a class="cza-header-inner-item {segment === 'kontakt' ? 'active' : ''}" href="kontakt" on:click={toggleMenu}>Kontakt</a>
 		</div>
-		<button class="cza-header-inner-menu" on:click={toggleMenu}>Sadržaj</button>
+		<button class="cza-header-inner-menu" on:click={toggleMenu}>Izbornik</button>
 	</nav>
 </header>
 

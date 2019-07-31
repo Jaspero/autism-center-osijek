@@ -1,0 +1,40 @@
+@import "../breakpoints";
+
+/**
+ * Read format
+ *
+ * A useful wrapper for better text legibility. Useful on innerHtml content.
+ *
+ *============================================================================*/
+
+.read-format {
+  h1 {
+    margin: 0 0 1em;
+    font-size: 36px;
+    position: relative;
+    padding-bottom: 24px;
+
+    @media (max-width: $screen-s) {
+      font-size: 24px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 4px;
+      background: var(--primary-theme);
+    }
+  }
+  p {
+    margin: 0 0 1em;
+  }
+  ul {
+    margin: -.5em 0 1em;
+  }
+  a {
+    color: var(--primary-theme);
+    text-decoration: underline;
+  }
+}

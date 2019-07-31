@@ -1,0 +1,54 @@
+@import "../breakpoints";
+
+/**
+ * Page content
+ *
+ * A simple tool that assists the reader by showing all important headings.
+ *
+ *============================================================================*/
+
+.page-content {
+  position: sticky;
+  top: calc(80px + 20px); // header + 20px
+  display: flex;
+  flex-direction: column;
+  border-right: 4px solid var(--tertiary);
+  padding: 5px 0;
+  max-height: calc(100vh - 80px - 20px - 20px); // - header - 20px top - 20px bottom
+  overflow: auto;
+
+  @media (max-width: $screen-s) {
+    border-right: none;
+    border-left: 4px solid var(--tertiary);
+    margin-bottom: 40px;
+    margin-top: 40px;
+    overflow: unset;
+    max-height: unset;
+
+    &::before {
+      content: 'Sadržaj:';
+      position: absolute;
+      top: -30px;
+      font-size: 16px;
+      line-height: 20px;
+      left: -4px;
+      color: var(--secondary);
+    }
+  }
+
+  & > a {
+    text-align: right;
+    padding: 5px 20px 5px 5px;
+    transition: .2s;
+
+    @media (max-width: $screen-s) {
+      text-align: left;
+      padding: 5px 5px 5px 20px;
+    }
+
+    &.active,
+    &:hover {
+      color: var(--primary-theme);
+    }
+  }
+}

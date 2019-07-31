@@ -17,8 +17,15 @@ html {
 }
 
 body {
-  background: var(--backdrop-theme);
-  color: var(--backdrop-primary);
+  --theme    : var(--backdrop-theme);
+  --primary  : var(--backdrop-primary);
+  --secondary: var(--backdrop-secondary);
+  --tertiary : var(--backdrop-tertiary);
+}
+
+body {
+  background: var(--theme);
+  color: var(--primary);
 }
 
 
