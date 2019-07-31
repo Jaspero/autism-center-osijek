@@ -27,12 +27,24 @@
       background: var(--primary-theme);
     }
   }
+
+  h2 {
+    margin: 0 0 1em;
+    font-size: 28px;
+
+    @media (max-width: $screen-s) {
+      font-size: 20px;
+    }
+  }
+
   p {
     margin: 0 0 1em;
   }
+
   ul {
     margin: -.5em 0 1em;
   }
+
   a {
     color: var(--primary-theme);
     text-decoration: underline;
