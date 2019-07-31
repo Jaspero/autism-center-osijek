@@ -27,7 +27,7 @@ jobs:
             - functions/node_modules
       - run:
           name: Set Firebase Environment
-          command: npm run target-setup -- --token $FIREBASE_CI_TOKEN --project authism-center-osijek
+          command: npm run target-setup -- --token $FIREBASE_CI_TOKEN --project autism-center-osijek
       - run:
           name: Building
           command: npm run build
@@ -50,7 +50,7 @@ jobs:
           key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
       - run:
           name: Deploy Master to Firebase
-          command: npm run deploy  -- -m $CIRCLE_SHA1 --token $FIREBASE_CI_TOKEN --project authism-center-osijek
+          command: npm run deploy  -- -m $CIRCLE_SHA1 --token $FIREBASE_CI_TOKEN --project autism-center-osijek
 workflows:
   version: 2
   -deploy:
