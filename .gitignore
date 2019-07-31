@@ -2,3 +2,4 @@
 node_modules
 /__sapper__/
 src/node_modules
+env-config.js

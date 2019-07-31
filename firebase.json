@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "target": "website",
+    "public": "static",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [{
+      "source": "**",
+      "function": "ssr"
+    }]
+  }
+}
