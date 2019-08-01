@@ -5,7 +5,6 @@
 
 	function toggleMenu() {
 		menuExpanded = !menuExpanded;
-		console.log(menuExpanded);
 	}
 </script>
 
