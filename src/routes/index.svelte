@@ -9,6 +9,26 @@
         z-index: 4;
         padding-bottom: 200px;
     }
+    .cza-intro-left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: calc(50% - 250px);
+        height: 100%;
+        object-fit: contain;
+        object-position: left;
+        pointer-events: none;
+    }
+    .cza-intro-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: calc(50% - 250px);
+        height: 100%;
+        object-fit: contain;
+        object-position: right;
+        pointer-events: none;
+    }
     .cza-navigation {
         margin-top: -100px;
         position: relative;
@@ -47,6 +67,10 @@
         margin-left: 10px;
     }
     @media (max-width: 1200px) {
+        .cza-intro-left,
+        .cza-intro-right {
+            display: none;
+        }
         .cza-navigation-container-item {
             width: calc(100% / 3 - 40px);
         }
@@ -72,6 +96,16 @@
     <img class="m-b-s" src="assets/images/logo-light.svg" alt="Centar za autizam Osijek." width="120">
     <p class="fs-large fw-bold m-b-xl">Centar za autizam Osijek</p>
     <h2 class="font-secondary fw-normal">“Ako me hoćeš upoznati<br>Uzmi me za ruku<br>Traži od mene ono što mogu pružiti<br>Ići ću pored tebe<br>Zajedno ćemo rasti<br>Ako me želiš razumjeti<br>Možemo biti prijatelji”</h2>
+    <picture>
+        <source srcset="assets/images/home/intro-left.webp" type="image/webp">
+        <source srcset="assets/images/home/intro-left.png" type="image/png">
+        <img class="cza-intro-left" src="assets/images/intro-left.png" alt="Slike centra.">
+    </picture>
+    <picture>
+        <source srcset="assets/images/home/intro-right.webp" type="image/webp">
+        <source srcset="assets/images/home/intro-right.png" type="image/png">
+        <img class="cza-intro-right" src="assets/images/intro-right.png" alt="Slike centra.">
+    </picture>
 </section>
 
 <section class="cza-navigation">
@@ -108,9 +142,8 @@
         <picture>
             <source srcset="assets/images/home/about.webp" type="image/webp">
             <source srcset="assets/images/home/about.png" type="image/png">
-            <img src="assets/images/sv-katarina.png" alt="Slike centra.">
+            <img src="assets/images/about.png" alt="Slike centra.">
         </picture>
-
     </div>
     <div class="col-6 col-s-12 flex fd-col jc-center ai-start">
         <h2 class="title m-b-l">O nama</h2>
