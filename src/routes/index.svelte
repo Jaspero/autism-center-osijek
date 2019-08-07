@@ -3,6 +3,7 @@
 </svelte:head>
 
 <style>
+    /* Intro */
     .cza-intro {
         margin-top: -80px; /*Header height*/
         position: relative;
@@ -12,9 +13,9 @@
     .cza-intro-left {
         position: absolute;
         left: 0;
-        top: 0;
+        top: 10%;
         width: calc(50% - 250px);
-        height: 100%;
+        height: 80%;
         object-fit: contain;
         object-position: left;
         pointer-events: none;
@@ -22,13 +23,27 @@
     .cza-intro-right {
         position: absolute;
         right: 0;
-        top: 0;
+        top: 10%;
         width: calc(50% - 250px);
-        height: 100%;
+        height: 80%;
         object-fit: contain;
         object-position: right;
         pointer-events: none;
     }
+    @media (max-width: 1200px) {
+        .cza-intro-left,
+        .cza-intro-right {
+            display: none;
+        }
+    }
+    @media (max-width: 900px) {
+        .cza-intro {
+            margin-top: 0;
+            z-index: 1;
+        }
+    }
+
+    /* Navigation */
     .cza-navigation {
         margin-top: -100px;
         position: relative;
@@ -67,19 +82,11 @@
         margin-left: 10px;
     }
     @media (max-width: 1200px) {
-        .cza-intro-left,
-        .cza-intro-right {
-            display: none;
-        }
         .cza-navigation-container-item {
             width: calc(100% / 3 - 40px);
         }
     }
     @media (max-width: 900px) {
-        .cza-intro {
-            margin-top: 0;
-            z-index: 1;
-        }
         .cza-navigation {
             z-index: 2;
         }
@@ -92,7 +99,8 @@
     }
 </style>
 
-<section class="primary bg ta-center p-t-xl cza-intro">
+<!--Intro-->
+<section class="cza-intro primary bg ta-center p-t-xl">
     <img class="m-b-s" src="assets/images/logo-light.svg" alt="Centar za autizam Osijek." width="120">
     <p class="fs-large fw-bold m-b-xl">Centar za autizam Osijek</p>
     <h2 class="font-secondary fw-normal">“Ako me hoćeš upoznati<br>Uzmi me za ruku<br>Traži od mene ono što mogu pružiti<br>Ići ću pored tebe<br>Zajedno ćemo rasti<br>Ako me želiš razumjeti<br>Možemo biti prijatelji”</h2>
@@ -108,6 +116,7 @@
     </picture>
 </section>
 
+<!--Navigacija-->
 <section class="cza-navigation">
     <div class="cza-navigation-container">
         <a class="cza-navigation-container-item" href="o-nama">
@@ -137,6 +146,7 @@
     </div>
 </section>
 
+<!--O nama-->
 <section class="grid p-y-xl">
     <div class="col-6 col-s-0">
         <picture>
@@ -157,5 +167,48 @@
             <li>Kutka za roditelje (informativnog i edukativnog) na web stranici Centra.</li>
         </ul>
         <a class="btn" href="o-nama">Saznaj više</a>
+    </div>
+</section>
+
+<!--Programi-->
+<section class="grid">
+    <div class="col-12">
+        <h2 class="title">Programi</h2>
+    </div>
+    <div class="col-12">
+        <div class="grid jc-start">
+            <a href="." class="col-3 card">
+                <p class="fs-small fg-secondary p-x-s">OSNOVNI PROGRAM</p>
+                <h3 class="card-title p-x-s p-b-s">Vrtićki program</h3>
+                <img class="card-image" src="assets/images/placeholder.png" alt="">
+            </a>
+            <a href="." class="col-3 card">
+                <p class="fs-small fg-secondary p-x-s">OSNOVNI PROGRAM</p>
+                <h3 class="card-title p-x-s p-b-s">Posebni program uz individualizirane postupke</h3>
+                <img class="card-image" src="assets/images/placeholder.png" alt="">
+            </a>
+            <a href="." class="col-6 card">
+                <p class="fs-small fg-secondary p-x-s">OSNOVNI PROGRAM</p>
+                <h3 class="card-title p-x-s p-b-s">Posebni program za stjecanje kompetencija u aktivnostima svakodnevnog života i rada uz individualizirane postupke</h3>
+                <img class="card-image" src="assets/images/placeholder.png" alt="">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!--CTA-section-->
+<!---->
+
+<!--Projekti-->
+<section class="grid">
+    <div class="col-12">
+        <h2 class="title">Projekti</h2>
+    </div>
+</section>
+
+<!--Novosti-->
+<section class="grid">
+    <div class="col-12">
+        <h2 class="title">Novosti</h2>
     </div>
 </section>

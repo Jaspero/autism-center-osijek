@@ -9,6 +9,7 @@
 </script>
 
 <style>
+	/* Header */
 	.cza-header {
 		position: fixed;
 		z-index: 3;
@@ -61,24 +62,9 @@
 		padding: 0 20px 0 30px;
 		display: none;
 	}
-	.cza-main {
-		padding-top: 80px; /* Header height */
-		min-height: 600px;
-	}
-	.cza-footer {
-		--theme    : var(--footer-theme);
-		--primary  : var(--footer-primary);
-		--secondary: var(--footer-secondary);
-		background: var(--theme);
-		color: var(--primary);
-        padding: 100px 0;
-	}
 	@media (max-width: 900px) {
 		.cza-header {
 			height: 60px;
-		}
-		.cza-main {
-			padding-top: 60px; /* Header height */
 		}
 		.cza-header-inner-items {
 			position: fixed;
@@ -124,8 +110,30 @@
 			display: block;
 		}
 	}
+
+	/* Main */
+	.cza-main {
+		padding-top: 80px; /* Header height */
+		min-height: 600px;
+	}
+	@media (max-width: 900px) {
+		.cza-main {
+			padding-top: 60px; /* Header height */
+		}
+	}
+
+	/* Footer */
+	.cza-footer {
+		--theme    : var(--footer-theme);
+		--primary  : var(--footer-primary);
+		--secondary: var(--footer-secondary);
+		background: var(--theme);
+		color: var(--primary);
+        padding: 100px 0;
+	}
 </style>
 
+<!--Header-->
 <header class="cza-header">
 	<nav class="cza-header-inner">
 		<a class="cza-header-inner-logo {segment === undefined ? 'active' : ''}" href=".">
@@ -144,10 +152,12 @@
 	</nav>
 </header>
 
+<!--Main-->
 <main class="cza-main">
 	<slot></slot>
 </main>
 
+<!--Footer-->
 <footer class="cza-footer">
 	<div class="grid">
 		<div class="col-4 col-m-10 col-xs-12">

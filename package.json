@@ -5,6 +5,7 @@
   "scripts": {
     "target-setup": "firebase target:apply hosting website autism-center-osijek",
     "dev": "sapper dev",
+    "build:scss": "node-sass index.scss static/global.css",
     "watch:scss": "node-sass index.scss static/global.css -w",
     "build": "sapper build --legacy && cp -r ./__sapper__/ ./functions/__sapper__",
     "prebuild": "rm -rf functions/__sapper__/build && node-sass index.scss static/global.css --output-style=compressed",
