@@ -222,6 +222,44 @@ h6 {
   font-size: 16px; }
 
 /**
+ * Title
+ *
+ *============================================================================*/
+.title {
+  position: relative;
+  padding-bottom: 24px; }
+  .title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 4px;
+    background: var(--primary-theme); }
+
+/**
+ * Buttons
+ *
+ *============================================================================*/
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 1em 1.5em;
+  font-weight: 500;
+  border-radius: 4px;
+  background: var(--primary-theme);
+  color: var(--primary-primary);
+  transition: .2s;
+  box-shadow: 0 0 5px 0 var(--primary-theme); }
+  .btn:hover {
+    box-shadow: 0 0 25px 0 var(--primary-theme); }
+
+/**
+ * Cards
+ *
+ *============================================================================*/
+/**
  * @media breakpoints
  *
  * Phone           :    0px - 600px

@@ -1,0 +1,21 @@
+/**
+ * Buttons
+ *
+ *============================================================================*/
+
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 1em 1.5em;
+  font-weight: 500;
+  border-radius: 4px;
+  background: var(--primary-theme);
+  color: var(--primary-primary);
+  transition: .2s;
+  box-shadow: 0 0 5px 0 var(--primary-theme);
+
+  &:hover {
+    box-shadow: 0 0 25px 0 var(--primary-theme);
+  }
+}
