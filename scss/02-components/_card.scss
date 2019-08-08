@@ -35,7 +35,7 @@
       opacity: 1;
     }
 
-    &-title::after {
+    .card-title::after {
       opacity: 1;
       margin-left: 10px;
     }
@@ -43,6 +43,8 @@
 
   &-title::after {
     content: '→';
+    font-weight: normal;
+    color: var(--primary-theme);
     display: inline-block;
     transition: .2s;
     opacity: 0;
@@ -53,5 +55,9 @@
     height: 200px;
     width: 100%;
     object-fit: cover;
+  }
+
+  &-link {
+    box-shadow: 0 0 0 1px var(--tertiary);
   }
 }

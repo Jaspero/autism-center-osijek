@@ -107,12 +107,12 @@
     <picture>
         <source srcset="assets/images/home/intro-left.webp" type="image/webp">
         <source srcset="assets/images/home/intro-left.png" type="image/png">
-        <img class="cza-intro-left" src="assets/images/intro-left.png" alt="Slike centra.">
+        <img class="cza-intro-left" src="assets/images/home/intro-left.png" alt="Slike centra.">
     </picture>
     <picture>
         <source srcset="assets/images/home/intro-right.webp" type="image/webp">
         <source srcset="assets/images/home/intro-right.png" type="image/png">
-        <img class="cza-intro-right" src="assets/images/intro-right.png" alt="Slike centra.">
+        <img class="cza-intro-right" src="assets/images/home/intro-right.png" alt="Slike centra.">
     </picture>
 </section>
 
@@ -152,7 +152,7 @@
         <picture>
             <source srcset="assets/images/home/about.webp" type="image/webp">
             <source srcset="assets/images/home/about.png" type="image/png">
-            <img src="assets/images/about.png" alt="Slike centra.">
+            <img src="assets/images/home/about.png" alt="Slike centra.">
         </picture>
     </div>
     <div class="col-6 col-s-12 flex fd-col jc-center ai-start">
@@ -171,25 +171,45 @@
 </section>
 
 <!--Programi-->
-<section class="grid">
+<section class="grid p-y-xl">
     <div class="col-12">
-        <h2 class="title">Programi</h2>
+        <h2 class="title m-b-l">Programi</h2>
     </div>
     <div class="col-12">
         <div class="grid jc-start">
-            <a href="." class="col-3 card">
+            <a href="." class="col-3 col-m-6 col-xs-12 card">
                 <p class="fs-small fg-secondary p-x-s">OSNOVNI PROGRAM</p>
-                <h3 class="card-title p-x-s p-b-s">Vrtićki program</h3>
+                <h3 class="p-x-s p-b-s">Vrtićki program</h3>
                 <img class="card-image" src="assets/images/placeholder.png" alt="">
             </a>
-            <a href="." class="col-3 card">
+            <a href="." class="col-3 col-m-6 col-xs-12 card">
                 <p class="fs-small fg-secondary p-x-s">OSNOVNI PROGRAM</p>
-                <h3 class="card-title p-x-s p-b-s">Posebni program uz individualizirane postupke</h3>
+                <h3 class="p-x-s p-b-s">Posebni program uz individualizirane postupke</h3>
                 <img class="card-image" src="assets/images/placeholder.png" alt="">
             </a>
-            <a href="." class="col-6 card">
+            <a href="." class="col-6 col-m-12 card">
                 <p class="fs-small fg-secondary p-x-s">OSNOVNI PROGRAM</p>
-                <h3 class="card-title p-x-s p-b-s">Posebni program za stjecanje kompetencija u aktivnostima svakodnevnog života i rada uz individualizirane postupke</h3>
+                <h3 class="p-x-s p-b-s">Posebni program za stjecanje kompetencija u aktivnostima svakodnevnog života i rada uz individualizirane postupke</h3>
+                <img class="card-image" src="assets/images/placeholder.png" alt="">
+            </a>
+            <a href="." class="col-3 col-m-6 col-xs-12 card">
+                <p class="fs-small fg-secondary p-x-s">OSNOVNI PROGRAM</p>
+                <h3 class="p-x-s p-b-s">Produženi stručni postupak</h3>
+                <img class="card-image" src="assets/images/placeholder.png" alt="">
+            </a>
+            <a href="." class="col-3 col-m-6 col-xs-12 card">
+                <p class="fs-small fg-secondary p-x-s">TERAPIJSKI POSTUPCI</p>
+                <h3 class="p-x-s p-b-s">Logopedska terapija</h3>
+                <img class="card-image" src="assets/images/placeholder.png" alt="">
+            </a>
+            <a href="." class="col-3 col-m-6 col-xs-12 card">
+                <p class="fs-small fg-secondary p-x-s">TERAPIJSKI POSTUPCI</p>
+                <h3 class="p-x-s p-b-s">Muzikoterapija</h3>
+                <img class="card-image" src="assets/images/placeholder.png" alt="">
+            </a>
+            <a href="." class="col-3 col-m-6 col-xs-12 card">
+                <p class="fs-small fg-secondary p-x-s">TERAPIJSKI POSTUPCI</p>
+                <h3 class="p-x-s p-b-s">Senzorna integracija</h3>
                 <img class="card-image" src="assets/images/placeholder.png" alt="">
             </a>
         </div>
@@ -197,18 +217,88 @@
 </section>
 
 <!--CTA-section-->
-<!---->
+<section class="cta-section m-y-l">
+    <div class="cta-section-content">
+        <h1 class="cta-section-content-title">Zanima vas više?</h1>
+        <p class="cta-section-content-subtitle">Pošaljite nam email na<br><a class="fw-bold" href="mailto:ured@centar-autizam-os.skole.hr">ured@centar-autizam-os.skole.hr</a><br>ili nas nazovite na <a class="fw-bold" href="tel:+385031202327">031/202-327</a></p>
+    </div>
+    <picture>
+        <source srcset="assets/images/cta-left.webp" type="image/webp">
+        <source srcset="assets/images/cta-left.png" type="image/png">
+        <img class="cta-section-image-left" src="assets/images/cta-left.png" alt="">
+    </picture>
+    <picture>
+        <source srcset="assets/images/cta-right.webp" type="image/webp">
+        <source srcset="assets/images/cta-right.png" type="image/png">
+        <img class="cta-section-image-right" src="assets/images/cta-right.png" alt="">
+    </picture>
+</section>
 
 <!--Projekti-->
-<section class="grid">
+<section class="grid p-y-xl">
     <div class="col-12">
-        <h2 class="title">Projekti</h2>
+        <h2 class="title m-b-l">Projekti</h2>
+    </div>
+    <div class="col-12">
+        <div class="grid jc-start">
+            <a href="." class="col-3 col-m-6 col-xs-12 card">
+                <h3 class="p-x-s p-b-s">Volontiranje</h3>
+                <img class="card-image" src="assets/images/placeholder.png" alt="">
+            </a>
+            <a href="." class="col-3 col-m-6 col-xs-12 card">
+                <h3 class="p-x-s p-b-s">Asistent u nastavi</h3>
+                <img class="card-image" src="assets/images/placeholder.png" alt="">
+            </a>
+            <a href="." class="col-3 col-m-6 col-xs-12 card">
+                <h3 class="p-x-s p-b-s">OSIgurajmo im JEdnaKost </h3>
+                <img class="card-image" src="assets/images/placeholder.png" alt="">
+            </a>
+            <a href="." class="col-3 col-m-6 col-xs-12 card">
+                <h3 class="p-x-s p-b-s">UNICEF</h3>
+                <img class="card-image" src="assets/images/placeholder.png" alt="">
+            </a>
+        </div>
     </div>
 </section>
 
 <!--Novosti-->
-<section class="grid">
+<section class="grid p-y-xl">
     <div class="col-12">
-        <h2 class="title">Novosti</h2>
+        <h2 class="title m-b-l">Novosti</h2>
+    </div>
+    <div class="col-12">
+        <div class="grid jc-start">
+            <a href="." class="col-6 col-s-12 card">
+                <div class="p-a-l">
+                    <p class="fs-small fg-secondary">20.4.2019.</p>
+                    <h3 class="card-title m-b-m">Novi natječaj za posao</h3>
+                    <p>Izvan nastavna aktivnost Radno kreativne radionice realizira se kroz praktičan rad, vježbanje i ponavljanje  osnovnih tehnika izrade jednostavnih oblika i ukrasno praktičnih predmeta. Aktivnosti su prilagođene  interesima i mogućnostima učenika te  razvijaju učenikovu  pažnju, finu  motoriku, vještinu opažanja, taktilnu  percepciju i okulomotornu koordinaciju.</p>
+                </div>
+            </a>
+            <a href="." class="col-6 col-s-12 card">
+                <div class="p-a-l">
+                    <p class="fs-small fg-secondary">20.4.2019.</p>
+                    <h3 class="card-title m-b-m">Novi natječaj za posao</h3>
+                    <p>Izvan nastavna aktivnost Radno kreativne radionice realizira se kroz praktičan rad, vježbanje i ponavljanje  osnovnih tehnika izrade jednostavnih oblika i ukrasno praktičnih predmeta. Aktivnosti su prilagođene  interesima i mogućnostima učenika te  razvijaju učenikovu  pažnju, finu  motoriku, vještinu opažanja, taktilnu  percepciju i okulomotornu koordinaciju.</p>
+                </div>
+            </a>
+            <a href="." class="col-6 col-s-12 card">
+                <div class="p-a-l">
+                    <p class="fs-small fg-secondary">20.4.2019.</p>
+                    <h3 class="card-title m-b-m">Novi natječaj za posao</h3>
+                    <p>Izvan nastavna aktivnost Radno kreativne radionice realizira se kroz praktičan rad, vježbanje i ponavljanje  osnovnih tehnika izrade jednostavnih oblika i ukrasno praktičnih predmeta. Aktivnosti su prilagođene  interesima i mogućnostima učenika te  razvijaju učenikovu  pažnju, finu  motoriku, vještinu opažanja, taktilnu  percepciju i okulomotornu koordinaciju.</p>
+                </div>
+            </a>
+            <a href="." class="col-6 col-s-12 card">
+                <div class="p-a-l">
+                    <p class="fs-small fg-secondary">20.4.2019.</p>
+                    <h3 class="card-title m-b-m">Novi natječaj za posao</h3>
+                    <p>Izvan nastavna aktivnost Radno kreativne radionice realizira se kroz praktičan rad, vježbanje i ponavljanje  osnovnih tehnika izrade jednostavnih oblika i ukrasno praktičnih predmeta. Aktivnosti su prilagođene  interesima i mogućnostima učenika te  razvijaju učenikovu  pažnju, finu  motoriku, vještinu opažanja, taktilnu  percepciju i okulomotornu koordinaciju.</p>
+                </div>
+            </a>
+            <a href="novosti" class="col-12 p-a-l card-link">
+                <p class="fs-large ta-right">Pregled svih <span class="c-primary">novosti →</span></p>
+            </a>
+        </div>
     </div>
 </section>
