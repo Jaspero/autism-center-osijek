@@ -94,7 +94,8 @@
             padding: 20px;
         }
         .cza-navigation-container-item {
-            width: calc(100% / 2 - 40px);
+            width: calc(100% / 2 - 20px);
+            margin: 10px 10px 20px;
         }
     }
 </style>

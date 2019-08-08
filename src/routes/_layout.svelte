@@ -201,9 +201,9 @@
 			<p class="m-b-s fg-secondary"><a href="assets/docs/pravilnik-o-nacinu-i-postupku-zaposljavanja.docx">Pravilnik o načinu i postupku zapošljavanja</a></p>
 			<p class="m-b-s fg-secondary"><a href="assets/docs/pravilnik-o-sistematizaciji-radnih-mjesta.docx">Pravilnik o sistematizaciji radnih mjesta</a></p>
 			<p class="m-b-s fg-secondary"><a href="assets/docs/statut-cza.docx">Statut CZA</a></p>
-			<p class="m-b-s fg-secondary"><a href="assets/docs/zahtjev-za-pristup-informacijama.docx">Zahtjev za pristup informacijama (Obrazac br. 1)</a></p>
-			<p class="m-b-s fg-secondary"><a href="assets/docs/zahtjev-za-dopunu-ili-ispravak-informacije.docx">Zahtjev za dopunu ili ispravak informacije (Obrazac br. 2)</a></p>
-			<p class="m-b-l fg-secondary"><a href="assets/docs/zahtjev-za-ponovnu-uporabu-informacija.docx">Zahtjev za ponovnu uporabu informacija (Obrazac br. 3)</a></p>
+			<p class="m-b-s fg-secondary"><a href="assets/docs/zahtjev-za-pristup-informacijama.docx">Zahtjev za pristup informacijama <br class="show-xs"> (Obrazac br. 1)</a></p>
+			<p class="m-b-s fg-secondary"><a href="assets/docs/zahtjev-za-dopunu-ili-ispravak-informacije.docx">Zahtjev za dopunu ili ispravak informacije <br class="show-xs"> (Obrazac br. 2)</a></p>
+			<p class="m-b-l fg-secondary"><a href="assets/docs/zahtjev-za-ponovnu-uporabu-informacija.docx">Zahtjev za ponovnu uporabu informacija <br class="show-xs"> (Obrazac br. 3)</a></p>
 			<h6 class="m-b-m">Broj posjetitelja</h6>
 			<p class="m-b-l fg-secondary">Devet</p>
 		</div>
