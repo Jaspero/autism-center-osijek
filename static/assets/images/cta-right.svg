@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="708.5" height="667" viewBox="0 0 708.5 667">
+  <defs>
+    <linearGradient id="linear-gradient" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f2f7ff"/>
+      <stop offset="1" stop-color="#b3ccff"/>
+    </linearGradient>
+    <filter id="Ellipse_12" x="0" y="0" width="245" height="245" filterUnits="userSpaceOnUse">
+      <feOffset dx="12" dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-opacity="0.278"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7ea1e6"/>
+      <stop offset="1" stop-color="#2e6be6"/>
+    </linearGradient>
+    <filter id="Ellipse_11" x="188.5" y="115.5" width="520" height="520" filterUnits="userSpaceOnUse">
+      <feOffset dx="25" dy="25" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur-2"/>
+      <feFlood flood-opacity="0.278"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_80" x="398" y="421" width="246" height="246" filterUnits="userSpaceOnUse">
+      <feOffset dx="12" dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_66" data-name="Group 66" transform="translate(-1207.5 -3473.5)">
+    <g transform="matrix(1, 0, 0, 1, 1207.5, 3473.5)" filter="url(#Ellipse_12)">
+      <circle id="Ellipse_12-2" data-name="Ellipse 12" cx="85" cy="85" r="85" transform="translate(25.5 25.5)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1207.5, 3473.5)" filter="url(#Ellipse_11)">
+      <circle id="Ellipse_11-2" data-name="Ellipse 11" cx="185" cy="185" r="185" transform="translate(238.5 165.5)" fill="url(#linear-gradient-2)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1207.5, 3473.5)" filter="url(#Rectangle_80)">
+      <rect id="Rectangle_80-2" data-name="Rectangle 80" width="171" height="171" transform="translate(423.5 446.5)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

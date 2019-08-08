@@ -222,16 +222,8 @@
         <h1 class="cta-section-content-title">Zanima vas više?</h1>
         <p class="cta-section-content-subtitle">Pošaljite nam email na<br><a class="fw-bold" href="mailto:ured@centar-autizam-os.skole.hr">ured@centar-autizam-os.skole.hr</a><br>ili nas nazovite na <a class="fw-bold" href="tel:+385031202327">031/202-327</a></p>
     </div>
-    <picture>
-        <source srcset="assets/images/cta-left.webp" type="image/webp">
-        <source srcset="assets/images/cta-left.png" type="image/png">
-        <img class="cta-section-image-left" src="assets/images/cta-left.png" alt="">
-    </picture>
-    <picture>
-        <source srcset="assets/images/cta-right.webp" type="image/webp">
-        <source srcset="assets/images/cta-right.png" type="image/png">
-        <img class="cta-section-image-right" src="assets/images/cta-right.png" alt="">
-    </picture>
+    <img class="cta-section-image-left" src="assets/images/cta-left.svg" alt="" aria-hidden="true">
+    <img class="cta-section-image-right" src="assets/images/cta-right.svg" alt="" aria-hidden="true">
 </section>
 
 <!--Projekti-->

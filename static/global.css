@@ -281,9 +281,9 @@ h6 {
           font-size: 16px; } }
   .cta-section-image-left {
     position: absolute;
-    top: -40px;
+    top: 0;
     right: calc(50% + 250px);
-    height: calc(100% + 80px);
+    height: calc(100% + 100px);
     width: auto;
     object-fit: contain; }
     @media (max-width: 900px) {
@@ -291,9 +291,9 @@ h6 {
         display: none; } }
   .cta-section-image-right {
     position: absolute;
-    top: -40px;
+    bottom: 0;
     left: calc(50% + 250px);
-    height: calc(100% + 80px);
+    height: calc(100% + 100px);
     width: auto;
     object-fit: contain; }
     @media (max-width: 900px) {
