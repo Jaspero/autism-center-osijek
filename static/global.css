@@ -718,6 +718,11 @@ h6 {
   @media (max-width: 900px) {
     .read-format h1 {
       font-size: 24px; } }
+  .read-format h1.centered-title {
+    text-align: center; }
+    .read-format h1.centered-title::after {
+      left: 50%;
+      transform: translateX(-50%); }
   .read-format h1::after {
     content: '';
     position: absolute;
@@ -733,6 +738,10 @@ h6 {
   @media (max-width: 900px) {
     .read-format h2 {
       font-size: 20px; } }
+
+.read-format h3 {
+  font-size: 16px;
+  margin: 2em 0 .5em; }
 
 .read-format p {
   margin: 0 0 1em; }
