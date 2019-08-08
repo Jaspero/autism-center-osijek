@@ -60,6 +60,10 @@ table {
   border-spacing: 0;
 }
 
+td {
+  vertical-align: baseline;
+}
+
 
 
 /* Semantic markup
@@ -100,6 +104,15 @@ a {
 button {
   cursor: pointer;
   font-size: inherit;
+}
+
+
+
+/* Textarea
+ *============================================================================*/
+
+textarea {
+  resize: vertical;
 }
 
 

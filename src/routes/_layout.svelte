@@ -141,6 +141,7 @@
 		</a>
 		<div class="flex-1"></div>
 		<div class="cza-header-inner-items {menuExpanded ? 'active' : ''}">
+			<a class="cza-header-inner-item {segment === undefined ? 'active' : ''}" href="." on:click={toggleMenu}>Početna</a>
 			<a class="cza-header-inner-item {segment === 'o-nama' ? 'active' : ''}" href="o-nama" on:click={toggleMenu}>O nama</a>
 			<a class="cza-header-inner-item {segment === 'programi' ? 'active' : ''}" href="programi" on:click={toggleMenu}>Programi</a>
 			<a class="cza-header-inner-item {segment === 'projekti' ? 'active' : ''}" href="projekti" on:click={toggleMenu}>Projekti</a>

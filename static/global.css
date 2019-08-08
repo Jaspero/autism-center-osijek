@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+td {
+  vertical-align: baseline; }
+
 /* Semantic markup
  *============================================================================*/
 small {
@@ -152,6 +155,11 @@ a {
 button {
   cursor: pointer;
   font-size: inherit; }
+
+/* Textarea
+ *============================================================================*/
+textarea {
+  resize: vertical; }
 
 /* Images
  *============================================================================*/
@@ -331,7 +339,7 @@ h6 {
   color: var(--primary-primary);
   transition: .2s;
   box-shadow: 0 0 5px 0 var(--primary-theme); }
-  .btn:hover {
+  .btn:hover, .btn:focus {
     box-shadow: 0 0 25px 0 var(--primary-theme); }
 
 /**
@@ -978,6 +986,11 @@ h6 {
 
 .fw-normal {
   font-weight: normal; }
+
+/* Text decoration
+ *============================================================================*/
+.td-underline {
+  text-decoration: underline; }
 
 /* Image controls
  *============================================================================*/
