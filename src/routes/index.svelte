@@ -147,7 +147,7 @@
 </section>
 
 <!--O nama-->
-<section class="grid p-y-xl">
+<section class="grid p-t-xl">
     <div class="col-6 col-s-0">
         <picture>
             <source srcset="assets/images/home/about.webp" type="image/webp">
