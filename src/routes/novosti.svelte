@@ -5,6 +5,7 @@
 <!--Ostale novosti-->
 <section class="grid p-y-xl">
 	<div class="col-12">
+		<p class="fs-small fg-secondary">21.09.2019.</p>
 		<h3 class="title m-b-l">E-glas edukacija - Grid 3</h3>
 	</div>
 	<div class="col-6 col-s-12 col-xs-12 read-format">
