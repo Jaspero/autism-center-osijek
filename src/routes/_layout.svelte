@@ -7,19 +7,16 @@
 		const header = document.querySelector('.cza-header');
 		menuExpanded = !menuExpanded;
 
-		// click outside closes dialog
-
+		// Click outside closes dialog
 		window.addEventListener('click', (event => {
 			if (!header.contains(event.target)) {
 				menuExpanded = false;
 			}
 		}))
 	}
-
 </script>
 
 <style>
-	/* Header */
 	.cza-header {
 		position: fixed;
 		z-index: 3;
@@ -72,6 +69,10 @@
 		padding: 0 20px 0 30px;
 		display: none;
 	}
+	.cza-main {
+		padding-top: 80px; /* Header height */
+		min-height: 600px;
+	}
 	@media (max-width: 900px) {
 		.cza-header {
 			height: 60px;
@@ -119,27 +120,9 @@
 		.cza-header-inner-menu {
 			display: block;
 		}
-	}
-
-	/* Main */
-	.cza-main {
-		padding-top: 80px; /* Header height */
-		min-height: 600px;
-	}
-	@media (max-width: 900px) {
 		.cza-main {
 			padding-top: 60px; /* Header height */
 		}
-	}
-
-	/* Footer */
-	.cza-footer {
-		--theme    : var(--footer-theme);
-		--primary  : var(--footer-primary);
-		--secondary: var(--footer-secondary);
-		background: var(--theme);
-		color: var(--primary);
-        padding: 100px 0;
 	}
 </style>
 
@@ -149,6 +132,7 @@
 		<a class="cza-header-inner-logo {segment === undefined ? 'active' : ''}" href=".">
 			<img src="assets/images/logo-dark.svg" alt="Centar za autizam Osijek." width="64">
 		</a>
+		<!--Divider-->
 		<div class="flex-1"></div>
 		<div class="cza-header-inner-items {menuExpanded ? 'active' : ''}">
 			<a class="cza-header-inner-item {segment === undefined ? 'active' : ''}" href="." on:click={toggleMenu}>Početna</a>
@@ -169,7 +153,7 @@
 </main>
 
 <!--Footer-->
-<footer class="cza-footer">
+<footer class="footer bg p-y-xl">
 	<div class="grid">
 		<div class="col-4 col-m-10 col-xs-12">
 			<a class="iblock m-b-l" href=".">

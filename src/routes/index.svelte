@@ -3,152 +3,42 @@
 </svelte:head>
 
 <script>
+    import Hero from './components/Hero.svelte';
+    import Navigation from './components/Navigation.svelte';
     import Banner from './components/Banner.svelte';
 </script>
 
 <style>
-    /* Intro */
-    .cza-intro {
-        margin-top: -80px; /*Header height*/
+    .cza-index-hero {
         position: relative;
         z-index: 4;
-        padding-bottom: 200px;
+        margin-top: -80px;
     }
-    .cza-intro-left {
-        position: absolute;
-        left: 0;
-        top: 10%;
-        width: calc(50% - 250px);
-        height: 80%;
-        object-fit: contain;
-        object-position: left;
-        pointer-events: none;
-    }
-    .cza-intro-right {
-        position: absolute;
-        right: 0;
-        top: 10%;
-        width: calc(50% - 250px);
-        height: 80%;
-        object-fit: contain;
-        object-position: right;
-        pointer-events: none;
-    }
-    @media (max-width: 1200px) {
-        .cza-intro-left,
-        .cza-intro-right {
-            display: none;
-        }
-    }
-    @media (max-width: 900px) {
-        .cza-intro {
-            margin-top: 0;
-            z-index: 1;
-        }
-    }
-
-    /* Navigation */
-    .cza-navigation {
-        margin-top: -100px;
-        position: relative;
-        z-index: 5;
+    .cza-index-navigation {
         padding: 0 10px;
-    }
-    .cza-navigation-container {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 1400px;
-        width: 100%;
-        margin: auto;
-        padding: 40px;
-        background: var(--panel-theme);
-        box-shadow: 0 0 50px 0 rgba(0,0,0,.3);
-    }
-    .cza-navigation-container-item {
-        width: calc(100% / 6 - 40px);
-        margin: 20px;
-        padding-bottom: 10px;
-        border-bottom: 4px solid var(--panel-tertiary);
-        transition: .2s;
-    }
-    .cza-navigation-container-item-title::after {
-        content: '→';
-        display: inline-block;
-        transition: .2s;
-        opacity: 0;
-        margin-left: 5px;
-    }
-    .cza-navigation-container-item:hover {
-        border-bottom: 4px solid var(--panel-secondary);
-    }
-    .cza-navigation-container-item:hover > .cza-navigation-container-item-title::after {
-        opacity: 1;
-        margin-left: 10px;
-    }
-    @media (max-width: 1200px) {
-        .cza-navigation-container-item {
-            width: calc(100% / 3 - 40px);
-        }
+        position: relative;
+        z-index: 4;
+        background: linear-gradient(to bottom, var(--primary-theme) 0%,var(--primary-theme) 50%,transparent 50%,transparent 100%);
     }
     @media (max-width: 900px) {
-        .cza-navigation {
-            z-index: 2;
+        .cza-index-hero {
+            position: static;
+            margin-top: 0;
         }
-        .cza-navigation-container {
-            padding: 20px;
-        }
-        .cza-navigation-container-item {
-            width: calc(100% / 2 - 20px);
-            margin: 10px 10px 20px;
+        .cza-index-navigation {
+            position: static;
         }
     }
 </style>
 
-<!--Intro-->
-<section class="cza-intro primary bg ta-center p-t-xl">
-    <img class="m-b-s" src="assets/images/logo-light.svg" alt="Centar za autizam Osijek." width="120">
-    <p class="fs-large fw-bold m-b-xl">Centar za autizam Osijek</p>
-    <h2 class="font-secondary fw-normal">“Ako me hoćeš upoznati<br>Uzmi me za ruku<br>Traži od mene ono što mogu pružiti<br>Ići ću pored tebe<br>Zajedno ćemo rasti<br>Ako me želiš razumjeti<br>Možemo biti prijatelji”</h2>
-    <picture>
-        <source srcset="assets/images/home/intro-left.webp" type="image/webp">
-        <source srcset="assets/images/home/intro-left.png" type="image/png">
-        <img class="cza-intro-left" src="assets/images/home/intro-left.png" alt="Slike centra.">
-    </picture>
-    <picture>
-        <source srcset="assets/images/home/intro-right.webp" type="image/webp">
-        <source srcset="assets/images/home/intro-right.png" type="image/png">
-        <img class="cza-intro-right" src="assets/images/home/intro-right.png" alt="Slike centra.">
-    </picture>
+<!--Hero-->
+<section class="cza-index-hero">
+    <Hero/>
 </section>
 
-<!--Navigacija-->
-<section class="cza-navigation">
-    <div class="cza-navigation-container">
-        <a class="cza-navigation-container-item" href="o-nama">
-            <h6 class="cza-navigation-container-item-title m-b-s">O nama</h6>
-            <p class="fs-small">Kako smo nastali, koja nam je misija i vizija te tko su naši djelatnici.</p>
-        </a>
-        <a class="cza-navigation-container-item" href="programi">
-            <h6 class="cza-navigation-container-item-title m-b-s">Programi</h6>
-            <p class="fs-small">Saznajte više o osnovnim programima, terapijskim postupcima i izvannastavnim aktivnostima Centra.</p>
-        </a>
-        <a class="cza-navigation-container-item" href="projekti">
-            <h6 class="cza-navigation-container-item-title m-b-s">Projekti</h6>
-            <p class="fs-small">Aktualni projekti i suradnja.</p>
-        </a>
-        <a class="cza-navigation-container-item" href="novosti">
-            <h6 class="cza-navigation-container-item-title m-b-s">Novosti</h6>
-            <p class="fs-small">Provjerite najnovije obavijesti i pratite novosti vezane uz rad Centra.</p>
-        </a>
-        <a class="cza-navigation-container-item" href="galerija">
-            <h6 class="cza-navigation-container-item-title m-b-s">Galerija</h6>
-            <p class="fs-small">Istražite fotografije Centra i pogledajte galeriju raznih događanja u sklopu rada Centra.</p>
-        </a>
-        <a class="cza-navigation-container-item" href="kontakt">
-            <h6 class="cza-navigation-container-item-title m-b-s">Kontakt</h6>
-            <p class="fs-small">Saznajte kontakt informacije, provjerite gdje se nalazimo i postavite upit.</p>
-        </a>
-    </div>
+<!--Navigation-->
+<section class="cza-index-navigation">
+    <Navigation/>
 </section>
 
 <!--O nama-->
