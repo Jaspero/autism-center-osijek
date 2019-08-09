@@ -2,6 +2,10 @@
     <title>CZA Osijek</title>
 </svelte:head>
 
+<script>
+    import Banner from './components/Banner.svelte';
+</script>
+
 <style>
     /* Intro */
     .cza-intro {
@@ -217,15 +221,8 @@
     </div>
 </section>
 
-<!--CTA-section-->
-<section class="cta-section m-y-l">
-    <div class="cta-section-content">
-        <h1 class="cta-section-content-title">Zanima vas više?</h1>
-        <p class="cta-section-content-subtitle">Pošaljite nam email na<br><a class="fw-bold" href="mailto:ured@centar-autizam-os.skole.hr">ured@centar-autizam-os.skole.hr</a><br>ili nas nazovite na <a class="fw-bold" href="tel:+385031202327">031/202-327</a></p>
-    </div>
-    <img class="cta-section-image-left" src="assets/images/cta-left.svg" alt="" aria-hidden="true">
-    <img class="cta-section-image-right" src="assets/images/cta-right.svg" alt="" aria-hidden="true">
-</section>
+<!--Banner-->
+<Banner>Zanima vas više?</Banner>
 
 <!--Projekti-->
 <section class="grid p-y-xl">
