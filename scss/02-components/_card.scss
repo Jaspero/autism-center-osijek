@@ -42,6 +42,7 @@
   }
 
   &-title::after {
+    position: absolute;
     content: '→';
     font-weight: normal;
     color: var(--primary-theme);
