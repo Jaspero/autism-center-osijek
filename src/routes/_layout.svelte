@@ -4,8 +4,18 @@
 	let menuExpanded = false;
 
 	function toggleMenu() {
+		const header = document.querySelector('.cza-header');
 		menuExpanded = !menuExpanded;
+
+		// click outside closes dialog
+
+		window.addEventListener('click', (event => {
+			if (!header.contains(event.target)) {
+				menuExpanded = false;
+			}
+		}))
 	}
+
 </script>
 
 <style>
