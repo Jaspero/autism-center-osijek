@@ -2,7 +2,11 @@
 	<title>CZA Osijek | Novosti</title>
 </svelte:head>
 
-<!--Ostale novosti-->
+<script>
+	import Card from './components/Card.svelte';
+</script>
+
+<!--Novost-->
 <section class="grid p-y-xl">
 	<div class="col-12">
 		<p class="fs-small fg-secondary">21.09.2019.</p>
@@ -26,46 +30,62 @@
 	</div>
 	<div class="col-12">
 		<div class="grid jc-start">
-			<a href="." class="col-3 col-m-6 col-xs-12 card">
-				<p class="fs-small fg-secondary p-x-s">21.09.2019.</p>
-				<h3 class="p-x-s p-b-s">Novi natječaj za posao</h3>
-				<img class="card-image" src="assets/images/placeholder.png" alt="">
-			</a>
-			<a href="." class="col-3 col-m-6 col-xs-12 card">
-				<p class="fs-small fg-secondary p-x-s">21.09.2019.</p>
-				<h3 class="p-x-s p-b-s">Novi natječaj za posao</h3>
-				<img class="card-image" src="assets/images/placeholder.png" alt="">
-			</a>
-			<a href="." class="col-3 col-m-6 col-xs-12 card">
-				<p class="fs-small fg-secondary p-x-s">21.09.2019.</p>
-				<h3 class="p-x-s p-b-s">Novi natječaj za posao</h3>
-				<img class="card-image" src="assets/images/placeholder.png" alt="">
-			</a>
-			<a href="." class="col-3 col-m-6 col-xs-12 card">
-				<p class="fs-small fg-secondary p-x-s">21.09.2019.</p>
-				<h3 class="p-x-s p-b-s">Novi natječaj za posao</h3>
-				<img class="card-image" src="assets/images/placeholder.png" alt="">
-			</a>
-			<a href="." class="col-3 col-m-6 col-xs-12 card">
-				<p class="fs-small fg-secondary p-x-s">21.09.2019.</p>
-				<h3 class="p-x-s p-b-s">Novi natječaj za posao</h3>
-				<img class="card-image" src="assets/images/placeholder.png" alt="">
-			</a>
-			<a href="." class="col-3 col-m-6 col-xs-12 card">
-				<p class="fs-small fg-secondary p-x-s">21.09.2019.</p>
-				<h3 class="p-x-s p-b-s">Novi natječaj za posao</h3>
-				<img class="card-image" src="assets/images/placeholder.png" alt="">
-			</a>
-			<a href="." class="col-3 col-m-6 col-xs-12 card">
-				<p class="fs-small fg-secondary p-x-s">21.09.2019.</p>
-				<h3 class="p-x-s p-b-s">Novi natječaj za posao</h3>
-				<img class="card-image" src="assets/images/placeholder.png" alt="">
-			</a>
-			<a href="." class="col-3 col-m-6 col-xs-12 card">
-				<p class="fs-small fg-secondary p-x-s">21.09.2019.</p>
-				<h3 class="p-x-s p-b-s">Novi natječaj za posao</h3>
-				<img class="card-image" src="assets/images/placeholder.png" alt="">
-			</a>
+			<Card href="/novosti" class="col-3 col-m-6 col-xs-12">
+				<span slot="subtitle">21.09.2019.</span>
+				<span slot="title">Novi natječaj za posao</span>
+				<div slot="image" class="aspect-container" data-ratio="2:1">
+					<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+				</div>
+			</Card>
+			<Card href="/novosti" class="col-3 col-m-6 col-xs-12">
+				<span slot="subtitle">21.09.2019.</span>
+				<span slot="title">Novi natječaj za posao</span>
+				<div slot="image" class="aspect-container" data-ratio="2:1">
+					<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+				</div>
+			</Card>
+			<Card href="/novosti" class="col-3 col-m-6 col-xs-12">
+				<span slot="subtitle">21.09.2019.</span>
+				<span slot="title">Novi natječaj za posao</span>
+				<div slot="image" class="aspect-container" data-ratio="2:1">
+					<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+				</div>
+			</Card>
+			<Card href="/novosti" class="col-3 col-m-6 col-xs-12">
+				<span slot="subtitle">21.09.2019.</span>
+				<span slot="title">Novi natječaj za posao</span>
+				<div slot="image" class="aspect-container" data-ratio="2:1">
+					<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+				</div>
+			</Card>
+			<Card href="/novosti" class="col-3 col-m-6 col-xs-12">
+				<span slot="subtitle">21.09.2019.</span>
+				<span slot="title">Novi natječaj za posao</span>
+				<div slot="image" class="aspect-container" data-ratio="2:1">
+					<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+				</div>
+			</Card>
+			<Card href="/novosti" class="col-3 col-m-6 col-xs-12">
+				<span slot="subtitle">21.09.2019.</span>
+				<span slot="title">Novi natječaj za posao</span>
+				<div slot="image" class="aspect-container" data-ratio="2:1">
+					<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+				</div>
+			</Card>
+			<Card href="/novosti" class="col-3 col-m-6 col-xs-12">
+				<span slot="subtitle">21.09.2019.</span>
+				<span slot="title">Novi natječaj za posao</span>
+				<div slot="image" class="aspect-container" data-ratio="2:1">
+					<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+				</div>
+			</Card>
+			<Card href="/novosti" class="col-3 col-m-6 col-xs-12">
+				<span slot="subtitle">21.09.2019.</span>
+				<span slot="title">Novi natječaj za posao</span>
+				<div slot="image" class="aspect-container" data-ratio="2:1">
+					<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+				</div>
+			</Card>
 		</div>
 	</div>
 </section>

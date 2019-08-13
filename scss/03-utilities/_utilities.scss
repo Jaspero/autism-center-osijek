@@ -209,11 +209,7 @@
 /* Borders
  *============================================================================*/
 
-.b-a { border       : 1px solid var(--tertiary); }
-.b-t { border-top   : 1px solid var(--tertiary); }
-.b-r { border-right : 1px solid var(--tertiary); }
-.b-b { border-bottom: 1px solid var(--tertiary); }
-.b-l { border-left  : 1px solid var(--tertiary); }
+.b-a { box-shadow: 0 0 0 1px var(--tertiary); }
 
 
 

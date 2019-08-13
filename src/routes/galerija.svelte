@@ -2,6 +2,10 @@
 	<title>CZA Osijek | Galerija</title>
 </svelte:head>
 
+<script>
+	import Card from './components/Card.svelte';
+</script>
+
 <style>
 	.cza-gallery-image-container {
 		position: relative;
@@ -34,25 +38,37 @@
 			<p class="fs-small fg-secondary">21.09.2019.</p>
 			<h3 class="title m-b-m">Galerija 1</h3>
 			<div class="grid">
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<a href="galerija" class="col-12 p-a-m card-link">
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<a href="galerija" class="col-12 p-a-m b-a">
 					<p class="ta-right">Ostale slike →</p>
 				</a>
 			</div>
@@ -61,25 +77,37 @@
 			<p class="fs-small fg-secondary">21.09.2019.</p>
 			<h3 class="title m-b-m">Galerija 1</h3>
 			<div class="grid">
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<a href="galerija" class="col-12 p-a-m card-link">
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<a href="galerija" class="col-12 p-a-m b-a">
 					<p class="ta-right">Ostale slike →</p>
 				</a>
 			</div>
@@ -88,25 +116,37 @@
 			<p class="fs-small fg-secondary">21.09.2019.</p>
 			<h3 class="title m-b-m">Galerija 1</h3>
 			<div class="grid">
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<div class="col-4 col-xs-6 cza-gallery-image-container">
-					<img class="cza-gallery-image" src="assets/images/placeholder.png" alt="">
-				</div>
-				<a href="galerija" class="col-12 p-a-m card-link">
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<Card href="/galerija" class="col-4 col-xs-6">
+					<div slot="image" class="aspect-container" data-ratio="3:2">
+						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
+					</div>
+				</Card>
+				<a href="galerija" class="col-12 p-a-m b-a">
 					<p class="ta-right">Ostale slike →</p>
 				</a>
 			</div>
