@@ -3,27 +3,8 @@
 </svelte:head>
 
 <script>
-	import Card from './components/Card.svelte';
+	import Card from '../../shared/components/Card.svelte';
 </script>
-
-<style>
-	.cza-gallery-image-container {
-		position: relative;
-		padding: 0;
-		padding-bottom: calc(100% / 3);
-	}
-	.cza-gallery-image {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		object-fit: cover;
-	}
-	@media (max-width: 600px) {
-		.cza-gallery-image-container {
-			padding-bottom: calc(100% / 2);
-		}
-	}
-</style>
 
 <section class="grid p-y-l">
 	<div class="col-3 col-m-4 col-s-10 col-xs-12">
@@ -68,7 +49,7 @@
 						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
 					</div>
 				</Card>
-				<a href="galerija" class="col-12 p-a-m b-a">
+				<a href="." class="col-12 p-a-m b-a">
 					<p class="ta-right">Ostale slike →</p>
 				</a>
 			</div>
@@ -107,7 +88,7 @@
 						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
 					</div>
 				</Card>
-				<a href="galerija" class="col-12 p-a-m b-a">
+				<a href="." class="col-12 p-a-m b-a">
 					<p class="ta-right">Ostale slike →</p>
 				</a>
 			</div>
@@ -146,7 +127,7 @@
 						<img class="aspect-image" src="assets/images/placeholder.png" alt="">
 					</div>
 				</Card>
-				<a href="galerija" class="col-12 p-a-m b-a">
+				<a href="." class="col-12 p-a-m b-a">
 					<p class="ta-right">Ostale slike →</p>
 				</a>
 			</div>

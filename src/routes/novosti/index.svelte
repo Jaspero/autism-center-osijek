@@ -3,7 +3,7 @@
 </svelte:head>
 
 <script>
-	import Card from './components/Card.svelte';
+	import Card from '../../shared/components/Card.svelte';
 </script>
 
 <!--Novost-->

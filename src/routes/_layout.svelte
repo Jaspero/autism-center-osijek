@@ -129,7 +129,7 @@
 <!--Header-->
 <header class="cza-header">
 	<nav class="cza-header-inner">
-		<a class="cza-header-inner-logo {segment === undefined ? 'active' : ''}" href=".">
+		<a class="cza-header-inner-logo" href=".">
 			<img src="assets/images/logo-dark.svg" alt="Centar za autizam Osijek." width="64">
 		</a>
 		<!--Divider-->

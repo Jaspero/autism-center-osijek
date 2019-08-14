@@ -3,7 +3,7 @@
 </svelte:head>
 
 <script>
-	import Banner from './components/Banner.svelte';
+	import Banner from '../../shared/components/Banner.svelte';
 </script>
 
 <!--O nama-->

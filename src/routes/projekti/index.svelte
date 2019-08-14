@@ -1,6 +1,6 @@
 <script context="module">
 	export function preload({ params, query }) {
-		return this.fetch('projekti.json')
+		return this.fetch('index.json')
 				.then(r => r.json());
 	}
 </script>
@@ -15,7 +15,7 @@
 	}
 
 	export function loadMore() {
-		fetch(`projekti.json?cursor=${hasMore}`)
+		fetch(`index.json?cursor=${hasMore}`)
 				.then(r => r.json())
 				.then(data => {
 					projects = [...projects, ...data.projects];
@@ -32,7 +32,7 @@
 	<div class="col-3 col-m-4 col-s-10 col-xs-12">
 		<nav class="page-content" data-content="Projekti:">
 			{#each projects as project}
-				<a>
+				<a href="..">
 					{project.name}
 				</a>
 			{/each}
