@@ -17,18 +17,6 @@ $colors-themes: (
     secondary: rgba(255,255,255,.8),
     tertiary : rgba(255,255,255,.15)
   ),
-  accent: (
-    theme    : #ffe587,
-    primary  : rgba(255,255,255,1),
-    secondary: rgba(255,255,255,.8),
-    tertiary : rgba(255,255,255,.15)
-  ),
-  warn: (
-    theme    : #dc143c,
-    primary  : rgba(255,255,255,1),
-    secondary: rgba(255,255,255,.8),
-    tertiary : rgba(255,255,255,.15)
-  ),
   panel: (
     theme    : #fff,
     primary  : rgba(0,0,0,.9),
@@ -49,11 +37,6 @@ $colors-themes: (
   )
 );
 
-$fonts: (
-  primary: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
-  secondary: "'Reenie Beanie', cursive"
-);
-
 
 
 /* Generating CSS variables in :root
@@ -64,22 +47,5 @@ $fonts: (
     @each $color-name, $color-value in $group {
       --#{$group-name}-#{$color-name}: #{$color-value};
     }
-  }
-  @each $font-name, $font-value in $fonts {
-    --font-#{$font-name}: #{$font-value};
-  }
-}
-
-
-
-/* Generating theme classes
- *============================================================================*/
-
-@each $group-name, $group in $colors-themes {
-  .#{$group-name} {
-    --theme    : var(--#{$group-name}-theme);
-    --primary  : var(--#{$group-name}-primary);
-    --secondary: var(--#{$group-name}-secondary);
-    --tertiary : var(--#{$group-name}-tertiary);
   }
 }

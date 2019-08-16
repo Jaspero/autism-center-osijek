@@ -7,6 +7,8 @@
     import Navigation from './components/Navigation.svelte';
     import Banner from '../../shared/components/Banner.svelte';
     import Card from '../../shared/components/Card.svelte';
+    import Title from '../../shared/components/Title.svelte';
+    import ViewAll from "../../shared/components/ViewAll.svelte";
 </script>
 
 <style>
@@ -43,8 +45,8 @@
 </section>
 
 <!--O nama-->
-<section class="grid p-t-xl">
-    <div class="col-6 col-s-0">
+<section class="generic-section grid">
+    <div class="col-6 col-s-12">
         <picture>
             <source srcset="assets/images/home/about.webp" type="image/webp">
             <source srcset="assets/images/home/about.png" type="image/png">
@@ -52,24 +54,25 @@
         </picture>
     </div>
     <div class="col-6 col-s-12 flex fd-col jc-center ai-start">
-        <h2 class="title m-b-l">O nama</h2>
-        <p class="m-b-m">Vrtićki, odnosno predškolski odgojno-obrazovni program Centra za autizam Osijek obuhvaća dvije vrtićke skupine pod vodstvom edukacijskih rehabilitatorica. Svaku skupinu pohađaju 4-5 djece. Odgojno-obrazovni rad u ovom programu temelji se na temeljitoj procjeni spoznajnog razvoja, socioemocionalnog razvoja, grube i fine motorike, brige o sebi, komunikacijskih i govornih vještina te predakademskih vještina i kreativnog stvaralaštva.</p>
-        <p class="m-b-xs">Suradnja se odvija putem:</p>
-        <ul class="m-b-l">
+        <Title>O nama</Title>
+        <p>Vrtićki, odnosno predškolski odgojno-obrazovni program Centra za autizam Osijek obuhvaća dvije vrtićke skupine pod vodstvom edukacijskih rehabilitatorica. Svaku skupinu pohađaju 4-5 djece. Odgojno-obrazovni rad u ovom programu temelji se na temeljitoj procjeni spoznajnog razvoja, socioemocionalnog razvoja, grube i fine motorike, brige o sebi, komunikacijskih i govornih vještina te predakademskih vještina i kreativnog stvaralaštva.</p>
+        <p>Suradnja se odvija putem:</p>
+        <ul>
             <li>Individualnih razgovora,</li>
             <li>Zajedničkih informativnih sastanaka,</li>
             <li>Svakodnevne razmjene informacija po potrebi,</li>
             <li>Grupnih radionica i individualnih poduka,</li>
             <li>Kutka za roditelje (informativnog i edukativnog) na web stranici Centra.</li>
         </ul>
+        <br>
         <a class="btn" href="../o-nama">Saznaj više</a>
     </div>
 </section>
 
 <!--Programi-->
-<section class="grid p-y-xl">
+<section class="generic-section grid">
     <div class="col-12">
-        <h2 class="title m-b-l">Programi</h2>
+        <Title>Programi</Title>
     </div>
     <div class="col-12">
         <div class="grid jc-start">
@@ -130,9 +133,9 @@
 <Banner>Zanima vas više?</Banner>
 
 <!--Projekti-->
-<section class="grid p-y-xl">
+<section class="generic-section grid">
     <div class="col-12">
-        <h2 class="title m-b-l">Projekti</h2>
+        <Title>Projekti</Title>
     </div>
     <div class="col-12">
         <div class="grid jc-start">
@@ -157,9 +160,9 @@
 </section>
 
 <!--Novosti-->
-<section class="grid p-y-xl">
+<section class="generic-section grid">
     <div class="col-12">
-        <h2 class="title m-b-l">Novosti</h2>
+        <Title>Novosti</Title>
     </div>
     <div class="col-12">
         <div class="grid jc-start">
@@ -219,9 +222,7 @@
                     <img class="aspect-image" src="assets/images/placeholder.png" alt="">
                 </div>
             </Card>
-            <a href="../novosti" class="col-12 p-a-m b-a">
-                <p class="fs-large ta-right">Pregled svih <span class="c-primary">novosti →</span></p>
-            </a>
+            <ViewAll class="col-12" href="../novosti">Pregled svih novosti</ViewAll>
         </div>
     </div>
 </section>

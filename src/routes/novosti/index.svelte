@@ -19,7 +19,7 @@
 	</div>
 	<div class="col-1 col-s-0"></div>
 	<div class="col-5 col-s-12 col-xs-12">
-		<img class="w-full" src="assets/images/placeholder.png" alt="">
+		<img src="assets/images/placeholder.png" alt="">
 	</div>
 </section>
 

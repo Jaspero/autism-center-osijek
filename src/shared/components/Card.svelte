@@ -13,20 +13,20 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        box-shadow: 0 0 0 1px var(--tertiary);
+        box-shadow: 0 0 0 1px var(--panel-tertiary);
         padding: 0;
         transition: .2s;
     }
     .card:hover {
         background: white;
-        box-shadow: 0 0 0 1px var(--tertiary), 0 0 25px 0 rgba(0,0,0,.3);
+        box-shadow: 0 0 0 1px var(--panel-tertiary), 0 0 25px 0 rgba(0,0,0,.3);
     }
     .card:hover > .card-highlight {
         visibility: visible;
         opacity: 1;
     }
     .card-subtitle {
-        font-size: 12px;
+        font-size: .75em;
         text-transform: uppercase;
         letter-spacing: .1em;
         font-weight: normal;
@@ -35,6 +35,7 @@
     }
     .card-subtitle:not(:empty) {
         margin-top: 40px;
+        margin-bottom: 0;
     }
     .card-subtitle:empty {
         display: none;
@@ -43,9 +44,8 @@
         margin-top: 40px;
     }
     .card-title {
-        font-size: 24px;
+        font-size: 1.5em;
         padding: 0 20px;
-        margin-bottom: 20px;
     }
     .card-title:empty {
         display: none;

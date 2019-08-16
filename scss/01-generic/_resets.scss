@@ -37,21 +37,6 @@ body {
 
 
 
-/* Margin resets
- *============================================================================*/
-
-h1, h2, h3, h4, h5, h6,
-p, ol, ul, hr {
-  margin:  0;
-}
-
-// Removes trailing margins from nested lists
-li > ol, ul {
-    margin-bottom: 0;
-}
-
-
-
 /* Tables
  *============================================================================*/
 
@@ -66,27 +51,6 @@ td {
 
 
 
-/* Semantic markup
- *============================================================================*/
-
-small {
-  font-size: .8em;
-}
-
-b, strong {
-  font-weight: 700;
-}
-
-i, em {
-  font-style: italic;
-}
-
-u {
-  text-decoration: underline;
-}
-
-
-
 /* Hyperlinks
  *============================================================================*/
 
@@ -96,24 +60,6 @@ a {
   text-decoration: none;
 }
 
-
-
-/* Buttons
- *============================================================================*/
-
-button {
-  cursor: pointer;
-  font-size: inherit;
-}
-
-
-
-/* Textarea
- *============================================================================*/
-
-textarea {
-  resize: vertical;
-}
 
 
 

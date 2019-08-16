@@ -2,6 +2,10 @@
 	<title>CZA Osijek | Kontakt</title>
 </svelte:head>
 
+<script>
+	import Title from '../../shared/components/Title.svelte';
+</script>
+
 <style>
 	.cza-form-label {
 		display: block;
@@ -33,7 +37,7 @@
 
 <section class="grid p-y-xl">
 	<div class="col-6 col-s-12">
-		<h3 class="title m-b-l">Kontaktni podaci</h3>
+		<Title>Kontaktni podaci</Title>
 		<table class="m-b-l">
 			<tbody>
 			<tr>
@@ -68,7 +72,7 @@
 		</table>
 	</div>
 	<div class="col-6 col-s-12">
-		<h3 class="title m-b-l">Kontaktni obrazac</h3>
+		<Title>Kontaktni obrazac</Title>
 		<form class="cza-form">
 			<label class="cza-form-label">
 				<span class="cza-form-placeholder">Vaše ime i prezime:</span>

@@ -1,30 +1,24 @@
 <style>
     .hero {
-        --theme    : var(--primary-theme);
-        --primary  : var(--primary-primary);
-        --secondary: var(--primary-secondary);
-        --tertiary : var(--primary-tertiary);
-    }
-    .hero {
         position: relative;
         padding: 80px 10px;
-        background: var(--theme);
-        color: var(--primary);
+        background: var(--primary-theme);
+        color: var(--primary-primary);
     }
     .hero-content {
         text-align: center;
     }
     .hero-content-logo {
-        margin-bottom: 20px;
+        margin-bottom: 1em;
     }
     .hero-content-title {
-        font-size: 24px;
-        margin-bottom: 60px;
+        font-size: 1.5em;
+        margin-bottom: 2em;
     }
     .hero-content-poem {
-        font-family: var(--font-secondary);
+        font-family: 'Reenie Beanie', cursive;
         font-weight: normal;
-        font-size: 36px;
+        font-size: 2em;
     }
     .hero-image {
         position: absolute;
@@ -52,12 +46,6 @@
             margin-top: 0;
             z-index: 1;
             padding: 40px 10px;
-        }
-        .hero-content-title {
-            font-size: 20px;
-        }
-        .hero-content-poem {
-            font-size: 28px;
         }
     }
 </style>

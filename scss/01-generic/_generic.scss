@@ -1,3 +1,5 @@
+@import "../breakpoints";
+
 /**
  * Generic
  *
@@ -13,19 +15,13 @@
 html {
   font-size: 16px;
   line-height: 1.5;
-  font-family: var(--font-primary);
-}
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  background: var(--backdrop-theme);
+  color: var(--backdrop-primary);
 
-body {
-  --theme    : var(--backdrop-theme);
-  --primary  : var(--backdrop-primary);
-  --secondary: var(--backdrop-secondary);
-  --tertiary : var(--backdrop-tertiary);
-}
-
-body {
-  background: var(--theme);
-  color: var(--primary);
+  @media (max-width: $screen-xs) {
+    font-size: 14px;
+  }
 }
 
 
@@ -35,12 +31,28 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
-  font-weight: bold;
 }
 
-h1 { font-size: 80px; }
-h2 { font-size: 40px; }
-h3 { font-size: 30px; }
-h4 { font-size: 20px; }
-h5 { font-size: 16px; }
-h6 { font-size: 16px; }
+
+
+/* Generic elements margins
+ *============================================================================*/
+
+h1, h2, h3, h4, h5, h6,
+p, ol, ul, hr {
+  margin: 0 0 1em;
+}
+
+p + ul {
+  margin-top: -.75em;
+}
+
+
+
+/* Generic section
+ *============================================================================*/
+
+.generic-section {
+  padding-top: calc(50px + .5vw);
+  padding-bottom: calc(50px + .5vw);
+}
