@@ -8,11 +8,13 @@ export async function get(req, res) {
         'Content-Type': 'application/json'
       });
 
-      res.end(JSON.stringify(
-          snaps.docs.map(item => ({
-            id: item.id,
-            ...item.data()
-          }))
+      res.end(JSON.stringify({
+          projects:
+              snaps.docs.map(item => ({
+                  id: item.id,
+                  ...item.data()
+              }))
+          }
       ));
     })
     .catch(error => {

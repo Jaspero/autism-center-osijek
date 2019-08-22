@@ -1,6 +1,6 @@
 <script context="module">
 	export function preload({ params, query }) {
-		return this.fetch('index.json')
+		return this.fetch('projekti.json')
 				.then(r => r.json());
 	}
 </script>
