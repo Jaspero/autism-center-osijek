@@ -21,7 +21,7 @@
 			<span slot="mobile-label">Projekti:</span>
 			<div slot="items">
 				{#each projects as project}
-				<BlogNavigationItem>
+				<BlogNavigationItem isTitle={true}>
 					<a slot="item" href=".">{project.name}</a>
 				</BlogNavigationItem>
 				{/each}

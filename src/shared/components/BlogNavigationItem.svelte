@@ -1,5 +1,6 @@
 <script>
     let hrefValue;
+    export let isTitle;
     export {
         hrefValue as href
     };
@@ -13,6 +14,9 @@
         padding: 5px 20px 5px 5px;
         transition: .2s;
     }
+    .blog-navigation-item-title {
+        font-weight: bold;
+    }
     .blog-navigation-item:hover {
         color: var(--primary-theme);
     }
@@ -25,7 +29,7 @@
     }
 </style>
 
-<span class="blog-navigation-item">
+<span class="blog-navigation-item {isTitle === true ? 'blog-navigation-item-title' : ''}">
     <slot name="item" href="{hrefValue}"></slot>
 </span>
 
