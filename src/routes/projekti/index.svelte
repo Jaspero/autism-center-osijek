@@ -1,18 +1,13 @@
 <script context="module">
-	export function preload({ params, query }) {
+	export function preload({params, query}) {
 		return this.fetch('projekti.json')
 				.then(r => r.json());
 	}
 </script>
 
 <script>
-	export let hasMore;
+	import BlogNavigation from "../../shared/components/BlogNavigation.svelte";
 	export let projects;
-	export let activeProject;
-
-	if (projects && projects.length) {
-		activeProject = projects[0];
-	}
 </script>
 
 <svelte:head>
@@ -21,13 +16,15 @@
 
 <section class="grid p-y-l">
 	<div class="col-3 col-m-4 col-s-10 col-xs-12">
-		<nav class="page-content" data-content="Projekti:">
-			{#each projects as project}
-				<a href="..">
-					{project.name}
-				</a>
-			{/each}
-		</nav>
+		<BlogNavigation>
+			<span slot="mobile-label">Projekti:</span>
+			<span slot="title">This is a title</span>
+			<div slot="items" >
+				{#each projects as project}
+					<a href=".">{project.name}</a>
+				{/each}
+			</div>
+		</BlogNavigation>
 	</div>
 	<div class="col-6 col-m-8 col-s-10 col-xs-12">
 		<div class="read-format">

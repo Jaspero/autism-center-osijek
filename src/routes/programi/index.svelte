@@ -2,14 +2,9 @@
 	<title>CZA Osijek | Programi</title>
 </svelte:head>
 
-<script>
-	import BlogNavigation from "../../shared/components/BlogNavigation.svelte";
-</script>
+<script></script>
 
 <section class="grid p-y-l">
-	<div class="col-3 col-m-4 col-s-10 col-xs-12">
-		<BlogNavigation></BlogNavigation>
-	</div>
 	<div class="col-6 col-m-8 col-s-10 col-xs-12">
 		<h1>Osnovni programi</h1>
 		<article class="m-b-xl">

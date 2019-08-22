@@ -16,5 +16,5 @@
 </style>
 
 <h1 class="title">
-    <slot>Javite nam se</slot>
+    <slot></slot>
 </h1>

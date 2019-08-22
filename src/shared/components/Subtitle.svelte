@@ -5,5 +5,5 @@
 </style>
 
 <h2 class="subtitle">
-    <slot>Javite nam se</slot>
+    <slot></slot>
 </h2>
