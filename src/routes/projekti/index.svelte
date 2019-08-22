@@ -7,6 +7,7 @@
 
 <script>
 	import BlogNavigation from "../../shared/components/BlogNavigation.svelte";
+	import BlogNavigationItem from "../../shared/components/BlogNavigationItem.svelte";
 	export let projects;
 </script>
 
@@ -18,10 +19,11 @@
 	<div class="col-3 col-m-4 col-s-10 col-xs-12">
 		<BlogNavigation>
 			<span slot="mobile-label">Projekti:</span>
-			<span slot="title">This is a title</span>
-			<div slot="items" >
+			<div slot="items">
 				{#each projects as project}
-					<a href=".">{project.name}</a>
+				<BlogNavigationItem>
+					<a slot="item" href=".">{project.name}</a>
+				</BlogNavigationItem>
 				{/each}
 			</div>
 		</BlogNavigation>
