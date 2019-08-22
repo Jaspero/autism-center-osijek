@@ -13,15 +13,6 @@
 	if (projects && projects.length) {
 		activeProject = projects[0];
 	}
-
-	export function loadMore() {
-		fetch(`index.json?cursor=${hasMore}`)
-			.then(r => r.json())
-			.then(data => {
-				projects = [...projects, ...data.projects];
-				hasMore = data.hasMore;
-			});
-	}
 </script>
 
 <svelte:head>
