@@ -39,194 +39,131 @@
 	<div class="grid">
 		<div class="col-9 col-m-10 col-s-11 col-xs-12">
 			<div class="grid">
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/sanda-zlataric.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/sanda-zlataric.png" type="image/png">
-						<img src="assets/images/o-nama/sanda-zlataric.png" alt="Sanda Zlatarić">
-					</picture>
-					<span slot="name">Sanda Zlatarić</span>
-					<span slot="role">Ravnateljica</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/sanda-zlataric.png"
+					nameValue="Sanda Zlatarić"
+					roleValue="Ravnateljica">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/zvonimir-borevac.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/zvonimir-borevac.png" type="image/png">
-						<img src="assets/images/o-nama/zvonimir-borevac.png" alt="Zvonimir Borevac">
-					</picture>
-					<span slot="name">Zvonimir Borevac</span>
-					<span slot="role">Tajnik</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/zvonimir-borevac.png"
+					nameValue="Zvonimir Borevac"
+					roleValue="Tajnik">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/ksenija-sudar.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/ksenija-sudar.png" type="image/png">
-						<img src="assets/images/o-nama/ksenija-sudar.png" alt="Ksenija Sudar">
-					</picture>
-					<span slot="name">Ksenija Sudar</span>
-					<span slot="role">Voditelj Računovodstva</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/ksenija-sudar.png"
+					nameValue="Ksenija Sudar"
+					roleValue="Voditelj Računovodstva">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/elizabeta-hanicar.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/elizabeta-hanicar.png" type="image/png">
-						<img src="assets/images/o-nama/elizabeta-hanicar.png" alt="Elizabeta Haničar">
-					</picture>
-					<span slot="name">Elizabeta Haničar</span>
-					<span slot="role">Pedagog</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/elizabeta-hanicar.png"
+					nameValue="Elizabeta Haničar"
+					roleValue="Pedagog">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/katarina-berki.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/katarina-berki.png" type="image/png">
-						<img src="assets/images/o-nama/katarina-berki.png" alt="Katarina Berki">
-					</picture>
-					<span slot="name">Katarina Berki</span>
-					<span slot="role">Kuharica</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/katarina-berki.png"
+					nameValue="Katarina Berki"
+					roleValue="Kuharica">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/slaven-ernjes.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/slaven-ernjes.png" type="image/png">
-						<img src="assets/images/o-nama/slaven-ernjes.png" alt="Slaven Ernješ">
-					</picture>
-					<span slot="name">Slaven Ernješ</span>
-					<span slot="role">Domar</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/slaven-ernjes.png"
+					nameValue="Slaven Ernješ"
+					roleValue="Domar">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/drazenka-pralija.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/drazenka-pralija.png" type="image/png">
-						<img src="assets/images/o-nama/drazenka-pralija.png" alt="Draženka Pralija">
-					</picture>
-					<span slot="name">Draženka Pralija</span>
-					<span slot="role">Spremačica</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/drazenka-pralija.png"
+					nameValue="Draženka Pralija"
+					roleValue="Spremačica">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/marijana-fiala.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/marijana-fiala.png" type="image/png">
-						<img src="assets/images/o-nama/marijana-fiala.png" alt="Marijana Fiala">
-					</picture>
-					<span slot="name">Marijana Fiala</span>
-					<span slot="role">Spremačica</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/marijana-fiala.png"
+					nameValue="Marijana Fiala"
+					roleValue="Spremačica">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/nada-varzic.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/nada-varzic.png" type="image/png">
-						<img src="assets/images/o-nama/nada-varzic.png" alt="Nada Varžić">
-					</picture>
-					<span slot="name">Nada Varžić</span>
-					<span slot="role">Spremačica</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/nada-varzic.png"
+					nameValue="Nada Varžić"
+					roleValue="Spremačica">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/marija-horvat.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/marija-horvat.png" type="image/png">
-						<img src="assets/images/o-nama/marija-horvat.png" alt="Marija Horvat">
-					</picture>
-					<span slot="name">Marija Horvat</span>
-					<span slot="role">Spremačica</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/marija-horvat.png"
+					nameValue="Marija Horvat"
+					roleValue="Spremačica">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/marija-mrđa.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/marija-mrđa.png" type="image/png">
-						<img src="assets/images/o-nama/marija-mrđa.png" alt="Marija Mrđa">
-					</picture>
-					<span slot="name">Marija Mrđa</span>
-					<span slot="role">Medicinska sestra</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/marija-mrđa.png"
+					nameValue="Marija Mrđa"
+					roleValue="Medicinska sestra">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/suzana-matic.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/suzana-matic.png" type="image/png">
-						<img src="assets/images/o-nama/suzana-matic.png" alt="Suzana Matić">
-					</picture>
-					<span slot="name">Suzana Matić</span>
-					<span slot="role">Njegovateljica</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/suzana-matic.png"
+					nameValue="Suzana Matić"
+					roleValue="Njegovateljica">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/mia-basic.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/mia-basic.png" type="image/png">
-						<img src="assets/images/o-nama/mia-basic.png" alt="Mia Bašić">
-					</picture>
-					<span slot="name">Mia Bašić</span>
-					<span slot="role">Učitelj edukacijski rehabilitator u produženom stručnom postupku i rehabilitacijskim programima</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/mia-basic.png"
+					nameValue="Mia Bašić"
+					roleValue="Učitelj edukacijski rehabilitator u produženom stručnom postupku i rehabilitacijskim programima">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/karolina-burek-bilokapic.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/karolina-burek-bilokapic.png" type="image/png">
-						<img src="assets/images/o-nama/karolina-burek-bilokapic.png" alt="Karolina Burek Bilokapić">
-					</picture>
-					<span slot="name">Karolina Burek Bilokapić</span>
-					<span slot="role">Učitelj edukacijski rehabilitator u produženom stručnom postupku i rehabilitacijskim programima</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/karolina-burek-bilokapic.png"
+					nameValue="Karolina Burek Bilokapić"
+					roleValue="Učitelj edukacijski rehabilitator u produženom stručnom postupku i rehabilitacijskim programima">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/dora-marjanovic.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/dora-marjanovic.png" type="image/png">
-						<img src="assets/images/o-nama/dora-marjanovic.png" alt="Dora Marjanović">
-					</picture>
-					<span slot="name">Dora Marjanović</span>
-					<span slot="role">Učitelj edukacijski rehabilitator u produženom stručnom postupku i rehabilitacijskim programima</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/dora-marjanovic.png"
+					nameValue="Dora Marjanović"
+					roleValue="Učitelj edukacijski rehabilitator u produženom stručnom postupku i rehabilitacijskim programima">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/vedrana-jugovic.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/vedrana-jugovic.png" type="image/png">
-						<img src="assets/images/o-nama/vedrana-jugovic.png" alt="Vedrana Jugović">
-					</picture>
-					<span slot="name">Vedrana Jugović</span>
-					<span slot="role">Učitelj edukacijski rehabilitator u produženom stručnom postupku i rehabilitacijskim programima</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/vedrana-jugovic.png"
+					nameValue="Vedrana Jugović"
+					roleValue="Učitelj edukacijski rehabilitator u produženom stručnom postupku i rehabilitacijskim programima">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/gabrijela-hajba.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/gabrijela-hajba.png" type="image/png">
-						<img src="assets/images/o-nama/gabrijela-hajba.png" alt="Gabrijela Hajba">
-					</picture>
-					<span slot="name">Gabrijela Hajba</span>
-					<span slot="role">Edukacijski rehabilitator u vrtićkim skupinama</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/gabrijela-hajba.png"
+					nameValue="Gabrijela Hajba"
+					roleValue="Edukacijski rehabilitator u vrtićkim skupinama">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/kristina-papic.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/kristina-papic.png" type="image/png">
-						<img src="assets/images/o-nama/kristina-papic.png" alt="Kristina Papić">
-					</picture>
-					<span slot="name">Kristina Papić</span>
-					<span slot="role">Edukacijski rehabilitator u vrtićkim skupinama</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/kristina-papic.png"
+					nameValue="Kristina Papić"
+					roleValue="Edukacijski rehabilitator u vrtićkim skupinama">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/marina-hosjak.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/marina-hosjak.png" type="image/png">
-						<img src="assets/images/o-nama/marina-hosjak.png" alt="Marina Hosjak">
-					</picture>
-					<span slot="name">Marina Hosjak</span>
-					<span slot="role">Učitelj glazbene kulture</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/marina-hosjak.png"
+					nameValue="Marina Hosjak"
+					roleValue="Učitelj glazbene kulture">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/tamara-kreso.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/tamara-kreso.png" type="image/png">
-						<img src="assets/images/o-nama/tamara-kreso.png" alt="Tamara Krešo">
-					</picture>
-					<span slot="name">Tamara Krešo</span>
-					<span slot="role">Učitelj likovne kulture</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/tamara-kreso.png"
+					nameValue="Tamara Krešo"
+					roleValue="Učitelj likovne kulture">
 				</Member>
-				<Member class="col-3 col-m-4 col-s-6 col-xs-12">
-					<picture slot="image">
-						<source srcset="assets/images/o-nama/kristina-gabelica.webp" type="image/webp">
-						<source srcset="assets/images/o-nama/kristina-gabelica.png" type="image/png">
-						<img src="assets/images/o-nama/kristina-gabelica.png" alt="Kristina Gabelica">
-					</picture>
-					<span slot="name">Kristina Gabelica</span>
-					<span slot="role">Učitelj tjelesne i zdravstvene kulture</span>
+				<Member
+					classValue="col-3 col-m-4 col-s-6 col-xs-12"
+					imageValue="assets/images/o-nama/kristina-gabelica.png"
+					nameValue="Kristina Gabelica"
+					roleValue="Učitelj tjelesne i zdravstvene kulture">
 				</Member>
 			</div>
 		</div>

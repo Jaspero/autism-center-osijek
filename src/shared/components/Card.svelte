@@ -1,10 +1,10 @@
 <script>
-    let className;
-    let hrefValue;
-    export {
-        className as class,
-        hrefValue as href
-    };
+    export let classValue;
+    export let hrefValue;
+    export let subtitleValue;
+    export let titleValue;
+    export let textValue;
+    export let imageValue;
 </script>
 
 <style>
@@ -14,8 +14,11 @@
         flex-direction: column;
         justify-content: flex-end;
         box-shadow: 0 0 0 1px var(--panel-tertiary);
-        padding: 0;
+        padding: 40px 0 20px;
         transition: .2s;
+    }
+    .card.card-has-image {
+        padding: 40px 0 0;
     }
     .card:hover {
         background: white;
@@ -30,35 +33,22 @@
         text-transform: uppercase;
         letter-spacing: .1em;
         font-weight: normal;
-        opacity: .75;
         padding: 0 20px;
-    }
-    .card-subtitle:not(:empty) {
-        margin-top: 40px;
-        margin-bottom: 0;
-    }
-    .card-subtitle:empty {
-        display: none;
-    }
-    .card-subtitle:empty + .card-title {
-        margin-top: 40px;
+        margin: 0;
+        opacity: .75;
     }
     .card-title {
         font-size: 1.5em;
         padding: 0 20px;
     }
-    .card-title:empty {
-        display: none;
-    }
-    .card-content {
+    .card-text {
         padding: 0 20px;
-        margin-bottom: 20px;
     }
-    .card-content:empty {
-        display: none;
-    }
-    .card-image:empty {
-        padding-top: 20px;
+    .card-image {
+        height: 200px;
+        width: 100%;
+        max-width: unset;
+        object-fit: cover;
     }
     .card-highlight {
         position: absolute;
@@ -74,20 +64,18 @@
     }
 </style>
 
-<a href="{hrefValue}" class="card {className}">
-    <h2 class="card-subtitle">
-        <slot name="subtitle"></slot>
-    </h2>
-    <h1 class="card-title">
-        <slot name="title"></slot>
-    </h1>
-    <p class="card-content">
-        <slot name="content"></slot>
-    </p>
-    <div class="card-image">
-        <slot name="image"></slot>
-    </div>
+<a href="{hrefValue}" class="card {classValue} {imageValue ? 'card-has-image' : ''}">
+    {#if subtitleValue}
+    <h2 class="card-subtitle">{subtitleValue}</h2>
+    {/if}
+    {#if titleValue}
+    <h1 class="card-title">{titleValue}</h1>
+    {/if}
+    {#if textValue}
+    <p class="card-text">{textValue}</p>
+    {/if}
+    {#if imageValue}
+    <img class="card-image" src={imageValue} alt="">
+    {/if}
     <div class="card-highlight" aria-hidden="true"></div>
 </a>
-
-

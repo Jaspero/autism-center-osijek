@@ -1,8 +1,8 @@
 <script>
-    let className;
-    export {
-        className as class
-    };
+    export let classValue;
+    export let imageValue;
+    export let nameValue;
+    export let roleValue;
 </script>
 
 <style>
@@ -28,14 +28,8 @@
     }
 </style>
 
-<article class="member {className}">
-    <div class="member-image">
-        <slot name="image"></slot>
-    </div>
-    <h1 class="member-name">
-        <slot name="name"></slot>
-    </h1>
-    <p class="member-role">
-        <slot name="role"></slot>
-    </p>
+<article class="member {classValue}">
+    <img class="member-image" src={imageValue} alt={nameValue}>
+    <h1 class="member-name">{nameValue}</h1>
+    <p class="member-role">{roleValue}</p>
 </article>

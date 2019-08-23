@@ -76,54 +76,54 @@
     </div>
     <div class="col-12">
         <div class="grid jc-start">
-            <Card href="" class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">OSNOVNI PROGRAM</span>
-                <span slot="title">Vrtićki program</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="OSNOVNI PROGRAM"
+                titleValue="Vrtićki program"
+                imageValue="assets/images/placeholder.png">
             </Card>
-            <Card href="" class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">OSNOVNI PROGRAM</span>
-                <span slot="title">Posebni program uz individualizirane postupke</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="OSNOVNI PROGRAM"
+                titleValue="Posebni program uz individualizirane postupke"
+                imageValue="assets/images/placeholder.png">
             </Card>
-            <Card href="" class="col-6 col-m-12 col-xs-12">
-                <span slot="subtitle">OSNOVNI PROGRAM</span>
-                <span slot="title">Posebni program za stjecanje kompetencija u aktivnostima svakodnevnog života i rada uz individualizirane postupke</span>
-                <div slot="image" class="aspect-container" data-ratio="4:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-6 col-m-12 col-xs-12"
+                subtitleValue="OSNOVNI PROGRAM"
+                titleValue="Posebni program za stjecanje kompetencija u aktivnostima svakodnevnog života i rada uz individualizirane postupke"
+                imageValue="assets/images/placeholder.png">
             </Card>
-            <Card href="" class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">OSNOVNI PROGRAM</span>
-                <span slot="title">Produženi stručni postupak</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="OSNOVNI PROGRAM"
+                titleValue="Produženi stručni postupak"
+                imageValue="assets/images/placeholder.png">
             </Card>
-            <Card href="" class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">TERAPIJSKI POSTUPCI</span>
-                <span slot="title">Logopedska terapija</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="TERAPIJSKI POSTUPCI"
+                titleValue="Logopedska terapija"
+                imageValue="assets/images/placeholder.png">
             </Card>
-            <Card href="" class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">TERAPIJSKI POSTUPCI</span>
-                <span slot="title">Muzikoterapija</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="TERAPIJSKI POSTUPCI"
+                titleValue="Muzikoterapija"
+                imageValue="assets/images/placeholder.png">
             </Card>
-            <Card href="" class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">TERAPIJSKI POSTUPCI</span>
-                <span slot="title">Senzorna integracija</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="TERAPIJSKI POSTUPCI"
+                titleValue="Senzorna integracija"
+                imageValue="assets/images/placeholder.png">
             </Card>
         </div>
     </div>
@@ -139,21 +139,29 @@
     </div>
     <div class="col-12">
         <div class="grid jc-start">
-            <Card href="/" class="col-6 col-s-12">
-                <span slot="title">Volontiranje</span>
-                <span slot="content">Volonterstvo (volontiranje, volonterski/dobrovoljni rad) u najširem značenju podrazumijeva rad pojedinca na dobrobit drugih pri čemu je njegovo djelovanje slobodno odabrano, neprofitno i bez financijske dobiti. </span>
+            <Card
+                hrefValue=""
+                classValue="col-6 col-s-12"
+                titleValue="Volontiranje"
+                textValue="Volonterstvo (volontiranje, volonterski/dobrovoljni rad) u najširem značenju podrazumijeva rad pojedinca na dobrobit drugih pri čemu je njegovo djelovanje slobodno odabrano, neprofitno i bez financijske dobiti.">
             </Card>
-            <Card href="/" class="col-6 col-s-12">
-                <span slot="title">Asistent u nastavi</span>
-                <span slot="content">Pomoćnike u vrtiću osigurava Grad Osijek na temelju zahtjeva koji zajedno s potrebnom dokumentacijom podnosi Centar.</span>
+            <Card
+                hrefValue=""
+                classValue="col-6 col-s-12"
+                titleValue="Asistent u nastavi"
+                textValue="Pomoćnike u vrtiću osigurava Grad Osijek na temelju zahtjeva koji zajedno s potrebnom dokumentacijom podnosi Centar.">
             </Card>
-            <Card href="/" class="col-6 col-s-12">
-                <span slot="title">OSIgurajmo im JEdnaKost 4</span>
-                <span slot="content">Projekt OSIgurajmo im JEdnaKost 4 sufinanciran je sredstvima Europske unije iz Europskog socijalnog fonda, a vodi ga Grad Osijek zajedno s partnerima.Projektom je omogućena stručna podrška pomoćnika u nastavi učenicima s teškoćama u razvoju, kojima su najpotrebniji. </span>
+            <Card
+                hrefValue=""
+                classValue="col-6 col-s-12"
+                titleValue="OSIgurajmo im JEdnaKost 4"
+                textValue="Projekt OSIgurajmo im JEdnaKost 4 sufinanciran je sredstvima Europske unije iz Europskog socijalnog fonda, a vodi ga Grad Osijek zajedno s partnerima.Projektom je omogućena stručna podrška pomoćnika u nastavi učenicima s teškoćama u razvoju, kojima su najpotrebniji.">
             </Card>
-            <Card href="/" class="col-6 col-s-12">
-                <span slot="title">Primjena tehnologije 21. stoljeća za promociju komunikacije, obrazovanja i socijalnog uključivanja djece rane dobi s teškoćama u razvoju</span>
-                <span slot="content">Centar za autizam uključio se u projekt Primjena tehnologije 21. stoljeća za promociju komunikacije, obrazovanja i socijalnog uključivanja djece rane dobi s teškoćama u razvoju. Projekt se provodi u suradnji Unicefa, Edukacijsko rehabilitacijskog fakulteta i Fakulteta elektrotehnike i računarstva. Program će trajati 17 mjeseci, a početak je svibanj 2019. godine.</span>
+            <Card
+                hrefValue=""
+                classValue="col-6 col-s-12"
+                titleValue="Primjena tehnologije 21. stoljeća za promociju komunikacije, obrazovanja i socijalnog uključivanja djece rane dobi s teškoćama u razvoju"
+                textValue="Centar za autizam uključio se u projekt Primjena tehnologije 21. stoljeća za promociju komunikacije, obrazovanja i socijalnog uključivanja djece rane dobi s teškoćama u razvoju. Projekt se provodi u suradnji Unicefa, Edukacijsko rehabilitacijskog fakulteta i Fakulteta elektrotehnike i računarstva. Program će trajati 17 mjeseci, a početak je svibanj 2019. godine.">
             </Card>
         </div>
     </div>
@@ -166,61 +174,61 @@
     </div>
     <div class="col-12">
         <div class="grid jc-start">
-            <Card href="." class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">21.09.2019.</span>
-                <span slot="title">Novi natječaj za posao</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="21.09.2019."
+                titleValue="Novi natječaj za posao"
+                imageValue="assets/images/placeholder.png">
             </Card>
-            <Card href="." class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">21.09.2019.</span>
-                <span slot="title">Novi natječaj za posao</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="21.09.2019."
+                titleValue="Novi natječaj za posao"
+                imageValue="assets/images/placeholder.png">
             </Card>
-            <Card href="." class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">21.09.2019.</span>
-                <span slot="title">Novi natječaj za posao</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="21.09.2019."
+                titleValue="Novi natječaj za posao"
+                imageValue="assets/images/placeholder.png">
             </Card>
-            <Card href="." class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">21.09.2019.</span>
-                <span slot="title">Novi natječaj za posao</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="21.09.2019."
+                titleValue="Novi natječaj za posao"
+                imageValue="assets/images/placeholder.png">
             </Card>
-            <Card href="." class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">21.09.2019.</span>
-                <span slot="title">Novi natječaj za posao</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="21.09.2019."
+                titleValue="Novi natječaj za posao"
+                imageValue="assets/images/placeholder.png">
             </Card>
-            <Card href="." class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">21.09.2019.</span>
-                <span slot="title">Novi natječaj za posao</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="21.09.2019."
+                titleValue="Novi natječaj za posao"
+                imageValue="assets/images/placeholder.png">
             </Card>
-            <Card href="." class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">21.09.2019.</span>
-                <span slot="title">Novi natječaj za posao</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="21.09.2019."
+                titleValue="Novi natječaj za posao"
+                imageValue="assets/images/placeholder.png">
             </Card>
-            <Card href="." class="col-3 col-m-6 col-xs-12">
-                <span slot="subtitle">21.09.2019.</span>
-                <span slot="title">Novi natječaj za posao</span>
-                <div slot="image" class="aspect-container" data-ratio="2:1">
-                    <img class="aspect-image" src="assets/images/placeholder.png" alt="">
-                </div>
+            <Card
+                hrefValue=""
+                classValue="col-3 col-m-6 col-xs-12"
+                subtitleValue="21.09.2019."
+                titleValue="Novi natječaj za posao"
+                imageValue="assets/images/placeholder.png">
             </Card>
             <ViewAll class="col-12" href="../novosti">Pregled svih novosti</ViewAll>
         </div>

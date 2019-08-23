@@ -17,15 +17,10 @@
 
 <section class="grid p-y-l">
 	<div class="col-3 col-m-4 col-s-10 col-xs-12">
-		<BlogNavigation>
-			<span slot="mobile-label">Projekti:</span>
-			<div slot="items">
-				{#each projects as project}
-				<BlogNavigationItem isTitle={true}>
-					<a slot="item" href=".">{project.name}</a>
-				</BlogNavigationItem>
-				{/each}
-			</div>
+		<BlogNavigation labelValue="Projekti:">
+			{#each projects as project}
+			<BlogNavigationItem isTitle textValue={project.name} hrefValue={"/projekti"}></BlogNavigationItem>
+			{/each}
 		</BlogNavigation>
 	</div>
 	<div class="col-6 col-m-8 col-s-10 col-xs-12">

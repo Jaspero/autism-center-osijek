@@ -1,14 +1,12 @@
 <script>
-    let hrefValue;
+    export let hrefValue;
+    export let textValue;
     export let isTitle;
-    export {
-        hrefValue as href
-    };
 </script>
 
 <style>
     .blog-navigation-item {
-        display: flex;
+        display: block;
         text-align: right;
         justify-content: flex-end;
         padding: 5px 20px 5px 5px;
@@ -29,7 +27,5 @@
     }
 </style>
 
-<span class="blog-navigation-item {isTitle === true ? 'blog-navigation-item-title' : ''}">
-    <slot name="item" href="{hrefValue}"></slot>
-</span>
+<a class="blog-navigation-item {isTitle === true ? 'blog-navigation-item-title' : ''}" href="{hrefValue}">{textValue}</a>
 

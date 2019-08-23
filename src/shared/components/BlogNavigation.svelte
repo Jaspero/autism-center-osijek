@@ -1,3 +1,7 @@
+<script>
+    export let labelValue;
+</script>
+
 <style>
     .blog-navigation {
         position: sticky;
@@ -11,6 +15,13 @@
     }
     .blog-navigation-mobile-label {
         display: none;
+        position: absolute;
+        top: -30px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 20px;
+        left: -4px;
+        color: var(--panel-secondary);
     }
     @media (max-width: 900px) {
         .blog-navigation {
@@ -23,21 +34,11 @@
         }
         .blog-navigation-mobile-label {
             display: block;
-            position: absolute;
-            top: -30px;
-            font-size: 16px;
-            line-height: 20px;
-            left: -4px;
-            color: var(--panel-secondary);
         }
     }
 </style>
 
 <nav class="blog-navigation">
-    <span class="blog-navigation-mobile-label">
-        <slot name="mobile-label"></slot>
-    </span>
-    <div class="blog-navigation-items">
-        <slot name="items"></slot>
-    </div>
+    <span class="blog-navigation-mobile-label">{labelValue}</span>
+    <slot></slot>
 </nav>
