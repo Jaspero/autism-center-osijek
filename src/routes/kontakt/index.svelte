@@ -4,6 +4,58 @@
 
 <script>
 	import Title from '../../shared/components/Title.svelte';
+
+	let name = '';
+	let email = '';
+	let message = '';
+
+	function notifications(type, text) {
+		const notificationEl = document.createElement('div');
+		const innernEl = document.createElement('div');
+		const notifMessage = document.createElement('p');
+		const button = document.createElement('button');
+		const textButton = document.createTextNode('Dismiss');
+		notificationEl.classList.add('notification-container');
+		notifMessage.classList.add('notification-text');
+		innernEl.classList.add('notification-inner');
+		button.classList.add(`notification-${type}`);
+		notifMessage.innerHTML = text;
+		button.appendChild(textButton);
+		notificationEl.appendChild(innernEl);
+		innernEl.appendChild(notifMessage);
+		innernEl.appendChild(button);
+		document.body.appendChild(notificationEl);
+		button.addEventListener('click', () => {
+			notificationEl.remove()
+		})
+	}
+
+	function sendForm(event) {
+		const formEl = document.querySelector('#form');
+		const button = document.querySelector('#button');
+		event.preventDefault();
+		button.classList.add('loading');
+
+		if (formEl.checkValidity()) {
+			fetch(`/kontakt.json`, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json; charset=utf-8'
+				},
+				body: JSON.stringify({name, email, message})
+			})
+					.then(() => {
+						button.classList.remove('loading');
+						notifications('Uspijeh', 'Poruka poslana. Hvala što ste nam se obratili.');
+						formEl.reset()
+					})
+					.catch(error => {
+						console.error(error);
+						button.classList.remove('loading');
+						notifications('Greška', 'Molim vas pokušajte kasnije.');
+					})
+		}
+	}
 </script>
 
 <style>
@@ -80,20 +132,20 @@
 	</div>
 	<div class="col-6 col-s-12">
 		<Title>Kontaktni obrazac</Title>
-		<form>
+		<form id="form">
 			<label class="cza-form-label">
 				<span class="cza-form-placeholder">Vaše ime i prezime:</span>
-				<input class="cza-form-input">
+				<input class="cza-form-input" bind:value={name}>
 			</label>
 			<label class="cza-form-label">
 				<span class="cza-form-placeholder">Vaša email adresa:</span>
-				<input class="cza-form-input" type="email">
+				<input class="cza-form-input" type="email"  bind:value={email}>
 			</label>
 			<label class="cza-form-label">
 				<span class="cza-form-placeholder">Vaša poruka ili upit:</span>
-				<textarea class="cza-form-input" rows="4"></textarea>
+				<textarea class="cza-form-input" rows="4" bind:value={message}></textarea>
 			</label>
-			<button class="btn">Pošalji upit</button>
+			<button type="submit" id="submit" class="btn" on:click={sendForm}>Pošalji upit</button>
 		</form>
 	</div>
 </section>
