@@ -12,12 +12,6 @@
 </script>
 
 <section class="grid generic-section">
-	<div class="col-3 col-m-4 col-s-10 col-xs-12">
-		<BlogNavigation labelValue="Galerije:">
-			<BlogNavigationItem isTitle textValue={"G1"} hrefValue={"/galerija"}></BlogNavigationItem>
-			<BlogNavigationItem isTitle textValue={"G2"} hrefValue={"/galerija"}></BlogNavigationItem>
-		</BlogNavigation>
-	</div>
 	<div class="col-6 col-m-8 col-s-10 col-xs-12">
 		<BlogArticle>
 			<Title>Galerija 1</Title>
@@ -56,5 +50,4 @@
 			</div>
 		</BlogArticle>
 	</div>
-	<div class="col-3 col-m-0"></div>
 </section>
