@@ -12,6 +12,10 @@
     .gallery-card-image {
         position: relative;
         padding-bottom: 66%;
+        overflow: hidden;
+    }
+    .gallery-card-image:hover > .gallery-card-image-inner {
+        opacity: .8;
     }
     .gallery-card-image-inner {
         position: absolute;
@@ -20,6 +24,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: .2s;
     }
 </style>
 

@@ -12,7 +12,12 @@
          width: 50px;
          height: 4px;
          background: var(--primary-theme);
-     }
+    }
+    @media (max-width: 900px) {
+        .title {
+            font-size: 1.5em;
+        }
+    }
 </style>
 
 <h1 class="title">
