@@ -9,6 +9,20 @@
     import Card from '../../shared/components/Card.svelte';
     import Title from '../../shared/components/Title.svelte';
     import ViewAll from "../../shared/components/ViewAll.svelte";
+    import Loader from '../../shared/components/Loader.svelte';
+
+    export let projectsLoading = true;
+    export let projects;
+
+    if (process.browser) {
+        fetch(`projekti.json`)
+            .then(r => r.json())
+            .then(data => {
+                projects = data;
+                projectsLoading = false;
+            });
+    }
+
 </script>
 
 <style>
@@ -138,32 +152,22 @@
         <Title>Projekti</Title>
     </div>
     <div class="col-12">
-        <div class="grid jc-start">
-            <Card
-                hrefValue=""
-                classValue="col-6 col-s-12"
-                titleValue="Volontiranje"
-                textValue="Volonterstvo (volontiranje, volonterski/dobrovoljni rad) u najširem značenju podrazumijeva rad pojedinca na dobrobit drugih pri čemu je njegovo djelovanje slobodno odabrano, neprofitno i bez financijske dobiti.">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-6 col-s-12"
-                titleValue="Asistent u nastavi"
-                textValue="Pomoćnike u vrtiću osigurava Grad Osijek na temelju zahtjeva koji zajedno s potrebnom dokumentacijom podnosi Centar.">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-6 col-s-12"
-                titleValue="OSIgurajmo im JEdnaKost 4"
-                textValue="Projekt OSIgurajmo im JEdnaKost 4 sufinanciran je sredstvima Europske unije iz Europskog socijalnog fonda, a vodi ga Grad Osijek zajedno s partnerima.Projektom je omogućena stručna podrška pomoćnika u nastavi učenicima s teškoćama u razvoju, kojima su najpotrebniji.">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-6 col-s-12"
-                titleValue="Primjena tehnologije 21. stoljeća za promociju komunikacije, obrazovanja i socijalnog uključivanja djece rane dobi s teškoćama u razvoju"
-                textValue="Centar za autizam uključio se u projekt Primjena tehnologije 21. stoljeća za promociju komunikacije, obrazovanja i socijalnog uključivanja djece rane dobi s teškoćama u razvoju. Projekt se provodi u suradnji Unicefa, Edukacijsko rehabilitacijskog fakulteta i Fakulteta elektrotehnike i računarstva. Program će trajati 17 mjeseci, a početak je svibanj 2019. godine.">
-            </Card>
-        </div>
+
+        {#if projectsLoading}
+            <Loader />
+        {:else}
+            <div class="grid jc-start">
+                {#each projects as project}
+                    <Card
+                            hrefValue=""
+                            classValue="col-6 col-s-12"
+                            titleValue={project.title}
+                            textValue={project.shortDescription}>
+                    </Card>
+                {/each}
+            </div>
+        {/if}
+
     </div>
 </section>
 
