@@ -172,4 +172,4 @@
 			<p>Grupnim pristupom radu razvijamo socijalne vještine naših učenika, pospješujemo finu motoriku, taktilnu percepciju i okulomotornu koordinaciju. Cilj nam je uspješno učenje kroz zabavu i interakciju, a krajnji nam je rezultat podizanje razine socijalnog funkcioniranja, vlastite funkcionalnosti  te pregršt  ugodnih emocija.</p>
 		</div>
 	</section>
-{/if}}
+{/if}
