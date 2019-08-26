@@ -14,11 +14,30 @@
 		const innernEl = document.createElement('div');
 		const notifMessage = document.createElement('p');
 		const button = document.createElement('button');
-		const textButton = document.createTextNode('Dismiss');
-		notificationEl.classList.add('notification-container');
-		notifMessage.classList.add('notification-text');
-		innernEl.classList.add('notification-inner');
-		button.classList.add(`notification-${type}`);
+		const textButton = document.createTextNode('OK');
+		notificationEl.style.cssText =
+			"position: fixed;" +
+			"z-index: 99;" +
+			"bottom: 0;" +
+			"left: 0;" +
+			"display: flex;" +
+			"justify-content: center;" +
+			"width: 100%;" +
+			"padding: 10px;";
+		innernEl.style.cssText =
+			"display: flex;" +
+			"align-items: center;" +
+			"justify-content: space-between;" +
+			"width: 100%;" +
+			"max-width: 400px;" +
+			"padding: 20px;" +
+			"background: white;" +
+			"border-radius: 4px;" +
+			"box-shadow: 0 10px 25px 0 rgba(0,0,0,.3);";
+		notifMessage.style.cssText =
+			"margin: 0 10px 0 0;";
+		button.classList.add(`btn`);
+		button.classList.add(`notification-inner-${type}`);
 		notifMessage.innerHTML = text;
 		button.appendChild(textButton);
 		notificationEl.appendChild(innernEl);
@@ -32,7 +51,7 @@
 
 	function sendForm(event) {
 		const formEl = document.querySelector('#form');
-		const button = document.querySelector('#button');
+		const button = document.querySelector('#submit');
 		event.preventDefault();
 		button.classList.add('loading');
 
@@ -46,13 +65,13 @@
 			})
 					.then(() => {
 						button.classList.remove('loading');
-						notifications('Uspijeh', 'Poruka poslana. Hvala što ste nam se obratili.');
+						notifications('success', 'Poruka poslana. Hvala Vam što ste nam se obratili.');
 						formEl.reset()
 					})
 					.catch(error => {
 						console.error(error);
 						button.classList.remove('loading');
-						notifications('Greška', 'Molim vas pokušajte kasnije.');
+						notifications('error', 'Došlo je do greške. Molimo Vas pokušajte kasnije.');
 					})
 		}
 	}

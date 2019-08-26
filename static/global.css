@@ -1,1 +1,513 @@
-:root{--primary-theme: #4075ff;--primary-primary: #fff;--primary-secondary: rgba(255,255,255,0.8);--primary-tertiary: rgba(255,255,255,0.15);--panel-theme: #fff;--panel-primary: rgba(0,0,0,0.9);--panel-secondary: rgba(0,0,0,0.7);--panel-tertiary: rgba(0,0,0,0.15);--backdrop-theme: #F2F6FC;--backdrop-primary: rgba(0,0,0,0.9);--backdrop-secondary: rgba(0,0,0,0.7);--backdrop-tertiary: rgba(0,0,0,0.15);--footer-theme: #1D2434;--footer-primary: #fff;--footer-secondary: rgba(255,255,255,0.8);--footer-tertiary: rgba(255,255,255,0.15)}*,*:before,*:after{box-sizing:inherit}html{box-sizing:border-box;word-wrap:break-word;overflow-wrap:break-word;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}body{overflow-x:hidden;min-height:100vh;margin:0}table{border-collapse:collapse;border-spacing:0}td{vertical-align:baseline}a{cursor:pointer;color:inherit;text-decoration:none}img{max-width:100%;height:auto;vertical-align:middle}.disabled,:disabled,[disabled]{opacity:.5;user-select:none;pointer-events:none}html{font-size:16px;line-height:1.5;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;background:var(--backdrop-theme);color:var(--backdrop-primary)}@media (max-width: 600px){html{font-size:14px}}h1,h2,h3,h4,h5,h6{line-height:1.2}h1,h2,h3,h4,h5,h6,p,ol,ul,hr{margin:0 0 1em}p+ul{margin-top:-.75em}.generic-section{padding-top:calc(50px + .5vw);padding-bottom:calc(50px + .5vw)}.btn{cursor:pointer;font-size:inherit;display:inline-block;border:none;outline:none;padding:1em 1.5em;font-weight:500;border-radius:4px;background:var(--primary-theme);color:var(--primary-primary);transition:.2s;box-shadow:0 0 5px 0 var(--primary-theme)}.btn:hover,.btn:focus{box-shadow:0 0 25px 0 var(--primary-theme)}.grid{display:flex;flex-wrap:wrap;justify-content:center;max-width:1400px;width:100%;margin:0 auto}[class*="col-"]{padding:10px}.col-0{display:none}.col-1{display:block;width:8.33333%}.col-2{display:block;width:16.66667%}.col-3{display:block;width:25%}.col-4{display:block;width:33.33333%}.col-5{display:block;width:41.66667%}.col-6{display:block;width:50%}.col-7{display:block;width:58.33333%}.col-8{display:block;width:66.66667%}.col-9{display:block;width:75%}.col-10{display:block;width:83.33333%}.col-11{display:block;width:91.66667%}.col-12{display:block;width:100%}@media (max-width: 1800px){.col-l-0{display:none}.col-l-1{display:block;width:8.33333%}.col-l-2{display:block;width:16.66667%}.col-l-3{display:block;width:25%}.col-l-4{display:block;width:33.33333%}.col-l-5{display:block;width:41.66667%}.col-l-6{display:block;width:50%}.col-l-7{display:block;width:58.33333%}.col-l-8{display:block;width:66.66667%}.col-l-9{display:block;width:75%}.col-l-10{display:block;width:83.33333%}.col-l-11{display:block;width:91.66667%}.col-l-12{display:block;width:100%}}@media (max-width: 1200px){.col-m-0{display:none}.col-m-1{display:block;width:8.33333%}.col-m-2{display:block;width:16.66667%}.col-m-3{display:block;width:25%}.col-m-4{display:block;width:33.33333%}.col-m-5{display:block;width:41.66667%}.col-m-6{display:block;width:50%}.col-m-7{display:block;width:58.33333%}.col-m-8{display:block;width:66.66667%}.col-m-9{display:block;width:75%}.col-m-10{display:block;width:83.33333%}.col-m-11{display:block;width:91.66667%}.col-m-12{display:block;width:100%}}@media (max-width: 900px){.col-s-0{display:none}.col-s-1{display:block;width:8.33333%}.col-s-2{display:block;width:16.66667%}.col-s-3{display:block;width:25%}.col-s-4{display:block;width:33.33333%}.col-s-5{display:block;width:41.66667%}.col-s-6{display:block;width:50%}.col-s-7{display:block;width:58.33333%}.col-s-8{display:block;width:66.66667%}.col-s-9{display:block;width:75%}.col-s-10{display:block;width:83.33333%}.col-s-11{display:block;width:91.66667%}.col-s-12{display:block;width:100%}}@media (max-width: 600px){.col-xs-0{display:none}.col-xs-1{display:block;width:8.33333%}.col-xs-2{display:block;width:16.66667%}.col-xs-3{display:block;width:25%}.col-xs-4{display:block;width:33.33333%}.col-xs-5{display:block;width:41.66667%}.col-xs-6{display:block;width:50%}.col-xs-7{display:block;width:58.33333%}.col-xs-8{display:block;width:66.66667%}.col-xs-9{display:block;width:75%}.col-xs-10{display:block;width:83.33333%}.col-xs-11{display:block;width:91.66667%}.col-xs-12{display:block;width:100%}}.flex{display:flex}.iflex{display:inline-flex}.fw-wrap{flex-wrap:wrap}.fw-nowrap{flex-wrap:nowrap}.fw-rev{flex-wrap:wrap-reverse}.fd-row{flex-direction:row}.fd-row-rev{flex-direction:row-reverse}.fd-col{flex-direction:column}.fd-col-rev{flex-direction:column-reverse}.ai-stretch{align-items:stretch}.ai-start{align-items:flex-start}.ai-end{align-items:flex-end}.ai-center{align-items:center}.ai-base{align-items:baseline}.jc-start{justify-content:flex-start}.jc-end{justify-content:flex-end}.jc-center{justify-content:center}.jc-around{justify-content:space-around}.jc-between{justify-content:space-between}.jc-evenly{justify-content:space-evenly}.flex-1{flex:1}
+/**
+ * Theme
+ *
+ * Adjustable theme settings.
+ *
+ *============================================================================*/
+/* Theme
+ *============================================================================*/
+/* Generating CSS variables in :root
+ *============================================================================*/
+:root {
+  --primary-theme: #4075ff;
+  --primary-primary: white;
+  --primary-secondary: rgba(255, 255, 255, 0.8);
+  --primary-tertiary: rgba(255, 255, 255, 0.15);
+  --panel-theme: #fff;
+  --panel-primary: rgba(0, 0, 0, 0.9);
+  --panel-secondary: rgba(0, 0, 0, 0.7);
+  --panel-tertiary: rgba(0, 0, 0, 0.15);
+  --backdrop-theme: #F2F6FC;
+  --backdrop-primary: rgba(0, 0, 0, 0.9);
+  --backdrop-secondary: rgba(0, 0, 0, 0.7);
+  --backdrop-tertiary: rgba(0, 0, 0, 0.15);
+  --footer-theme: #1D2434;
+  --footer-primary: white;
+  --footer-secondary: rgba(255, 255, 255, 0.8);
+  --footer-tertiary: rgba(255, 255, 255, 0.15); }
+
+/**
+ * Resets
+ *
+ * Style resets in order to synchronize different browser default styles.
+ *
+ *============================================================================*/
+/* Basic page behaviour resets
+ *============================================================================*/
+/**
+ * 1. Best practice box-sizing. Source:
+ *    css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * 2. Forces long words to break into new lines if they don't fit a container.
+ * 3. Sharper font rendering. Source:
+ *    developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
+ */
+*, *:before, *:after {
+  box-sizing: inherit;
+  /* [1] */ }
+
+html {
+  box-sizing: border-box;
+  /* [1] */
+  word-wrap: break-word;
+  /* [2] */
+  overflow-wrap: break-word;
+  /* [2] */
+  -moz-osx-font-smoothing: grayscale;
+  /* [3] */
+  -webkit-font-smoothing: antialiased;
+  /* [3] */ }
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0; }
+
+/* Tables
+ *============================================================================*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td {
+  vertical-align: baseline; }
+
+/* Hyperlinks
+ *============================================================================*/
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none; }
+
+/* Images
+ *============================================================================*/
+/**
+ * 1. Images will retain their aspect ratio on screen resizing. They
+      will never scale up to be larger than their original size.
+ * 2. Removes whitespace under images.
+ */
+img {
+  max-width: 100%;
+  /* [1] */
+  height: auto;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */ }
+
+/* Disabled content
+ *============================================================================*/
+.disabled, :disabled, [disabled] {
+  opacity: .5;
+  user-select: none;
+  pointer-events: none; }
+
+/**
+ * @media breakpoints
+ *
+ * Phone           :    0px - 600px
+ * Tablet portrait :  600px - 900px
+ * Tablet landscape:  900px - 1200px
+ * Desktop         : 1200px - 1800px
+ * Large desktop   : 1800px +
+ *
+ *============================================================================*/
+/**
+ * Generic
+ *
+ * Style for generic & low-spec HTML elements.
+ *
+ *============================================================================*/
+/* HTML
+ *============================================================================*/
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  background: var(--backdrop-theme);
+  color: var(--backdrop-primary); }
+  @media (max-width: 600px) {
+    html {
+      font-size: 14px; } }
+
+/* Headings
+ *============================================================================*/
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2; }
+
+/* Generic elements margins
+ *============================================================================*/
+h1, h2, h3, h4, h5, h6,
+p, ol, ul, hr {
+  margin: 0 0 1em; }
+
+p + ul {
+  margin-top: -.75em; }
+
+/* Generic section
+ *============================================================================*/
+.generic-section {
+  padding-top: calc(50px + .5vw);
+  padding-bottom: calc(50px + .5vw); }
+
+/**
+ * Buttons
+ *
+ *============================================================================*/
+.btn {
+  cursor: pointer;
+  font-size: inherit;
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 1em 1.5em;
+  font-weight: 500;
+  border-radius: 4px;
+  background: var(--primary-theme);
+  color: var(--primary-primary);
+  transition: .2s;
+  box-shadow: 0 0 5px 0 var(--primary-theme); }
+  .btn:hover, .btn:focus {
+    box-shadow: 0 0 25px 0 var(--primary-theme); }
+  .btn.loading {
+    position: relative;
+    color: transparent;
+    pointer-events: none; }
+    .btn.loading:after {
+      content: '';
+      position: absolute;
+      top: calc(50% - 12px);
+      left: calc(50% - 12px);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0.25);
+      border-top-color: var(--primary-primary);
+      animation: loading 0.7s infinite cubic-bezier(0.5, 0.25, 0.5, 0.75); }
+
+@keyframes loading {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(360deg); } }
+
+/**
+ * @media breakpoints
+ *
+ * Phone           :    0px - 600px
+ * Tablet portrait :  600px - 900px
+ * Tablet landscape:  900px - 1200px
+ * Desktop         : 1200px - 1800px
+ * Large desktop   : 1800px +
+ *
+ *============================================================================*/
+/**
+ * Grid
+ *
+ * A 12-column grid based on display: flex.
+ *
+ *============================================================================*/
+/* Grid
+ *============================================================================*/
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto; }
+
+/* Columns
+ *============================================================================*/
+[class*="col-"] {
+  padding: 10px; }
+
+.col-0 {
+  display: none; }
+
+.col-1 {
+  display: block;
+  width: 8.33333%; }
+
+.col-2 {
+  display: block;
+  width: 16.66667%; }
+
+.col-3 {
+  display: block;
+  width: 25%; }
+
+.col-4 {
+  display: block;
+  width: 33.33333%; }
+
+.col-5 {
+  display: block;
+  width: 41.66667%; }
+
+.col-6 {
+  display: block;
+  width: 50%; }
+
+.col-7 {
+  display: block;
+  width: 58.33333%; }
+
+.col-8 {
+  display: block;
+  width: 66.66667%; }
+
+.col-9 {
+  display: block;
+  width: 75%; }
+
+.col-10 {
+  display: block;
+  width: 83.33333%; }
+
+.col-11 {
+  display: block;
+  width: 91.66667%; }
+
+.col-12 {
+  display: block;
+  width: 100%; }
+
+@media (max-width: 1800px) {
+  .col-l-0 {
+    display: none; }
+  .col-l-1 {
+    display: block;
+    width: 8.33333%; }
+  .col-l-2 {
+    display: block;
+    width: 16.66667%; }
+  .col-l-3 {
+    display: block;
+    width: 25%; }
+  .col-l-4 {
+    display: block;
+    width: 33.33333%; }
+  .col-l-5 {
+    display: block;
+    width: 41.66667%; }
+  .col-l-6 {
+    display: block;
+    width: 50%; }
+  .col-l-7 {
+    display: block;
+    width: 58.33333%; }
+  .col-l-8 {
+    display: block;
+    width: 66.66667%; }
+  .col-l-9 {
+    display: block;
+    width: 75%; }
+  .col-l-10 {
+    display: block;
+    width: 83.33333%; }
+  .col-l-11 {
+    display: block;
+    width: 91.66667%; }
+  .col-l-12 {
+    display: block;
+    width: 100%; } }
+
+@media (max-width: 1200px) {
+  .col-m-0 {
+    display: none; }
+  .col-m-1 {
+    display: block;
+    width: 8.33333%; }
+  .col-m-2 {
+    display: block;
+    width: 16.66667%; }
+  .col-m-3 {
+    display: block;
+    width: 25%; }
+  .col-m-4 {
+    display: block;
+    width: 33.33333%; }
+  .col-m-5 {
+    display: block;
+    width: 41.66667%; }
+  .col-m-6 {
+    display: block;
+    width: 50%; }
+  .col-m-7 {
+    display: block;
+    width: 58.33333%; }
+  .col-m-8 {
+    display: block;
+    width: 66.66667%; }
+  .col-m-9 {
+    display: block;
+    width: 75%; }
+  .col-m-10 {
+    display: block;
+    width: 83.33333%; }
+  .col-m-11 {
+    display: block;
+    width: 91.66667%; }
+  .col-m-12 {
+    display: block;
+    width: 100%; } }
+
+@media (max-width: 900px) {
+  .col-s-0 {
+    display: none; }
+  .col-s-1 {
+    display: block;
+    width: 8.33333%; }
+  .col-s-2 {
+    display: block;
+    width: 16.66667%; }
+  .col-s-3 {
+    display: block;
+    width: 25%; }
+  .col-s-4 {
+    display: block;
+    width: 33.33333%; }
+  .col-s-5 {
+    display: block;
+    width: 41.66667%; }
+  .col-s-6 {
+    display: block;
+    width: 50%; }
+  .col-s-7 {
+    display: block;
+    width: 58.33333%; }
+  .col-s-8 {
+    display: block;
+    width: 66.66667%; }
+  .col-s-9 {
+    display: block;
+    width: 75%; }
+  .col-s-10 {
+    display: block;
+    width: 83.33333%; }
+  .col-s-11 {
+    display: block;
+    width: 91.66667%; }
+  .col-s-12 {
+    display: block;
+    width: 100%; } }
+
+@media (max-width: 600px) {
+  .col-xs-0 {
+    display: none; }
+  .col-xs-1 {
+    display: block;
+    width: 8.33333%; }
+  .col-xs-2 {
+    display: block;
+    width: 16.66667%; }
+  .col-xs-3 {
+    display: block;
+    width: 25%; }
+  .col-xs-4 {
+    display: block;
+    width: 33.33333%; }
+  .col-xs-5 {
+    display: block;
+    width: 41.66667%; }
+  .col-xs-6 {
+    display: block;
+    width: 50%; }
+  .col-xs-7 {
+    display: block;
+    width: 58.33333%; }
+  .col-xs-8 {
+    display: block;
+    width: 66.66667%; }
+  .col-xs-9 {
+    display: block;
+    width: 75%; }
+  .col-xs-10 {
+    display: block;
+    width: 83.33333%; }
+  .col-xs-11 {
+    display: block;
+    width: 91.66667%; }
+  .col-xs-12 {
+    display: block;
+    width: 100%; } }
+
+/**
+ * @media breakpoints
+ *
+ * Phone           :    0px - 600px
+ * Tablet portrait :  600px - 900px
+ * Tablet landscape:  900px - 1200px
+ * Desktop         : 1200px - 1800px
+ * Large desktop   : 1800px +
+ *
+ *============================================================================*/
+/**
+ * Utilities
+ *
+ * Utility classes that make life simple.
+ *
+ *============================================================================*/
+/* Flex
+ *============================================================================*/
+.flex {
+  display: flex; }
+
+.iflex {
+  display: inline-flex; }
+
+.fw-wrap {
+  flex-wrap: wrap; }
+
+.fw-nowrap {
+  flex-wrap: nowrap; }
+
+.fw-rev {
+  flex-wrap: wrap-reverse; }
+
+.fd-row {
+  flex-direction: row; }
+
+.fd-row-rev {
+  flex-direction: row-reverse; }
+
+.fd-col {
+  flex-direction: column; }
+
+.fd-col-rev {
+  flex-direction: column-reverse; }
+
+.ai-stretch {
+  align-items: stretch; }
+
+.ai-start {
+  align-items: flex-start; }
+
+.ai-end {
+  align-items: flex-end; }
+
+.ai-center {
+  align-items: center; }
+
+.ai-base {
+  align-items: baseline; }
+
+.jc-start {
+  justify-content: flex-start; }
+
+.jc-end {
+  justify-content: flex-end; }
+
+.jc-center {
+  justify-content: center; }
+
+.jc-around {
+  justify-content: space-around; }
+
+.jc-between {
+  justify-content: space-between; }
+
+.jc-evenly {
+  justify-content: space-evenly; }
+
+.flex-1 {
+  flex: 1; }

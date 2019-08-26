@@ -20,4 +20,27 @@
   &:hover, &:focus {
     box-shadow: 0 0 25px 0 var(--primary-theme);
   }
+
+  &.loading {
+    position: relative;
+    color: transparent;
+    pointer-events: none;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: calc(50% - 12px);
+      left: calc(50% - 12px);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 3px solid rgba(255,255,255,.25);
+      border-top-color: var(--primary-primary);
+      animation: loading .7s infinite cubic-bezier(0.5, 0.25, 0.5, 0.75);
+      @keyframes loading {
+        from { transform: rotate(0); }
+        to   { transform: rotate(360deg); }
+      }
+    }
+  }
 }
