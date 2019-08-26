@@ -9,7 +9,7 @@
     import Card from '../../shared/components/Card.svelte';
     import Title from '../../shared/components/Title.svelte';
     import ViewAll from "../../shared/components/ViewAll.svelte";
-    import Loader from '../../shared/components/Loader.svelte';
+    import CardPlaceholder from '../../shared/components/CardPlaceholder.svelte';
 
     export let projectsLoading = true;
     export let projects;
@@ -18,11 +18,10 @@
         fetch(`projekti.json`)
             .then(r => r.json())
             .then(data => {
-                projects = data;
+                projects = data.projects;
                 projectsLoading = false;
             });
     }
-
 </script>
 
 <style>
@@ -89,57 +88,19 @@
         <Title>Programi</Title>
     </div>
     <div class="col-12">
-        <div class="grid jc-start">
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="OSNOVNI PROGRAM"
-                titleValue="Vrtićki program"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="OSNOVNI PROGRAM"
-                titleValue="Posebni program uz individualizirane postupke"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-6 col-m-12 col-xs-12"
-                subtitleValue="OSNOVNI PROGRAM"
-                titleValue="Posebni program za stjecanje kompetencija u aktivnostima svakodnevnog života i rada uz individualizirane postupke"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="OSNOVNI PROGRAM"
-                titleValue="Produženi stručni postupak"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="TERAPIJSKI POSTUPCI"
-                titleValue="Logopedska terapija"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="TERAPIJSKI POSTUPCI"
-                titleValue="Muzikoterapija"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="TERAPIJSKI POSTUPCI"
-                titleValue="Senzorna integracija"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-        </div>
+        {#if 1}
+            <CardPlaceholder cards={8} classValue="col-3 col-m-6 col-xs-12" hasSubtitle hasTitle hasImage/>
+        {:else}
+            <div class="grid jc-start">
+                <Card
+                    hrefValue=""
+                    classValue="col-3 col-m-6 col-xs-12"
+                    subtitleValue="OSNOVNI PROGRAM"
+                    titleValue="Vrtićki program"
+                    imageValue="assets/images/placeholder.png">
+                </Card>
+            </div>
+        {/if}
     </div>
 </section>
 
@@ -152,22 +113,20 @@
         <Title>Projekti</Title>
     </div>
     <div class="col-12">
-
         {#if projectsLoading}
-            <Loader />
+            <CardPlaceholder cards={4} classValue="col-6 col-s-12" hasTitle hasContent/>
         {:else}
             <div class="grid jc-start">
                 {#each projects as project}
                     <Card
-                            hrefValue=""
-                            classValue="col-6 col-s-12"
-                            titleValue={project.title}
-                            textValue={project.shortDescription}>
+                        hrefValue=""
+                        classValue="col-6 col-s-12"
+                        titleValue={project.title}
+                        textValue={project.shortDescription}>
                     </Card>
                 {/each}
             </div>
         {/if}
-
     </div>
 </section>
 
@@ -177,64 +136,19 @@
         <Title>Novosti</Title>
     </div>
     <div class="col-12">
-        <div class="grid jc-start">
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="21.09.2019."
-                titleValue="Novi natječaj za posao"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="21.09.2019."
-                titleValue="Novi natječaj za posao"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="21.09.2019."
-                titleValue="Novi natječaj za posao"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="21.09.2019."
-                titleValue="Novi natječaj za posao"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="21.09.2019."
-                titleValue="Novi natječaj za posao"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="21.09.2019."
-                titleValue="Novi natječaj za posao"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="21.09.2019."
-                titleValue="Novi natječaj za posao"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <Card
-                hrefValue=""
-                classValue="col-3 col-m-6 col-xs-12"
-                subtitleValue="21.09.2019."
-                titleValue="Novi natječaj za posao"
-                imageValue="assets/images/placeholder.png">
-            </Card>
-            <ViewAll class="col-12" href="../novosti">Pregled svih novosti</ViewAll>
-        </div>
+        {#if 1}
+            <CardPlaceholder cards={8} classValue="col-3 col-m-6 col-xs-12" hasSubtitle hasTitle hasImage/>
+        {:else}
+            <div class="grid jc-start">
+                <Card
+                    hrefValue=""
+                    classValue="col-3 col-m-6 col-xs-12"
+                    subtitleValue="21.09.2019."
+                    titleValue="Novi natječaj za posao"
+                    imageValue="assets/images/placeholder.png">
+                </Card>
+                <ViewAll class="col-12" href="../novosti">Pregled svih novosti</ViewAll>
+            </div>
+        {/if}
     </div>
 </section>

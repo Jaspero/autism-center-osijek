@@ -7,8 +7,6 @@
 	import Title from "../../shared/components/Title.svelte";
 	import ViewAll from "../../shared/components/ViewAll.svelte";
 	import BlogArticle from "../../shared/components/BlogArticle.svelte";
-	import BlogNavigation from "../../shared/components/BlogNavigation.svelte";
-	import BlogNavigationItem from "../../shared/components/BlogNavigationItem.svelte";
 </script>
 
 <section class="grid generic-section">

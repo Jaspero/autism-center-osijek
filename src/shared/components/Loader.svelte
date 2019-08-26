@@ -1,3 +1,0 @@
-<p>
-    Add Loading
-</p>
