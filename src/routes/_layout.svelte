@@ -71,7 +71,7 @@
 	}
 	.cza-main {
 		padding-top: 80px; /* Header height */
-		min-height: 600px;
+		min-height: calc(100vh - 240px);
 	}
 	.cza-footer {
 		padding: 80px 0;
@@ -161,6 +161,7 @@
 		}
 		.cza-main {
 			padding-top: 60px; /* Header height */
+			min-height: calc(100vh - 240px);
 		}
 		.cza-footer-inner-column {
 			width: 100%;
