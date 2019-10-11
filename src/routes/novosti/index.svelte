@@ -44,6 +44,7 @@
 			<div class="grid jc-start">
 				{#each news as item}
 					<Card
+							relValue="prefetch"
 							hrefValue={item.url}
 							classValue="col-3 col-m-6 col-xs-12"
 							subtitleValue={item.date}

@@ -5,6 +5,8 @@
 	import Title from "../../shared/components/Title.svelte";
 	import Content from "../../shared/components/Content.svelte";
 	import Loading from "../../shared/components/Loading.svelte";
+	import {scrollToId} from "../../shared/utility/scroll-to-id";
+	import {tick} from "svelte";
 
 	export let projectsLoading = true;
 	export let projects;
@@ -15,7 +17,12 @@
 			.then(data => {
 				projects = data.projects;
 				projectsLoading = false;
-			});
+
+				return tick()
+			})
+			.then(() => {
+				scrollToId();
+			})
 	}
 </script>
 
@@ -30,14 +37,14 @@
 	<div class="col-3 col-m-4 col-s-10 col-xs-12">
 		<BlogNavigation labelValue="Projekti:">
 			{#each projects as project}
-				<BlogNavigationItem isTitle textValue={project.title} hrefValue={"/projekti"}></BlogNavigationItem>
+				<BlogNavigationItem isTitle textValue={project.title} hrefPrefix="/projekti" hrefValue={project.title}></BlogNavigationItem>
 			{/each}
 		</BlogNavigation>
 	</div>
 	<div class="col-6 col-m-8 col-s-10 col-xs-12">
 		{#each projects as project}
 			<BlogArticle>
-				<Title>{project.title}</Title>
+				<Title id={project.title}>{project.title}</Title>
 				<Content>{@html project.content}</Content>
 			</BlogArticle>
 		{/each}

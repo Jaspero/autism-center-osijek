@@ -4,6 +4,20 @@
     }
 </style>
 
-<h2 class="subtitle">
+<script>
+
+    import {toSlug} from '../../shared/utility/to-slug';
+
+    export let id = '';
+
+    let slug;
+
+    $: {
+        slug = toSlug(id);
+    }
+
+</script>
+
+<h2 id={slug} class="subtitle">
     <slot></slot>
 </h2>

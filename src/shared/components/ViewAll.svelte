@@ -1,6 +1,7 @@
 <script>
     let className;
     let hrefValue;
+
     export {
         className as class,
         hrefValue as href
@@ -28,7 +29,7 @@
     }
 </style>
 
-<a href="{hrefValue}" class="view-all {className}">
+<a rel="prefetch" href="{hrefValue}" class="view-all {className}">
     <slot></slot>
 </a>
 

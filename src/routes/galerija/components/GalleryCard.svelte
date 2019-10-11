@@ -1,6 +1,5 @@
 <script>
     export let classValue;
-    export let hrefValue;
     export let imageValue;
 </script>
 
@@ -28,7 +27,7 @@
     }
 </style>
 
-<a href="{hrefValue}" class="gallery-card {classValue}">
+<a class="gallery-card {classValue}">
     <div class="gallery-card-image">
         <img class="gallery-card-image-inner" src={imageValue} alt="">
     </div>

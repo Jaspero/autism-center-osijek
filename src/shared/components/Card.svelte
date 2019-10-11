@@ -5,6 +5,7 @@
     export let titleValue;
     export let textValue;
     export let imageValue;
+    export let relValue = '';
 </script>
 
 <style>
@@ -64,7 +65,7 @@
     }
 </style>
 
-<a href="{hrefValue}" class="card {classValue} {imageValue ? 'card-has-image' : ''}">
+<a rel={relValue} href="{hrefValue}" class="card {classValue} {imageValue ? 'card-has-image' : ''}">
     {#if subtitleValue}
     <h2 class="card-subtitle">{subtitleValue}</h2>
     {/if}

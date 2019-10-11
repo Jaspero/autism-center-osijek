@@ -1,7 +1,16 @@
 <script>
+    import {toSlug} from '../../shared/utility/to-slug';
+
+    export let hrefPrefix;
     export let hrefValue;
     export let textValue;
     export let isTitle;
+
+    let slug;
+
+    $: {
+        slug = hrefPrefix + '#' + toSlug(hrefValue);
+    }
 </script>
 
 <style>
@@ -27,5 +36,5 @@
     }
 </style>
 
-<a class="blog-navigation-item {isTitle === true ? 'blog-navigation-item-title' : ''}" href="{hrefValue}">{textValue}</a>
+<a class="blog-navigation-item {isTitle === true ? 'blog-navigation-item-title' : ''}" href="{slug}">{textValue}</a>
 

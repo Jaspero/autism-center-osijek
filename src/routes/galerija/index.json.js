@@ -28,6 +28,7 @@ export async function get(req, res) {
 
             const data = cur.data();
             data.date = new Date(data.date).toLocaleDateString('en-GB');
+            data.images = data.images.slice(0, 7);
 
             acc.push(data);
           }

@@ -10,6 +10,7 @@
     import Title from '../../shared/components/Title.svelte';
     import ViewAll from "../../shared/components/ViewAll.svelte";
     import CardPlaceholder from '../../shared/components/CardPlaceholder.svelte';
+    import {toSlug} from '../../shared/utility/to-slug';
 
     let projectsLoading = true;
     let projects;
@@ -24,21 +25,35 @@
         fetch(`projekti.json`)
             .then(r => r.json())
             .then(data => {
-                projects = data.projects;
+                projects = data.projects.map(it => {
+                    it.slug = '/projekti/#' + toSlug(it.title);
+                    return it;
+                });
                 projectsLoading = false;
             });
 
         fetch(`programi.json`)
             .then(r => r.json())
             .then(data => {
-                programs = data.programs;
+                programs = data.programs.map(it => {
+
+                    it.segments = it.segments.map(segment => {
+                        segment.slug = '/programi/#' + toSlug(segment.subTitle);
+                        return segment;
+                    });
+
+                    return it;
+                });
                 programsLoading = false;
             });
 
         fetch(`novosti.json`)
             .then(r => r.json())
             .then(data => {
-                news = data.news;
+                news = data.news.map(it => {
+                    it.url = '/novosti/' + item.url;
+                    return it;
+                });
                 newsLoading = false;
             });
     }
@@ -115,7 +130,7 @@
                 {#each programs as item}
                     {#each item.segments as segment}
                         <Card
-                            hrefValue={() => '/programi?t=' + segment.subTitle}
+                            hrefValue={segment.slug}
                             classValue="col-3 col-m-6 col-xs-12"
                             subtitleValue={item.title}
                             titleValue={segment.subTitle}
@@ -143,7 +158,7 @@
             <div class="grid jc-start">
                 {#each projects as project}
                     <Card
-                        hrefValue={() => '/projekti?t=' + project.title}
+                        hrefValue={project.slug}
                         classValue="col-6 col-s-12"
                         titleValue={project.title}
                         textValue={project.shortDescription}>
@@ -166,14 +181,15 @@
             <div class="grid jc-start">
                 {#each news as item}
                 <Card
-                    hrefValue={() => '/novosti/' + item.url}
+                    relValue="prefetch"
+                    hrefValue={item.url}
                     classValue="col-3 col-m-6 col-xs-12"
                     subtitleValue={item.date}
                     titleValue={item.title}
                     imageValue={item.image}>
                 </Card>
                 {/each}
-                <ViewAll class="col-12" href="../novosti">Pregled svih novosti</ViewAll>
+                <ViewAll class="col-12" href="/novosti">Pregled svih novosti</ViewAll>
             </div>
         {/if}
     </div>

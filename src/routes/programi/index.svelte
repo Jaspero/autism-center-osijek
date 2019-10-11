@@ -10,6 +10,8 @@
 	import Subtitle from "../../shared/components/Subtitle.svelte";
 	import Content from "../../shared/components/Content.svelte";
 	import Loading from "../../shared/components/Loading.svelte";
+	import {scrollToId} from "../../shared/utility/scroll-to-id";
+	import {tick} from "svelte";
 
 	export let programsLoading = true;
 	export let programs;
@@ -20,7 +22,12 @@
 			.then(data => {
 				programs = data.programs;
 				programsLoading = false;
-			});
+
+				return tick()
+			})
+			.then(() => {
+				scrollToId();
+			})
 	}
 </script>
 
@@ -30,18 +37,23 @@
 	<section class="grid generic-section">
 		<div class="col-3 col-m-4 col-s-10 col-xs-12">
 			<BlogNavigation labelValue="Programi:">
-				<BlogNavigationItem isTitle textValue={"OsnovniProgrami"} hrefValue={"/programi"}></BlogNavigationItem>
-				<BlogNavigationItem textValue={"VrtićkiProgrami"} hrefValue={"/programi"}></BlogNavigationItem>
-				<BlogNavigationItem textValue={"PosebniProgram"} hrefValue={"/programi"}></BlogNavigationItem>
+
+				{#each programs as item}
+					<BlogNavigationItem isTitle textValue={item.title} hrefPrefix="/programi/" hrefValue={item.title}></BlogNavigationItem>
+
+					{#each item.segments as segment}
+						<BlogNavigationItem textValue={segment.subTitle} hrefPrefix="/programi/" hrefValue={segment.subTitle}></BlogNavigationItem>
+					{/each}
+				{/each}
 			</BlogNavigation>
 		</div>
 		<div class="col-6 col-m-8 col-s-10 col-xs-12">
 			{#each programs as item}
-				<Title>{item.title}</Title>
+				<Title id={item.title}>{item.title}</Title>
 
 				{#each item.segments as segment}
 					<BlogArticle>
-						<Subtitle>{segment.subTitle}</Subtitle>
+						<Subtitle id={segment.subTitle}>{segment.subTitle}</Subtitle>
 						<Content>{@html segment.content}</Content>
 					</BlogArticle>
 				{/each}
