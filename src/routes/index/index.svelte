@@ -11,8 +11,14 @@
     import ViewAll from "../../shared/components/ViewAll.svelte";
     import CardPlaceholder from '../../shared/components/CardPlaceholder.svelte';
 
-    export let projectsLoading = true;
-    export let projects;
+    let projectsLoading = true;
+    let projects;
+
+    let programsLoading = true;
+    let programs;
+
+    let newsLoading = true;
+    let news;
 
     if (process.browser) {
         fetch(`projekti.json`)
@@ -20,6 +26,20 @@
             .then(data => {
                 projects = data.projects;
                 projectsLoading = false;
+            });
+
+        fetch(`programi.json`)
+            .then(r => r.json())
+            .then(data => {
+                programs = data.programs;
+                programsLoading = false;
+            });
+
+        fetch(`novosti.json`)
+            .then(r => r.json())
+            .then(data => {
+                news = data.news;
+                newsLoading = false;
             });
     }
 </script>
@@ -88,17 +108,21 @@
         <Title>Programi</Title>
     </div>
     <div class="col-12">
-        {#if 1}
-            <CardPlaceholder cards={8} classValue="col-3 col-m-6 col-xs-12" hasSubtitle hasTitle hasImage/>
+        {#if programsLoading}
+            <CardPlaceholder cards={4} classValue="col-3 col-m-6 col-xs-12" hasSubtitle hasTitle hasImage/>
         {:else}
             <div class="grid jc-start">
-                <Card
-                    hrefValue=""
-                    classValue="col-3 col-m-6 col-xs-12"
-                    subtitleValue="OSNOVNI PROGRAM"
-                    titleValue="Vrtićki program"
-                    imageValue="assets/images/placeholder.png">
-                </Card>
+                {#each programs as item}
+                    {#each item.segments as segment}
+                        <Card
+                            hrefValue="/programi"
+                            classValue="col-3 col-m-6 col-xs-12"
+                            subtitleValue={item.title}
+                            titleValue={segment.subTitle}
+                            imageValue={segment.image}>
+                        </Card>
+                    {/each}
+                {/each}
             </div>
         {/if}
     </div>
@@ -136,10 +160,11 @@
         <Title>Novosti</Title>
     </div>
     <div class="col-12">
-        {#if 1}
+        {#if newsLoading}
             <CardPlaceholder cards={8} classValue="col-3 col-m-6 col-xs-12" hasSubtitle hasTitle hasImage/>
         {:else}
             <div class="grid jc-start">
+                {#each news as item}
                 <Card
                     hrefValue=""
                     classValue="col-3 col-m-6 col-xs-12"
@@ -147,6 +172,7 @@
                     titleValue="Novi natječaj za posao"
                     imageValue="assets/images/placeholder.png">
                 </Card>
+                {/each}
                 <ViewAll class="col-12" href="../novosti">Pregled svih novosti</ViewAll>
             </div>
         {/if}

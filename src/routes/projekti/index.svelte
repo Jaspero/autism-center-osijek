@@ -1,10 +1,3 @@
-<script context="module">
-	export function preload({params, query}) {
-		return this.fetch('projekti.json')
-				.then(r => r.json());
-	}
-</script>
-
 <script>
 	import BlogNavigation from "../../shared/components/BlogNavigation.svelte";
 	import BlogNavigationItem from "../../shared/components/BlogNavigationItem.svelte";

@@ -6,6 +6,31 @@
 	import Card from '../../shared/components/Card.svelte';
 	import Title from '../../shared/components/Title.svelte';
 	import CardPlaceholder from '../../shared/components/CardPlaceholder.svelte';
+
+	let loading = true;
+	let news = [];
+	let hasMore;
+
+	function loadMore() {
+
+		let url = `novosti.json`;
+
+		if (hasMore) {
+			url += `?cursor=${hasMore}`;
+		}
+
+		fetch(url)
+				.then(r => r.json())
+				.then(data => {
+					news = [...news, ...data.news];
+					hasMore = data.hasMore;
+					loading = false;
+				});
+	}
+
+	if (process.browser) {
+		loadMore();
+	}
 </script>
 
 <section class="grid generic-section">
@@ -13,17 +38,19 @@
 		<Title>Novosti</Title>
 	</div>
 	<div class="col-12">
-		{#if 1}
+		{#if loading}
 			<CardPlaceholder cards={8} classValue="col-3 col-m-6 col-xs-12" hasSubtitle hasTitle hasImage/>
 		{:else}
 			<div class="grid jc-start">
-				<Card
-						hrefValue=""
-						classValue="col-3 col-m-6 col-xs-12"
-						subtitleValue="21.09.2019."
-						titleValue="Novi natječaj za posao"
-						imageValue="assets/images/placeholder.png">
-				</Card>
+				{#each news as item}
+					<Card
+							hrefValue={item.url}
+							classValue="col-3 col-m-6 col-xs-12"
+							subtitleValue={item.date}
+							titleValue={item.title}
+							imageValue={item.image}>
+					</Card>
+				{/each}
 			</div>
 		{/if}
 	</div>
