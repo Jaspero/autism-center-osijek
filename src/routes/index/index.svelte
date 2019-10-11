@@ -115,7 +115,7 @@
                 {#each programs as item}
                     {#each item.segments as segment}
                         <Card
-                            hrefValue="/programi"
+                            hrefValue={() => '/programi?t=' + segment.subTitle}
                             classValue="col-3 col-m-6 col-xs-12"
                             subtitleValue={item.title}
                             titleValue={segment.subTitle}
@@ -143,7 +143,7 @@
             <div class="grid jc-start">
                 {#each projects as project}
                     <Card
-                        hrefValue=""
+                        hrefValue={() => '/projekti?t=' + project.title}
                         classValue="col-6 col-s-12"
                         titleValue={project.title}
                         textValue={project.shortDescription}>
@@ -166,11 +166,11 @@
             <div class="grid jc-start">
                 {#each news as item}
                 <Card
-                    hrefValue=""
+                    hrefValue={() => '/novosti/' + item.url}
                     classValue="col-3 col-m-6 col-xs-12"
-                    subtitleValue="21.09.2019."
-                    titleValue="Novi natječaj za posao"
-                    imageValue="assets/images/placeholder.png">
+                    subtitleValue={item.date}
+                    titleValue={item.title}
+                    imageValue={item.image}>
                 </Card>
                 {/each}
                 <ViewAll class="col-12" href="../novosti">Pregled svih novosti</ViewAll>

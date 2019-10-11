@@ -25,7 +25,11 @@ export async function get(req, res) {
         hasMore: snaps.docs.length === lookUpSize ? snaps.docs[snaps.docs.length - 1].id : null,
         news: snaps.docs.reduce((acc, cur, ind) => {
           if (ind < pageSize) {
-            acc.push(cur.data());
+
+            const data = cur.data();
+            data.date = new Date(data.date).toLocaleDateString('en-GB');
+
+            acc.push(data);
           }
           return acc;
         }, [])
