@@ -1,6 +1,12 @@
 <script>
+    import { createEventDispatcher } from 'svelte';
+
     export let classValue;
     export let imageValue;
+
+    const dispatch = createEventDispatcher();
+
+    const select = () => dispatch('selected');
 </script>
 
 <style>
@@ -27,7 +33,7 @@
     }
 </style>
 
-<a class="gallery-card {classValue}">
+<a class="gallery-card {classValue}" on:click={select}>
     <div class="gallery-card-image">
         <img class="gallery-card-image-inner" src={imageValue} alt="">
     </div>

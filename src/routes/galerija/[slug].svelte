@@ -16,12 +16,31 @@
 
 <script>
     import GalleryCard from "./components/GalleryCard.svelte";
+    import GalleryCarousel from "./components/GalleryCarousel.svelte";
     import Title from "../../shared/components/Title.svelte";
     import BlogArticle from "../../shared/components/BlogArticle.svelte";
 
     export let item;
 
+    let selectItem = null;
+    let carouselOpen = false;
+
+    function openCarousel(images, index) {
+        selectItem = index;
+        carouselOpen = true;
+    }
+
+    function closeCarousel() {
+        carouselOpen = false;
+    }
 </script>
+
+<GalleryCarousel
+    gallery={item.images}
+    selected={selectItem}
+    open={carouselOpen}
+    on:close={closeCarousel}>
+</GalleryCarousel>
 
 <section class="grid generic-section">
     <div class="col-6 col-m-8 col-s-10 col-xs-12">

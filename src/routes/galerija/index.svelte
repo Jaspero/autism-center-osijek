@@ -4,6 +4,7 @@
 
 <script>
 	import GalleryCard from "./components/GalleryCard.svelte";
+	import GalleryCarousel from "./components/GalleryCarousel.svelte"
 	import Title from "../../shared/components/Title.svelte";
 	import ViewAll from "../../shared/components/ViewAll.svelte";
 	import BlogArticle from "../../shared/components/BlogArticle.svelte";
@@ -12,6 +13,10 @@
 	let loading = true;
 	let gallery = [];
 	let hasMore;
+
+	let selectItem = null;
+	let selectedImages = [];
+	let carouselOpen = false;
 
 	function loadMore() {
 
@@ -36,6 +41,16 @@
 			});
 	}
 
+	function openCarousel(images, index) {
+		selectItem = index;
+		selectedImages = [...images];
+		carouselOpen = true;
+	}
+
+	function closeCarousel() {
+		carouselOpen = false;
+	}
+
 	if (process.browser) {
 		loadMore();
 	}
@@ -44,16 +59,25 @@
 {#if loading}
 	<Loading/>
 {:else}
+
+	<GalleryCarousel
+		gallery={selectedImages}
+		selected={selectItem}
+		open={carouselOpen}
+		on:close={closeCarousel}>
+	</GalleryCarousel>
+
 	<section class="grid generic-section">
 		<div class="col-6 col-m-8 col-s-10 col-xs-12">
 			{#each gallery as {title, images, date, url}}
 				<BlogArticle>
 					<Title>{title}</Title>
 					<div class="grid">
-						{#each images as image}
+						{#each images as image, i}
 							<GalleryCard
 								classValue="col-4 col-xs-6"
-								imageValue={image}>
+								imageValue={image}
+								on:selected={() => openCarousel(images, i)}>
 							</GalleryCard>
 						{/each}
 						<ViewAll href={url} class="col-12">Pregledaj sve</ViewAll>
