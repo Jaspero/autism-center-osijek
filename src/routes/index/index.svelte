@@ -1,5 +1,6 @@
 <svelte:head>
     <title>CZA Osijek</title>
+    <meta name="description" content="Centar za autizam Osijek, najmoderniji regionalni centar za djecu s poremećajem iz spektra autizma.Saznajte o programima, terapijskim postupcima i aktivnostima." />
 </svelte:head>
 
 <script>
