@@ -250,5 +250,10 @@
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/zahtjev-za-dopunu-ili-ispravak-informacije.docx">Zahtjev za dopunu ili ispravak informacije (Obrazac br. 2)</a></p>
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/zahtjev-za-ponovnu-uporabu-informacija.docx">Zahtjev za ponovnu uporabu informacija (Obrazac br. 3)</a></p>
 		</div>
+
+		<div class="cza-footer-inner-column">
+			<h1 class="cza-footer-inner-column-title">Made by</h1>
+			<p class="cza-footer-inner-column-item"><a href="https://jaspero.co/" target="_blank" rel="noopener">Jaspero</a></p>
+		</div>
 	</div>
 </footer>
