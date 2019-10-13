@@ -28,6 +28,7 @@
 
 <svelte:head>
 	<title>CZA Osijek | Projekti</title>
+	<meta name="description" content="Aktualni projekti i suradnja" />
 </svelte:head>
 
 {#if projectsLoading}

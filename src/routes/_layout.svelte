@@ -2,8 +2,18 @@
 	export let segment;
 
 	let menuExpanded = false;
+	let count = 0;
 
-	function toggleMenu() {
+    if (process.browser) {
+        fetch(`index.json`)
+            .then(r => r.json())
+            .then(data => {
+                count = data.count;
+            });
+    }
+
+
+    function toggleMenu() {
 		const header = document.querySelector('.cza-header');
 		menuExpanded = !menuExpanded;
 
@@ -255,5 +265,10 @@
 			<h1 class="cza-footer-inner-column-title">Made by</h1>
 			<p class="cza-footer-inner-column-item"><a href="https://jaspero.co/" target="_blank" rel="noopener">Jaspero</a></p>
 		</div>
+
+        <div class="cza-footer-inner-column">
+            <h1 class="cza-footer-inner-column-title">Posjetitelja</h1>
+            <p class="cza-footer-inner-column-item">{count}</p>
+        </div>
 	</div>
 </footer>

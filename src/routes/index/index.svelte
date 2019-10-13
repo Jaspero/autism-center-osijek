@@ -21,6 +21,11 @@
     let newsLoading = true;
     let news;
 
+    const sizeMap = {
+        standard: 'col-3 col-m-6 col-xs-12',
+        large: 'col-6 col-xs-12'
+    };
+
     if (process.browser) {
         fetch(`projekti.json`)
             .then(r => r.json())
@@ -37,10 +42,16 @@
             .then(data => {
                 programs = data.programs.map(it => {
 
-                    it.segments = it.segments.map(segment => {
-                        segment.slug = '/programi/#' + toSlug(segment.subTitle);
-                        return segment;
-                    });
+                    it.segments = it.segments.reduce((acc, segment) => {
+                        if (!segment.hiddenOnHome) {
+                            segment.slug = '/programi/#' + toSlug(segment.subTitle);
+                            segment.size = segment.size ? sizeMap[segment.size] : sizeMap.standard;
+
+                            acc.push(segment);
+                        }
+
+                        return acc;
+                    }, []);
 
                     return it;
                 });
@@ -131,7 +142,7 @@
                     {#each item.segments as segment}
                         <Card
                             hrefValue={segment.slug}
-                            classValue="col-3 col-m-6 col-xs-12"
+                            classValue={segment.size}
                             subtitleValue={item.title}
                             titleValue={segment.subTitle}
                             imageValue={segment.image}>

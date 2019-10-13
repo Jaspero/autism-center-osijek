@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>CZA Osijek | Novosti</title>
+	<meta name="description" content="Provjerite najnovije obavijesti i pratite novosti vezane uz rad Centra" />
 </svelte:head>
 
 <script>

@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>CZA Osijek | Kontakt</title>
+	<meta name="description" content="Saznajte kontakt informacije, provjerite gdje se nalazimo i postavite upit" />
 </svelte:head>
 
 <script>

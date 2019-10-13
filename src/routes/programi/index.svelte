@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>CZA Osijek | Programi</title>
+	<meta name="description" content="Saznajte više o osnovnim programima, terapijskim postupcima i izvannastavnim aktivnostima koje se provode u Centru" />
 </svelte:head>
 
 <script>

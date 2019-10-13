@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>CZA Osijek | Galerija</title>
+	<meta name="description" content="Istražite fotografije Centra i pogledajte galeriju raznih događanja u sklopu rada Centra" />
 </svelte:head>
 
 <script>

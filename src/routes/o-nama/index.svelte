@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>CZA Osijek | O nama</title>
+	<meta name="description" content="Kako smo nastali, koja nam je misija i vizija te tko su naši djelatnici" />
 </svelte:head>
 
 <script>
