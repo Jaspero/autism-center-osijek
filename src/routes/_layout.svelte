@@ -262,12 +262,12 @@
 		</div>
 
 		<div class="cza-footer-inner-column">
-			<h1 class="cza-footer-inner-column-title">Made by</h1>
+			<h1 class="cza-footer-inner-column-title">Izradio</h1>
 			<p class="cza-footer-inner-column-item"><a href="https://jaspero.co/" target="_blank" rel="noopener">Jaspero</a></p>
 		</div>
 
         <div class="cza-footer-inner-column">
-            <h1 class="cza-footer-inner-column-title">Posjetitelja</h1>
+            <h1 class="cza-footer-inner-column-title">Broj posjetitelja</h1>
             <p class="cza-footer-inner-column-item">{count}</p>
         </div>
 	</div>
