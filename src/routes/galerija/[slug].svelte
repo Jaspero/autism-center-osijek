@@ -25,7 +25,7 @@
     let selectItem = null;
     let carouselOpen = false;
 
-    function openCarousel(images, index) {
+    function openCarousel(index) {
         selectItem = index;
         carouselOpen = true;
     }
@@ -47,10 +47,11 @@
         <BlogArticle>
             <Title>{item.title}</Title>
             <div class="grid jc-start">
-                {#each item.images as image}
+                {#each item.images as image, i}
                     <GalleryCard
                         classValue="col-4 col-xs-6"
-                        imageValue={image}>
+                        imageValue={image}
+                        on:selected={() => openCarousel(i)}>
                     </GalleryCard>
                 {/each}
             </div>

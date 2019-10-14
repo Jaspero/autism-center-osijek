@@ -9,7 +9,15 @@
 
     const dispatch = createEventDispatcher();
 
+
+    $: {
+        if (open) {
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
     function close() {
+        document.body.style.overflow = null;
         open = false;
         dispatch('close');
     }

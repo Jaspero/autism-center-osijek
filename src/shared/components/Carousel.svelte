@@ -4,7 +4,7 @@
     </div>
     <ul class="bullets">
         {#each pips as pip, i}
-            <li class="bullet" on:click={() => go(i)}></li>
+            <li class="bullet" class:active={currentSlide === i} on:click={() => go(i)}></li>
         {/each}
     </ul>
 </div>
@@ -27,12 +27,17 @@
         height: 40px;
     }
     .bullet {
+        cursor: pointer;
         margin: 6px;
         border-radius: 100%;
         background-color: rgba(255,255,255,0.75);
         box-shadow: 0 0 4px black;
         height: 8px;
         width: 8px;
+    }
+
+    .bullet.active {
+        background-color: var(--primary-theme);
     }
 </style>
 
@@ -45,19 +50,28 @@
     export let autoplay = 0;
     export let startIndex = 0;
 
+    let currentSlide = 0;
     let siema;
     let controller;
     let timer;
 
     $: pips = controller ? controller.innerElements : [];
 
+    $: {
+        currentSlide = startIndex;
+    }
+
     onMount(() => {
         controller = new Siema({
             selector: siema,
             startIndex,
             perPage,
-            loop
+            loop,
+            onChange: () => {
+                currentSlide = controller.currentSlide;
+            }
         });
+
 
         if (autoplay) {
             timer = setInterval(right, autoplay);

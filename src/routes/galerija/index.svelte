@@ -77,7 +77,7 @@
 
 	<section class="grid generic-section">
 		<div class="col-6 col-m-8 col-s-10 col-xs-12">
-			{#each gallery as {title, images, date, url}}
+			{#each gallery as {title, images, date, url, viewAll}}
 				<BlogArticle>
 					<time class="gallery-date">{date}</time>
 					<Title>{title}</Title>
@@ -89,7 +89,9 @@
 								on:selected={() => openCarousel(images, i)}>
 							</GalleryCard>
 						{/each}
-						<ViewAll href={url} class="col-12">Pregledaj sve</ViewAll>
+						{#if viewAll}
+							<ViewAll href={url} class="col-12">Pregledaj sve</ViewAll>
+						{/if}
 					</div>
 				</BlogArticle>
 			{/each}
