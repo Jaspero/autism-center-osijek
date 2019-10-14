@@ -23,7 +23,10 @@
 		fetch(url)
 				.then(r => r.json())
 				.then(data => {
-					news = [...news, ...data.news];
+					news = [...news, ...data.news.map(it => {
+                        it.url = '/novosti/' + item.url;
+					    return it;
+					})];
 					hasMore = data.hasMore;
 					loading = false;
 				});
