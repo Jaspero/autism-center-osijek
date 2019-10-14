@@ -3,7 +3,7 @@
         const res = await this.fetch(`novosti/${params.slug}.json`);
         const data = await res.json();
         if (res.status === 200) {
-            return { item: data };
+            return {item: data};
         } else {
             this.error(res.status, data.message);
         }
@@ -17,3 +17,5 @@
 <script>
     export let item;
 </script>
+
+{@html item.content}
