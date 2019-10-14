@@ -59,7 +59,7 @@
 		font-weight: 500;
 		border-top: 4px solid transparent;
 		border-bottom: 4px solid transparent;
-		opacity: .5;
+		opacity: .75;
 		transition: .2s;
 	}
 	.cza-header-inner-item.active {

@@ -9,7 +9,7 @@
 /* Generating CSS variables in :root
  *============================================================================*/
 :root {
-  --primary-theme: #4075ff;
+  --primary-theme: #2e69ff;
   --primary-primary: white;
   --primary-secondary: rgba(255, 255, 255, 0.8);
   --primary-tertiary: rgba(255, 255, 255, 0.15);
