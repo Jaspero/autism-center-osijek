@@ -511,3 +511,11 @@ p + ul {
 
 .flex-1 {
   flex: 1; }
+
+/* Offset for using a[href]  */
+[id]::before {
+  content: '';
+  display: block;
+  height: 110px;
+  margin-top: -110px;
+  visibility: hidden; }

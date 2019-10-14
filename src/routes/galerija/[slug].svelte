@@ -46,7 +46,7 @@
     <div class="col-6 col-m-8 col-s-10 col-xs-12">
         <BlogArticle>
             <Title>{item.title}</Title>
-            <div class="grid">
+            <div class="grid jc-start">
                 {#each item.images as image}
                     <GalleryCard
                         classValue="col-4 col-xs-6"

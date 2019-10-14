@@ -73,7 +73,7 @@
 			{#each gallery as {title, images, date, url}}
 				<BlogArticle>
 					<Title>{title}</Title>
-					<div class="grid">
+					<div class="grid jc-start">
 						{#each images as image, i}
 							<GalleryCard
 								classValue="col-4 col-xs-6"
