@@ -1,5 +1,6 @@
 <script>
     import { createEventDispatcher } from 'svelte';
+    import LibraryImage from '../../../shared/components/LibraryImage.svelte'
 
     export let classValue;
     export let imageValue;
@@ -35,6 +36,6 @@
 
 <a class="gallery-card {classValue}" on:click={select}>
     <div class="gallery-card-image">
-        <img class="gallery-card-image-inner" src={imageValue} alt="">
+        <LibraryImage class={'gallery-card-image-inner'} prefix={'thumb_'} src={imageValue}></LibraryImage>
     </div>
 </a>

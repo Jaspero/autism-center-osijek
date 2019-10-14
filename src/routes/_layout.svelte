@@ -1,10 +1,26 @@
-<script>
+<script  context="module">
 	export let segment;
+	export let webpSupported = false;
 
 	let menuExpanded = false;
 	let count = 0;
 
+
+    async function webpCheck() {
+        const webpData =
+                'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+        const blob = await fetch(webpData).then(r => r.blob());
+
+        webpSupported = await createImageBitmap(blob).then(
+                () => true,
+                () => false
+        );
+    }
+
     if (process.browser) {
+        webpCheck()
+            .then();
+
         fetch(`index.json`)
             .then(r => r.json())
             .then(data => {
