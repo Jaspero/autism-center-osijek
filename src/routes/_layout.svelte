@@ -210,7 +210,7 @@
 	<div class="cza-footer-inner">
 		<a class="cza-footer-inner-logo" href=".">
 			<img class="cza-footer-inner-logo-image" src="assets/images/logo-light.svg" alt="Centar za autizam Osijek." width="100">
-			<p class="cza-footer-inner-logo-text"><b>Centar za Autizam Osijek</b></p>
+			<p class="cza-footer-inner-logo-text"><b>Centar za autizam Osijek</b></p>
 		</a>
 
 		<div class="cza-footer-inner-column">

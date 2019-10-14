@@ -9,6 +9,7 @@
     import Banner from '../../shared/components/Banner.svelte';
     import Card from '../../shared/components/Card.svelte';
     import Title from '../../shared/components/Title.svelte';
+    import Subtitle from '../../shared/components/Subtitle.svelte';
     import ViewAll from "../../shared/components/ViewAll.svelte";
     import CardPlaceholder from '../../shared/components/CardPlaceholder.svelte';
     import {toSlug} from '../../shared/utility/to-slug';
@@ -115,17 +116,14 @@
     </div>
     <div class="col-6 col-s-12 flex fd-col jc-center ai-start">
         <Title>O nama</Title>
-        <p>Vrtićki, odnosno predškolski odgojno-obrazovni program Centra za autizam Osijek obuhvaća dvije vrtićke skupine pod vodstvom edukacijskih rehabilitatorica. Svaku skupinu pohađaju 4-5 djece. Odgojno-obrazovni rad u ovom programu temelji se na temeljitoj procjeni spoznajnog razvoja, socioemocionalnog razvoja, grube i fine motorike, brige o sebi, komunikacijskih i govornih vještina te predakademskih vještina i kreativnog stvaralaštva.</p>
-        <p>Suradnja se odvija putem:</p>
-        <ul>
-            <li>Individualnih razgovora,</li>
-            <li>Zajedničkih informativnih sastanaka,</li>
-            <li>Svakodnevne razmjene informacija po potrebi,</li>
-            <li>Grupnih radionica i individualnih poduka,</li>
-            <li>Kutka za roditelje (informativnog i edukativnog) na web stranici Centra.</li>
-        </ul>
-        <br>
-        <a class="btn" href="../o-nama">Saznaj više</a>
+        <Subtitle>Vizija</Subtitle>
+        <p>Odgoj i obrazovanje sretnog i uspješnog učenika koji se razvija uz poticaj učitelja, podršku roditelja i cijele lokalne zajednice.</p>
+        <Subtitle>Misija</Subtitle>
+        <p>Suradnjom nastavnika, roditelja i lokalne zajednice svakom djetetu omogućiti razvitak u sredini u kojoj će se osjećati prihvaćeno, voljeno, sigurno i zadovoljno. Kreirati sredinu koja će djelovati poticajno na razvitak svih njegovih potencijala, u kojoj će se voditi briga o djetetovim specifičnostima kao pojedinca i gdje će ga se osposobljavati za samostalan i odgovoran život.</p>
+        <div>
+            <br>
+            <a class="btn" href="../o-nama">Saznaj više</a>
+        </div>
     </div>
 </section>
 
