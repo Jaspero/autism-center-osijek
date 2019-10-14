@@ -64,7 +64,7 @@
             .then(r => r.json())
             .then(data => {
                 news = data.news.map(it => {
-                    it.url = '/novosti/' + item.url;
+                    it.url = '/novosti/' + it.url;
                     return it;
                 });
                 newsLoading = false;

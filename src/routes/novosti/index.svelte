@@ -24,7 +24,7 @@
 				.then(r => r.json())
 				.then(data => {
 					news = [...news, ...data.news.map(it => {
-                        it.url = '/novosti/' + item.url;
+                        it.url = '/novosti/' + it.url;
 					    return it;
 					})];
 					hasMore = data.hasMore;
