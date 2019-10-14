@@ -88,5 +88,9 @@
 		</div>
 	</section>
 
-	<button disabled={!hasMore} on:click={loadMore}>Učitaj više</button>
+	<section class="grid" style="margin-bottom: 4em;">
+		<div class="col-6 col-m-8 col-s-10 col-xs-12" style="text-align: center;">
+			<button class="btn" disabled={!hasMore} on:click={loadMore}>Učitaj više</button>
+		</div>
+	</section>
 {/if}
