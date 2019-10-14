@@ -88,5 +88,5 @@
 		</div>
 	</section>
 
-	<button disabled={!hasMore} on:click={loadMore}>Učitavj više</button>
+	<button disabled={!hasMore} on:click={loadMore}>Učitaj više</button>
 {/if}

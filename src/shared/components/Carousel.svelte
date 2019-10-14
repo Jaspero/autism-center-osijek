@@ -1,67 +1,38 @@
 <div class="carousel">
-    <button class="left" on:click={left}>
-        <slot name="left-control"></slot>
-    </button>
     <div class="slides" bind:this={siema}>
         <slot></slot>
     </div>
-    <ul>
+    <ul class="bullets">
         {#each pips as pip, i}
-            <li on:click={() => go(i)}></li>
+            <li class="bullet" on:click={() => go(i)}></li>
         {/each}
     </ul>
-    <button class="right" on:click={right}>
-        <slot name="right-control"></slot>
-    </button>
 </div>
 
 <style>
     .carousel {
         position: relative;
         width: 100%;
-        justify-content: center;
-        align-items: center;
     }
-
-    button {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        top: 50%;
-        z-index: 50;
-        margin-top: -20px;
-        border: none;
-        background-color: transparent;
-    }
-    button:focus {
-        outline: none;
-    }
-
-    .left {
-        left: 2vw;
-    }
-
-    .right {
-        right: 2vw;
-    }
-    ul {
+    .bullets {
         list-style-type: none;
+        margin: 0;
+        padding: 0;
         position: absolute;
+        bottom: 0;
         display: flex;
+        align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: -30px;
-        padding: 0;
+        height: 40px;
     }
-    ul li {
+    .bullet {
         margin: 6px;
         border-radius: 100%;
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255,255,255,0.75);
+        box-shadow: 0 0 4px black;
         height: 8px;
         width: 8px;
-    }
-    ul li:hover {
-        background-color: rgba(255,255,255,0.85);
     }
 </style>
 

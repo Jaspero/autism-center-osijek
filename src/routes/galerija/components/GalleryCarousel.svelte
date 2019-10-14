@@ -15,27 +15,58 @@
     }
 </script>
 
+<style>
+    .gallery-backdrop {
+        position: fixed;
+        z-index: 11;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.75);
+    }
+    .gallery-wrapper {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .gallery-close {
+        cursor: pointer;
+        position: absolute;
+        z-index: 2;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 50px;
+        color: white;
+        text-shadow: 0 0 4px black;
+    }
+    .gallery-img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain;
+        padding-bottom: 40px;
+    }
+</style>
+
 {#if open}
     <div class="gallery-backdrop" in:fade="{{duration: 200}}" out:fade="{{duration: 200}}">
-        <div class="gallery-wrapper relative ai-center jc-center" in:fly="{{y: 200, duration: 600}}">
-            <div class="gallery-view flex ai-center jc-center">
-                <Carousel perPage={1} startIndex={selected} class="relative">
-                    <div>
-                        <img src="assets/icons/gallery-arrow-left.svg" alt="">
-                    </div>
-                    {#each gallery as image}
-                        <div class="slide-content ta-center">
-                            <img src={image} alt="Gallery view" class="obj-cover gallery-image">
-                        </div>
-                    {/each}
-                    <div>
-                        <img src="assets/icons/gallery-arrow-right.svg" alt="">
-                    </div>
-                </Carousel>
-            </div>
-            <div class="close-gallery">
-                <img src="assets/icons/cancel.svg" alt="Close gallery" on:click={close}>
-            </div>
+        <div class="gallery-wrapper" in:fade="{{duration: 600}}">
+            <Carousel perPage={1} startIndex={selected}>
+                {#each gallery as image}
+                    <img src={image} alt="Gallery view" style="width: 100vw; height: 100vh; object-fit: contain;">
+                {/each}
+            </Carousel>
         </div>
+        <button class="gallery-close" on:click={close}>×</button>
     </div>
 {/if}

@@ -4,12 +4,3 @@
 @import "scss/02-components/buttons";
 @import "scss/03-utilities/grid";
 @import "scss/03-utilities/utilities";
-
-/* Offset for using a[href]  */
-[id]::before {
-  content: '';
-  display: block;
-  height: 110px;
-  margin-top: -110px;
-  visibility: hidden;
-}
