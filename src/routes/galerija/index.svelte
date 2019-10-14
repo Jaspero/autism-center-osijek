@@ -57,6 +57,13 @@
 	}
 </script>
 
+<style>
+	.gallery-date {
+		display: block;
+		margin-top: 2em;
+	}
+</style>
+
 {#if loading}
 	<Loading/>
 {:else}
@@ -72,6 +79,7 @@
 		<div class="col-6 col-m-8 col-s-10 col-xs-12">
 			{#each gallery as {title, images, date, url}}
 				<BlogArticle>
+					<time class="gallery-date">{date}</time>
 					<Title>{title}</Title>
 					<div class="grid jc-start">
 						{#each images as image, i}
