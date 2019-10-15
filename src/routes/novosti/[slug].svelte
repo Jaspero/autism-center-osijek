@@ -24,6 +24,7 @@
 <section class="grid generic-section">
     <div class="col-6 col-m-8 col-s-10 col-xs-12">
         <BlogArticle>
+            <time>{item.date}</time>
             <Title>{item.title}</Title>
             {@html item.content}
         </BlogArticle>
