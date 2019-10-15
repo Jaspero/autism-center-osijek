@@ -17,6 +17,7 @@
 <script>
     import BlogArticle from "../../shared/components/BlogArticle.svelte";
     import Title from "../../shared/components/Title.svelte";
+    import Content from "../../shared/components/Content.svelte";
 
     export let item;
 </script>
@@ -26,7 +27,10 @@
         <BlogArticle>
             <time>{item.date}</time>
             <Title>{item.title}</Title>
-            {@html item.content}
+            <Content>
+                {@html item.content}
+                <p>Slike možete pogledati u našoj <a href="/galerija/{item.gallery}">galeriji</a>.</p>
+            </Content>
         </BlogArticle>
     </div>
 </section>
