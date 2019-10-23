@@ -272,3 +272,5 @@
         </div>
 	</div>
 </footer>
+
+<a href="/360/index.html" rel="nofollow" target="_blank">Virtualna šetnja</a>
