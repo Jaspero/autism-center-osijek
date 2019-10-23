@@ -122,6 +122,16 @@
 		margin: 0;
 		padding: 0 0 .5em .5em;
 	}
+	.cza-fab {
+		position: fixed;
+		z-index: 4;
+		bottom: 10px;
+		right: 10px;
+		background: linear-gradient(to bottom right, #7EA1E6, #2E6BE6);
+		padding: 1em;
+		border-radius: 50%;
+		box-shadow: 12px 12px 25px rgba(0,0,0,0.2);
+	}
 	@media (max-width: 900px) {
 		.cza-header {
 			height: 60px;
@@ -273,4 +283,6 @@
 	</div>
 </footer>
 
-<a href="/360/index.html" rel="nofollow" target="_blank">Virtualna šetnja</a>
+<a class="cza-fab" href="/360/index.html" rel="nofollow" target="_blank" title="Virtualna šetnja." aria-label="Virtualna šetnja.">
+	<img src="assets/images/360.svg" alt="Virtualna šetnja.">
+</a>
