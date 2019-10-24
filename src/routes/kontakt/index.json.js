@@ -13,10 +13,10 @@ export function post(req, res) {
             }
         },
         mail: {
-            from: `"Webstranica" <info@jaspero.co>`,
-            to: 'filip.lauc93@gmail.com',
+            from: `"Centar Za Autizam" <ured@centar-autizam-os.skole.hr>`,
+            to: 'ured@centar-autizam-os.skole.hr',
             replyTo: req.body.email,
-            subject: 'Novi upit sa web stranice',
+            subject: 'Centar Za Autizam - Novi upit sa web stranice',
             text: 'Učitajte ovu poruku sa preglednikom koji podržava html.',
             html: `<table>
                 <tr>
