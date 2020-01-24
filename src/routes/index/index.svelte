@@ -10,9 +10,10 @@
     import Card from '../../shared/components/Card.svelte';
     import Title from '../../shared/components/Title.svelte';
     import Subtitle from '../../shared/components/Subtitle.svelte';
-    import ViewAll from "../../shared/components/ViewAll.svelte";
+    import ViewAll from '../../shared/components/ViewAll.svelte';
     import CardPlaceholder from '../../shared/components/CardPlaceholder.svelte';
     import {toSlug} from '../../shared/utility/to-slug';
+    import {CACHE} from '../../shared/consts/cache.const';
 
     let projectsLoading = true;
     let projects;
@@ -29,46 +30,65 @@
     };
 
     if (process.browser) {
-        fetch(`projekti.json`)
-            .then(r => r.json())
-            .then(data => {
-                projects = data.projects.map(it => {
-                    it.slug = '/projekti/#' + toSlug(it.title);
-                    return it;
+
+        if (CACHE.homeProjects) {
+            projects = CACHE.homeProjects;
+            projectsLoading = false;
+        } else {
+            fetch(`projekti.json`)
+                .then(r => r.json())
+                .then(data => {
+                    projects = data.projects.map(it => {
+                        it.slug = '/projekti/#' + toSlug(it.title);
+                        return it;
+                    });
+                    CACHE.homeProjects = projects;
+                    projectsLoading = false;
                 });
-                projectsLoading = false;
-            });
+        }
 
-        fetch(`programi.json`)
-            .then(r => r.json())
-            .then(data => {
-                programs = data.programs.map(it => {
+        if (CACHE.homePrograms) {
+            programs = CACHE.homePrograms;
+            programsLoading = false;
+        } else {
+            fetch(`programi.json`)
+                .then(r => r.json())
+                .then(data => {
+                    programs = data.programs.map(it => {
 
-                    it.segments = it.segments.reduce((acc, segment) => {
-                        if (!segment.hiddenOnHome) {
-                            segment.slug = '/programi/#' + toSlug(segment.subTitle);
-                            segment.size = segment.size ? sizeMap[segment.size] : sizeMap.standard;
+                        it.segments = it.segments.reduce((acc, segment) => {
+                            if (!segment.hiddenOnHome) {
+                                segment.slug = '/programi/#' + toSlug(segment.subTitle);
+                                segment.size = segment.size ? sizeMap[segment.size] : sizeMap.standard;
 
-                            acc.push(segment);
-                        }
+                                acc.push(segment);
+                            }
 
-                        return acc;
-                    }, []);
+                            return acc;
+                        }, []);
 
-                    return it;
+                        return it;
+                    });
+                    CACHE.homePrograms = programs;
+                    programsLoading = false;
                 });
-                programsLoading = false;
-            });
+        }
 
-        fetch(`novosti.json`)
-            .then(r => r.json())
-            .then(data => {
-                news = data.news.map(it => {
-                    it.url = '/novosti/' + it.url;
-                    return it;
+        if (CACHE.homeNews) {
+            news = CACHE.homeNews;
+            newsLoading = false;
+        } else {
+            fetch(`novosti.json`)
+                .then(r => r.json())
+                .then(data => {
+                    news = data.news.map(it => {
+                        it.url = '/novosti/' + it.url;
+                        return it;
+                    });
+                    CACHE.homeNews = news;
+                    newsLoading = false;
                 });
-                newsLoading = false;
-            });
+        }
     }
 </script>
 

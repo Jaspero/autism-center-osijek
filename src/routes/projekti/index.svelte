@@ -1,28 +1,42 @@
 <script>
-	import BlogNavigation from "../../shared/components/BlogNavigation.svelte";
-	import BlogNavigationItem from "../../shared/components/BlogNavigationItem.svelte";
-	import BlogArticle from "../../shared/components/BlogArticle.svelte";
-	import Title from "../../shared/components/Title.svelte";
-	import Content from "../../shared/components/Content.svelte";
-	import Loading from "../../shared/components/Loading.svelte";
-	import {scrollToId} from "../../shared/utility/scroll-to-id";
-	import {tick} from "svelte";
+	import BlogNavigation from '../../shared/components/BlogNavigation.svelte';
+	import BlogNavigationItem from '../../shared/components/BlogNavigationItem.svelte';
+	import BlogArticle from '../../shared/components/BlogArticle.svelte';
+	import Title from '../../shared/components/Title.svelte';
+	import Content from '../../shared/components/Content.svelte';
+	import Loading from '../../shared/components/Loading.svelte';
+	import {scrollToId} from '../../shared/utility/scroll-to-id';
+	import {tick} from 'svelte';
+	import {CACHE} from '../../shared/consts/cache.const';
 
 	export let projectsLoading = true;
 	export let projects;
 
 	if (process.browser) {
-		fetch(`projekti.json`)
-			.then(r => r.json())
-			.then(data => {
-				projects = data.projects;
-				projectsLoading = false;
 
-				return tick()
-			})
-			.then(() => {
-				scrollToId();
-			})
+		if (CACHE.projects) {
+			projects = CACHE.projects;
+			projectsLoading = false;
+
+			tick()
+				.then(() => {
+					scrollToId()
+				});
+		} else {
+			fetch(`projekti.json`)
+				.then(r => r.json())
+				.then(data => {
+					projects = data.projects;
+					CACHE.projects = data.projects;
+					projectsLoading = false;
+
+					return tick()
+				})
+				.then(() => {
+					scrollToId();
+				})
+				.catch();
+		}
 	}
 </script>
 

@@ -13,22 +13,37 @@
 	import Loading from '../../shared/components/Loading.svelte';
 	import {scrollToId} from '../../shared/utility/scroll-to-id';
 	import {tick} from 'svelte';
+	import {CACHE} from '../../shared/consts/cache.const';
 
 	export let programsLoading = true;
 	export let programs;
 
 	if (process.browser) {
-		fetch(`programi.json`)
-			.then(r => r.json())
-			.then(data => {
-				programs = data.programs;
-				programsLoading = false;
 
-				return tick()
-			})
-			.then(() => {
-				scrollToId();
-			})
+		if (CACHE.programs) {
+			programs = CACHE.programs;
+			programsLoading = false;
+
+			tick()
+				.then(() => {
+					scrollToId();
+				});
+		} else {
+			fetch(`programi.json`)
+				.then(r => r.json())
+				.then(data => {
+					programs = data.programs;
+					programsLoading = false;
+
+					CACHE.programs = programs;
+
+					return tick()
+				})
+				.then(() => {
+					scrollToId();
+				})
+				.catch()
+		}
 	}
 </script>
 
