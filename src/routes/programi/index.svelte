@@ -4,15 +4,15 @@
 </svelte:head>
 
 <script>
-	import BlogNavigation from "../../shared/components/BlogNavigation.svelte";
-	import BlogNavigationItem from "../../shared/components/BlogNavigationItem.svelte";
-	import BlogArticle from "../../shared/components/BlogArticle.svelte";
-	import Title from "../../shared/components/Title.svelte";
-	import Subtitle from "../../shared/components/Subtitle.svelte";
-	import Content from "../../shared/components/Content.svelte";
-	import Loading from "../../shared/components/Loading.svelte";
-	import {scrollToId} from "../../shared/utility/scroll-to-id";
-	import {tick} from "svelte";
+	import BlogNavigation from '../../shared/components/BlogNavigation.svelte';
+	import BlogNavigationItem from '../../shared/components/BlogNavigationItem.svelte';
+	import BlogArticle from '../../shared/components/BlogArticle.svelte';
+	import Title from '../../shared/components/Title.svelte';
+	import Subtitle from '../../shared/components/Subtitle.svelte';
+	import Content from '../../shared/components/Content.svelte';
+	import Loading from '../../shared/components/Loading.svelte';
+	import {scrollToId} from '../../shared/utility/scroll-to-id';
+	import {tick} from 'svelte';
 
 	export let programsLoading = true;
 	export let programs;
