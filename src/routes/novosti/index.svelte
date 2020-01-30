@@ -56,6 +56,11 @@
 							imageValue={item.image}>
 					</Card>
 				{/each}
+				<div class="col-12">
+					<div class="generic-section flex jc-center">
+						<button class="btn" disabled={!hasMore} on:click={loadMore}>Učitaj još</button>
+					</div>
+				</div>
 			</div>
 		{/if}
 	</div>
