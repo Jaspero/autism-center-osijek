@@ -13,6 +13,9 @@
     .gallery-card {
         box-shadow: 0 0 0 1px var(--panel-tertiary);
         padding: 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
     }
     .gallery-card-image {
         position: relative;
@@ -33,8 +36,8 @@
     }
 </style>
 
-<a class="gallery-card {classValue}" on:click={select}>
+<button class="gallery-card {classValue}" on:click={select}>
     <div class="gallery-card-image">
         <img class="gallery-card-image-inner" src={imageValue} alt="">
     </div>
-</a>
+</button>

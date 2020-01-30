@@ -71,7 +71,7 @@
         <div class="gallery-wrapper" in:fade="{{duration: 600}}">
             <Carousel perPage={1} startIndex={selected}>
                 {#each gallery as image}
-                    <img src={image} alt="Gallery view" style="width: 100vw; height: 100vh; object-fit: contain;">
+                    <img class="gallery-img" src={image} alt="Gallery view">
                 {/each}
             </Carousel>
         </div>
