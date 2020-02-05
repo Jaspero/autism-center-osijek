@@ -72,6 +72,10 @@
         <h1 class="navigation-item-title">Galerija</h1>
         <p class="navigation-item-description">Istražite fotografije Centra i pogledajte galeriju raznih događanja u sklopu rada Centra.</p>
     </a>
+<!--    <a class="navigation-item" href="dokumenti">
+        <h1 class="navigation-item-title">Dokumenti</h1>
+        <p class="navigation-item-description">Istražite dokumente Centra.</p>
+    </a>-->
     <a class="navigation-item" href="kontakt">
         <h1 class="navigation-item-title">Kontakt</h1>
         <p class="navigation-item-description">Saznajte kontakt informacije, provjerite gdje se nalazimo i postavite upit.</p>

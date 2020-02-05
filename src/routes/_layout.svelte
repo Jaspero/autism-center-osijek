@@ -204,6 +204,7 @@
 			<a class="cza-header-inner-item {segment === 'projekti' ? 'active' : ''}" href="projekti" on:click={toggleMenu}>Projekti</a>
 			<a class="cza-header-inner-item {segment === 'novosti' ? 'active' : ''}" href="novosti" on:click={toggleMenu}>Novosti</a>
 			<a class="cza-header-inner-item {segment === 'galerija' ? 'active' : ''}" href="galerija" on:click={toggleMenu}>Galerija</a>
+			<a class="cza-header-inner-item {segment === 'dokumenti' ? 'active' : ''}" href="dokumenti" on:click={toggleMenu}>Dokumenti</a>
 			<a class="cza-header-inner-item {segment === 'kontakt' ? 'active' : ''}" href="kontakt" on:click={toggleMenu}>Kontakt</a>
 		</div>
 		<button class="cza-header-inner-menu" on:click={toggleMenu}>Izbornik</button>
