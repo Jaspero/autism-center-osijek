@@ -1,32 +1,44 @@
 <svelte:head>
-    <title>CZA Osijek</title>
+    <title>CZA Osijek | Dokumenti</title>
     <meta name="description" content="Centar za autizam Osijek, najmoderniji regionalni centar za djecu s poremećajem iz spektra autizma.Saznajte o programima, terapijskim postupcima i aktivnostima." />
 </svelte:head>
 
 <script>
-    let loading = true;
-    let documents = [];
-    let hasMore;
+    import {scrollToId} from '../../shared/utility/scroll-to-id';
+    import {tick} from 'svelte';
+    import {CACHE} from '../../shared/consts/cache.const';
 
-    function loadMore() {
-
-        let url = `dokumenti.json`;
-
-        if (hasMore) {
-            url += `?cursor=${hasMore}`;
-        }
-
-        fetch(url)
-                .then(r => r.json())
-                .then(data => {
-                    hasMore = data.hasMore;
-                    loading = false;
-                });
-    }
+    export let documentsLoading = true;
+    export let documents;
 
     if (process.browser) {
-        loadMore();
+
+        if (CACHE.documents) {
+            documents = CACHE.documents;
+            documentsLoading = false;
+
+            tick()
+                    .then(() => {
+                        scrollToId();
+                    });
+        } else {
+            fetch(`dokumenti.json`)
+                    .then(r => r.json())
+                    .then(data => {
+                        documents = data.documents;
+                        documentsLoading = false;
+
+                        CACHE.documents = documents;
+
+                        return tick()
+                    })
+                    .catch()
+        }
     }
 </script>
 
-<body></body>
+<body>
+    {#each documents as document}
+        <p>{document.title}</p>
+    {/each}
+</body>
