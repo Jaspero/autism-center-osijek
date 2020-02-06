@@ -16,7 +16,7 @@ export function get(req, res) {
             });
 
             const data = items.docs[0].data();
-            data.date = new Date(data.date).toLocaleDateString('en-GB');
+            data.date = new Date(data.date).toLocaleDateString('hr-HR');
 
             res.end(JSON.stringify(data));
         })

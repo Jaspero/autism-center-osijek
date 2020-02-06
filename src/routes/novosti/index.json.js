@@ -27,7 +27,7 @@ export async function get(req, res) {
           if (ind < pageSize) {
 
             const data = cur.data();
-            data.date = new Date(data.date).toLocaleDateString('en-GB');
+            data.date = new Date(data.date).toLocaleDateString('hr-HR');
 
             acc.push(data);
           }
