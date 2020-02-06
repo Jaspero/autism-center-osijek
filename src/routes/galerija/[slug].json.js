@@ -16,7 +16,10 @@ export function get(req, res) {
             });
 
             const data = items.docs[0].data();
-            data.date = new Date(data.date).toLocaleDateString('hr-HR');
+
+            // using this locale because of dd/mm/yyyy
+
+            data.date = new Date(data.date).toLocaleDateString(['ban', 'id']);
 
             res.end(JSON.stringify(data));
         })

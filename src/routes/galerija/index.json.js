@@ -27,7 +27,10 @@ export async function get(req, res) {
           if (ind < pageSize) {
 
             const data = cur.data();
-            data.date = new Date(data.date).toLocaleDateString('hr-HR');
+
+          // using this locale because of dd/mm/yyyy
+
+            data.date = new Date(data.date).toLocaleDateString(['ban', 'id']);
             data.viewAll = data.images.length > 6;
             data.images = data.images.slice(0, 6);
 
