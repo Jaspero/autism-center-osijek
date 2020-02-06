@@ -269,6 +269,8 @@
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/zahtjev-za-pristup-informacijama.docx">Zahtjev za pristup informacijama (Obrazac br. 1)</a></p>
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/zahtjev-za-dopunu-ili-ispravak-informacije.docx">Zahtjev za dopunu ili ispravak informacije (Obrazac br. 2)</a></p>
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/zahtjev-za-ponovnu-uporabu-informacija.docx">Zahtjev za ponovnu uporabu informacija (Obrazac br. 3)</a></p>
+			<p class="cza-footer-inner-column-item"><a href="assets/docs/biljeske-uz-financijske-izvjestaje-za-2019-godinu.doc">Bilješke uz financijske izvještaje za 2019. godinu</a></p>
+			<p class="cza-footer-inner-column-item"><a href="assets/docs/izvjestaj-o-prihodima-i-rashodima-primicima-i-izdacima.xls">Izvještaj o prihodima i rashodima, primicima i izdacima</a></p>
 		</div>
 
 		<div class="cza-footer-inner-column">
