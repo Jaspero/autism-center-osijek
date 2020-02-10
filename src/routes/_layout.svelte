@@ -271,6 +271,7 @@
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/zahtjev-za-ponovnu-uporabu-informacija.docx">Zahtjev za ponovnu uporabu informacija (Obrazac br. 3)</a></p>
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/biljeske-uz-financijske-izvjestaje-za-2019-godinu.doc">Bilješke uz financijske izvještaje za 2019. godinu</a></p>
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/izvjestaj-o-prihodima-i-rashodima-primicima-i-izdacima.xls">Izvještaj o prihodima i rashodima, primicima i izdacima</a></p>
+			<p class="cza-footer-inner-column-item"><a href="assets/docs/sigurnosni-i-zastitni-program-i-protokol-postupanja.pdf">Sigurnosni i zaštitni program i protokol postupanja u kriznim situacijama</a></p>
 		</div>
 
 		<div class="cza-footer-inner-column">
