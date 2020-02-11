@@ -35,10 +35,13 @@
                     .catch()
         }
     }
+
+    console.log(documents, 'doc');
+
 </script>
 
 <body>
     {#each documents as document}
-        <p>{document.title}</p>
+        <p>{document.name}</p>
     {/each}
 </body>

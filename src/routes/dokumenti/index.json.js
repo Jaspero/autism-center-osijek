@@ -9,7 +9,7 @@ export async function get(req, res) {
             });
 
             res.end(JSON.stringify({
-                    programs:
+                    documents:
                         snaps.docs.map(item => ({
                             id: item.id,
                             ...item.data()
