@@ -4,7 +4,6 @@
 </svelte:head>
 
 <script>
-    import {scrollToId} from '../../shared/utility/scroll-to-id';
     import {tick} from 'svelte';
     import {CACHE} from '../../shared/consts/cache.const';
 
@@ -16,32 +15,22 @@
         if (CACHE.documents) {
             documents = CACHE.documents;
             documentsLoading = false;
-
-            tick()
-                    .then(() => {
-                        scrollToId();
-                    });
         } else {
-            fetch(`dokumenti.json`)
-                    .then(r => r.json())
-                    .then(data => {
-                        documents = data.documents;
-                        documentsLoading = false;
+            fetch(`/dokumenti.json`)
+                .then(r => r.json())
+                .then(data => {
+                    documents = data;
+                    documentsLoading = false;
 
-                        CACHE.documents = documents;
+                    CACHE.documents = documents;
 
-                        return tick()
-                    })
-                    .catch()
+                    return tick()
+                })
+                .catch()
         }
     }
-
-    console.log(documents, 'doc');
-
 </script>
 
-<body>
-    {#each documents as document}
-        <p>{document.name}</p>
-    {/each}
-</body>
+{#each documents as document}
+    <p>{document.name}</p>
+{/each}
