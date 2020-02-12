@@ -204,7 +204,6 @@
 			<a class="cza-header-inner-item {segment === 'projekti' ? 'active' : ''}" href="projekti" on:click={toggleMenu}>Projekti</a>
 			<a class="cza-header-inner-item {segment === 'novosti' ? 'active' : ''}" href="novosti" on:click={toggleMenu}>Novosti</a>
 			<a class="cza-header-inner-item {segment === 'galerija' ? 'active' : ''}" href="galerija" on:click={toggleMenu}>Galerija</a>
-			<a class="cza-header-inner-item {segment === 'dokumenti' ? 'active' : ''}" href="dokumenti" on:click={toggleMenu}>Dokumenti</a>
 			<a class="cza-header-inner-item {segment === 'kontakt' ? 'active' : ''}" href="kontakt" on:click={toggleMenu}>Kontakt</a>
 		</div>
 		<button class="cza-header-inner-menu" on:click={toggleMenu}>Izbornik</button>
@@ -262,7 +261,9 @@
 
 		<div class="cza-footer-inner-column">
 			<h1 class="cza-footer-inner-column-title">Dokumentacija</h1>
-			<p class="cza-footer-inner-column-item"><a href="assets/docs/godisnji-plan-i-program-centra.pdf" download="godisnji-plan-i-program-centra.pdf">Godišnji plan i program Centra</a></p>
+			<p class="cza-footer-inner-column-item">Sve dokumente možete pronaći na sljedećoj stranici: <a href="dokumenti"><u>Dokumenti</u></a></p>
+			<!--
+			<p class="cza-footer-inner-column-item"><a href="assets/docs/godisnji-plan-i-program-centra.pdf">Godišnji plan i program Centra</a></p>
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/kurikulum-centra.docx">Kurikulum Centra</a></p>
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/pravilnik-o-nacinu-i-postupku-zaposljavanja.docx">Pravilnik o načinu i postupku zapošljavanja</a></p>
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/pravilnik-o-sistematizaciji-radnih-mjesta.docx">Pravilnik o sistematizaciji radnih mjesta</a></p>
@@ -270,6 +271,7 @@
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/zahtjev-za-pristup-informacijama.docx">Zahtjev za pristup informacijama (Obrazac br. 1)</a></p>
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/zahtjev-za-dopunu-ili-ispravak-informacije.docx">Zahtjev za dopunu ili ispravak informacije (Obrazac br. 2)</a></p>
 			<p class="cza-footer-inner-column-item"><a href="assets/docs/zahtjev-za-ponovnu-uporabu-informacija.docx">Zahtjev za ponovnu uporabu informacija (Obrazac br. 3)</a></p>
+			-->
 		</div>
 
 		<div class="cza-footer-inner-column">

@@ -10,7 +10,7 @@
         box-shadow: 0 0 50px 0 rgba(0,0,0,.3);
     }
     .navigation-item {
-        width: calc(100% / 7 - 40px);
+        width: calc(100% / 6 - 40px);
         margin: 20px;
         border-bottom: 4px solid var(--panel-tertiary);
         transition: .2s;
@@ -71,10 +71,6 @@
     <a class="navigation-item" href="galerija">
         <h1 class="navigation-item-title">Galerija</h1>
         <p class="navigation-item-description">Istražite fotografije Centra i pogledajte galeriju raznih događanja u sklopu rada Centra.</p>
-    </a>
-    <a class="navigation-item" href="dokumenti">
-        <h1 class="navigation-item-title">Dokumenti</h1>
-        <p class="navigation-item-description">Istražite dokumente Centra.</p>
     </a>
     <a class="navigation-item" href="kontakt">
         <h1 class="navigation-item-title">Kontakt</h1>

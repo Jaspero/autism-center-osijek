@@ -1,11 +1,13 @@
 <svelte:head>
     <title>CZA Osijek | Dokumenti</title>
-    <meta name="description" content="Centar za autizam Osijek, najmoderniji regionalni centar za djecu s poremećajem iz spektra autizma.Saznajte o programima, terapijskim postupcima i aktivnostima." />
+    <meta name="description" content="Centar za autizam Osijek, najmoderniji regionalni centar za djecu s poremećajem iz spektra autizma. Saznajte o programima, terapijskim postupcima i aktivnostima." />
 </svelte:head>
 
 <script>
     import {tick} from 'svelte';
     import {CACHE} from '../../shared/consts/cache.const';
+
+    import Title from '../../shared/components/Title.svelte';
 
     export let documentsLoading = true;
     export let documents;
@@ -31,6 +33,13 @@
     }
 </script>
 
-{#each documents as document}
-    <p>{document.name}</p>
-{/each}
+<section class="grid generic-section">
+    <div class="col-6 col-m-8 col-s-10 col-xs-12">
+        <Title>Dokumenti</Title>
+    </div>
+    <div class="col-6 col-m-8 col-s-10 col-xs-12">
+        {#each documents as document}
+            <p><a href="{document.file}" download>{document.message}</a></p>
+        {/each}
+    </div>
+</section>
