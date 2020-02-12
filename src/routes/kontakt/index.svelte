@@ -64,16 +64,16 @@
 				},
 				body: JSON.stringify({name, email, message})
 			})
-					.then(() => {
-						button.classList.remove('loading');
-						notifications('success', 'Poruka poslana. Hvala Vam što ste nam se obratili.');
-						formEl.reset()
-					})
-					.catch(error => {
-						console.error(error);
-						button.classList.remove('loading');
-						notifications('error', 'Došlo je do greške. Molimo Vas pokušajte kasnije.');
-					})
+				.then(() => {
+					button.classList.remove('loading');
+					notifications('success', 'Poruka poslana. Hvala Vam što ste nam se obratili.');
+					formEl.reset()
+				})
+				.catch(error => {
+					console.error(error);
+					button.classList.remove('loading');
+					notifications('error', 'Došlo je do greške. Molimo Vas pokušajte kasnije.');
+				})
 		}
 	}
 </script>

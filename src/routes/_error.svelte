@@ -21,6 +21,7 @@
 				<li><a href="projekti">Projekti</a></li>
 				<li><a href="novosti">Novosti</a></li>
 				<li><a href="galerija">Galerija</a></li>
+				<li><a href="dokumenti">Dokumenti</a></li>
 				<li><a href="kontakt">Kontakt</a></li>
 			</ul>
 		</Content>

@@ -261,17 +261,7 @@
 
 		<div class="cza-footer-inner-column">
 			<h1 class="cza-footer-inner-column-title">Dokumentacija</h1>
-			<p class="cza-footer-inner-column-item"><a href="assets/docs/godisnji-plan-i-program-centra.pdf" download="godisnji-plan-i-program-centra.pdf">Godišnji plan i program Centra</a></p>
-			<p class="cza-footer-inner-column-item"><a href="assets/docs/kurikulum-centra.docx">Kurikulum Centra</a></p>
-			<p class="cza-footer-inner-column-item"><a href="assets/docs/pravilnik-o-nacinu-i-postupku-zaposljavanja.docx">Pravilnik o načinu i postupku zapošljavanja</a></p>
-			<p class="cza-footer-inner-column-item"><a href="assets/docs/pravilnik-o-sistematizaciji-radnih-mjesta.docx">Pravilnik o sistematizaciji radnih mjesta</a></p>
-			<p class="cza-footer-inner-column-item"><a href="assets/docs/statut-cza.docx">Statut CZA</a></p>
-			<p class="cza-footer-inner-column-item"><a href="assets/docs/zahtjev-za-pristup-informacijama.docx">Zahtjev za pristup informacijama (Obrazac br. 1)</a></p>
-			<p class="cza-footer-inner-column-item"><a href="assets/docs/zahtjev-za-dopunu-ili-ispravak-informacije.docx">Zahtjev za dopunu ili ispravak informacije (Obrazac br. 2)</a></p>
-			<p class="cza-footer-inner-column-item"><a href="assets/docs/zahtjev-za-ponovnu-uporabu-informacija.docx">Zahtjev za ponovnu uporabu informacija (Obrazac br. 3)</a></p>
-			<p class="cza-footer-inner-column-item"><a href="assets/docs/biljeske-uz-financijske-izvjestaje-za-2019-godinu.doc">Bilješke uz financijske izvještaje za 2019. godinu</a></p>
-			<p class="cza-footer-inner-column-item"><a href="assets/docs/izvjestaj-o-prihodima-i-rashodima-primicima-i-izdacima.xls">Izvještaj o prihodima i rashodima, primicima i izdacima</a></p>
-			<p class="cza-footer-inner-column-item"><a href="assets/docs/sigurnosni-i-zastitni-program-i-protokol-postupanja.pdf">Sigurnosni i zaštitni program i protokol postupanja u kriznim situacijama</a></p>
+			<p class="cza-footer-inner-column-item">Sve dokumente možete pronaći na sljedećoj stranici: <a href="dokumenti"><u>dokumenti</u></a></p>
 		</div>
 
 		<div class="cza-footer-inner-column">
