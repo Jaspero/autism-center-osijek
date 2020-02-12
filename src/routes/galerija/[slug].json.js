@@ -1,4 +1,5 @@
 import admin from 'firebase-admin';
+import {formatDate} from '../../shared/utility/format-date';
 
 export function get(req, res) {
     const { slug } = req.params;
@@ -16,7 +17,7 @@ export function get(req, res) {
             });
 
             const data = items.docs[0].data();
-            data.date = new Date(data.date).toLocaleDateString('en-GB');
+            data.date = formatDate(data.date);
 
             res.end(JSON.stringify(data));
         })

@@ -1,4 +1,5 @@
 import admin from 'firebase-admin';
+import {formatDate} from '../../shared/utility/format-date';
 
 export async function get(req, res) {
   const {cursor, pageSize = 10} = req.query;
@@ -27,7 +28,8 @@ export async function get(req, res) {
           if (ind < pageSize) {
 
             const data = cur.data();
-            data.date = new Date(data.date).toLocaleDateString('en-GB');
+
+            data.date = formatDate(data.date);
             data.viewAll = data.images.length > 6;
             data.images = data.images.slice(0, 6);
 
