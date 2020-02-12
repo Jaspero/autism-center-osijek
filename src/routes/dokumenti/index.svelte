@@ -8,6 +8,7 @@
     import {CACHE} from '../../shared/consts/cache.const';
 
     import Title from '../../shared/components/Title.svelte';
+    import Loading from "../../shared/components/Loading.svelte";
 
     export let documentsLoading = true;
     export let documents;
@@ -21,6 +22,7 @@
             fetch(`/dokumenti.json`)
                 .then(r => r.json())
                 .then(data => {
+                    console.log(data);
                     documents = data;
                     documentsLoading = false;
 
@@ -33,13 +35,24 @@
     }
 </script>
 
+<style>
+    a {
+        color: var(--primary-theme);
+        text-decoration: underline;
+    }
+</style>
+
 <section class="grid generic-section">
     <div class="col-6 col-m-8 col-s-10 col-xs-12">
         <Title>Dokumenti</Title>
-    </div>
-    <div class="col-6 col-m-8 col-s-10 col-xs-12">
-        {#each documents as document}
-            <p><a href="{document.file}" download>{document.message}</a></p>
-        {/each}
+        {#if documentsLoading}
+            <Loading/>
+        {:else}
+        <ul>
+            {#each documents as item}
+                <li><a href="{item.file}" download>{item.message}</a></li>
+            {/each}
+        </ul>
+        {/if}
     </div>
 </section>
