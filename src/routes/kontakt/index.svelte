@@ -129,7 +129,7 @@
 			</tr>
 			<tr>
 				<td class="cza-contact-item">Telefon:</td>
-				<td class="cza-contact-item"><a href="tel:+38531202327">031/202-327</a></td>
+				<td class="cza-contact-item"><a href="tel:+38531201850">031/201-850</a></td>
 			</tr>
 			<tr>
 				<td class="cza-contact-item">Fax:</td>
