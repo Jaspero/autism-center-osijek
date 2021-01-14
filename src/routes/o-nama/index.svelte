@@ -42,12 +42,6 @@
 			<div class="grid">
 				<Member
 					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/sanda-zlataric.png"
-					nameValue="Sanda Zlatarić"
-					roleValue="Ravnateljica">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
 					imageValue="assets/images/o-nama/zvonimir-borevac.png"
 					nameValue="Zvonimir Borevac"
 					roleValue="Tajnik">
