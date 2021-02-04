@@ -7,7 +7,6 @@
 	import Banner from '../../shared/components/Banner.svelte';
 	import Title from '../../shared/components/Title.svelte';
 	import Subtitle from '../../shared/components/Subtitle.svelte';
-	import Member from './components/Member.svelte';
 </script>
 
 <!--O nama-->
@@ -35,132 +34,86 @@
 	<div class="grid">
 		<div class="col-6 col-m-8 col-s-10 col-xs-12">
 			<Title>Naš tim</Title>
-		</div>
-	</div>
-	<div class="grid">
-		<div class="col-9 col-m-10 col-s-11 col-xs-12">
-			<div class="grid">
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/zvonimir-borevac.png"
-					nameValue="Zvonimir Borevac"
-					roleValue="Tajnik">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/ksenija-sudar.png"
-					nameValue="Ksenija Sudar"
-					roleValue="Voditelj Računovodstva">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/elizabeta-hanicar.png"
-					nameValue="Elizabeta Haničar"
-					roleValue="Pedagog">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/katarina-berki.png"
-					nameValue="Katarina Berki"
-					roleValue="Kuharica">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/slaven-ernjes.png"
-					nameValue="Slaven Ernješ"
-					roleValue="Domar">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/drazenka-pralija.png"
-					nameValue="Draženka Pralija"
-					roleValue="Spremačica">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/marijana-fiala.png"
-					nameValue="Marijana Fiala"
-					roleValue="Spremačica">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/nada-varzic.png"
-					nameValue="Nada Varžić"
-					roleValue="Spremačica">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/marija-horvat.png"
-					nameValue="Marija Horvat"
-					roleValue="Spremačica">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/marija-mrđa.png"
-					nameValue="Marija Mrđa"
-					roleValue="Medicinska sestra">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/suzana-matic.png"
-					nameValue="Suzana Matić"
-					roleValue="Njegovateljica">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/mia-basic.png"
-					nameValue="Mia Bašić"
-					roleValue="Učitelj edukacijski rehabilitator u produženom stručnom postupku i rehabilitacijskim programima">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/karolina-burek-bilokapic.png"
-					nameValue="Karolina Burek Bilokapić"
-					roleValue="Učitelj edukacijski rehabilitator u produženom stručnom postupku i rehabilitacijskim programima">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/dora-marjanovic.png"
-					nameValue="Dora Marjanović"
-					roleValue="Učitelj edukacijski rehabilitator u produženom stručnom postupku i rehabilitacijskim programima">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/vedrana-jugovic.png"
-					nameValue="Vedrana Jugović"
-					roleValue="Učitelj edukacijski rehabilitator u produženom stručnom postupku i rehabilitacijskim programima">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/gabrijela-hajba.png"
-					nameValue="Gabrijela Hajba"
-					roleValue="Edukacijski rehabilitator u vrtićkim skupinama">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/kristina-papic.png"
-					nameValue="Kristina Papić"
-					roleValue="Edukacijski rehabilitator u vrtićkim skupinama">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/marina-hosjak.png"
-					nameValue="Marina Hosjak"
-					roleValue="Učitelj glazbene kulture">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/tamara-kreso.png"
-					nameValue="Tamara Krešo"
-					roleValue="Učitelj likovne kulture">
-				</Member>
-				<Member
-					classValue="col-3 col-m-4 col-s-6 col-xs-12"
-					imageValue="assets/images/o-nama/kristina-gabelica.png"
-					nameValue="Kristina Gabelica"
-					roleValue="Učitelj tjelesne i zdravstvene kulture">
-				</Member>
-			</div>
+      <br>
+      <ul>
+        <li><b>Vladimir Bjelobrk</b> - Ravnatelj</li>
+        <li><b>Zvonimir Borevac</b> - Tajnik</li>
+        <li><b>Elizabeta Haničar</b> - Stručni suradnik pedagog</li>
+        <li><b>Sara Pažin</b> - Stručni suradnik logoped</li>
+        <li><b>Ksenija Sudar</b> - Voditelj računovodstva</li>
+      </ul>
+      <br>
+      <Subtitle>EDUKACIJSKI REHABILITATOR RANOG I PREDŠKOLSKOG ODGOJA I OBRAZOVANJA</Subtitle>
+      <ul>
+        <li>Tatjana Barić</li>
+        <li>Doris Bošnjak</li>
+        <li>Matea Juroš</li>
+        <li>Ena Pavić</li>
+      </ul>
+      <br>
+      <Subtitle>UČITELJ EDUKACIJSKI REHABILITATOR RAZREDNE I PREDMETNE NASTAVE</Subtitle>
+      <ul>
+        <li>Dora Akšamović</li>
+        <li>Marina Mihić</li>
+        <li>Bojana Stanić</li>
+        <li>Kristina Vlaović</li>
+      </ul>
+      <br>
+      <Subtitle>UČITELJ EDUKACIJSKI REHABILITATOR U ODGOJNO OBRAZOVNIM SKUPINAMA</Subtitle>
+      <ul>
+        <li>Zoran Malečić</li>
+        <li>Anja Kovač Mišura</li>
+        <li>Martina Kovačević</li>
+        <li>Rea Pilgermajer</li>
+        <li>Neven Stober</li>
+        <li>Una Šijan</li>
+        <li>Jadranka Antunović Tavrić</li>
+      </ul>
+      <br>
+      <Subtitle>UČITELJ EDUKACIJSKI REHABILITATOR U PRODUŽENOM STRUČNOM POSTUPKU I REHABILITACIJSKIM PROGRAMIMA</Subtitle>
+      <ul>
+        <li>Mia Bašić</li>
+        <li>Karolina Burek Bilokapić</li>
+        <li>Vedrana Jugović</li>
+        <li>Gabrijela Purić</li>
+      </ul>
+      <br>
+      <Subtitle>VJEROUČITELJ</Subtitle>
+      <ul>
+        <li>Ivana Dugandžić</li>
+      </ul>
+      <br>
+      <Subtitle>UČITELJ GLAZBENE KULTURE</Subtitle>
+      <ul>
+        <li>Marina Hojsak</li>
+      </ul>
+      <br>
+      <Subtitle>UČITELJ LIKOVNE KULTURE</Subtitle>
+      <ul>
+        <li>Tamara Krešo</li>
+      </ul>
+      <br>
+      <Subtitle>UČITELJ TJELLESNE I ZDRAVSTVENE KULTURE</Subtitle>
+      <ul>
+        <li>Kristina Gagro</li>
+      </ul>
+      <br>
+      <Subtitle>MEDICINSKO OSOBLJE</Subtitle>
+      <ul>
+        <li>Suzana Matić - njegovateljica</li>
+        <li>Marija Mrđa - medicinska sestra</li>
+        <li>Vjekoslav Šimić - medicinski tehničar</li>
+      </ul>
+      <br>
+      <Subtitle>TEHNIČKO OSOBLJE</Subtitle>
+      <ul>
+        <li>Katarina Berki – kuharica</li>
+        <li>Ljiljana Bukovčak - spremačica</li>
+        <li>Slaven Ernješ - domar/vozač</li>
+        <li>Marija Horvat - spremačica</li>
+        <li>Draženka Pralija - spremačica</li>
+        <li>Nada Varžić - spremačica</li>
+      </ul>
 		</div>
 	</div>
 </section>
