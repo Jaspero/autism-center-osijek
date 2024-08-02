@@ -10,7 +10,7 @@
         box-shadow: 0 0 50px 0 rgba(0,0,0,.3);
     }
     .navigation-item {
-        width: calc(100% / 6 - 40px);
+        width: calc(100% / 7 - 40px);
         margin: 20px;
         border-bottom: 4px solid var(--panel-tertiary);
         transition: .2s;
@@ -63,6 +63,10 @@
     <a class="navigation-item" href="projekti">
         <h1 class="navigation-item-title">Projekti</h1>
         <p class="navigation-item-description">Aktualni projekti i suradnja.</p>
+    </a>
+    <a class="navigation-item" href="natjecaji">
+        <h1 class="navigation-item-title">Natječaji</h1>
+        <p class="navigation-item-description">Pregledajte natječaje koje objavljujemo.</p>
     </a>
     <a class="navigation-item" href="novosti">
         <h1 class="navigation-item-title">Novosti</h1>
