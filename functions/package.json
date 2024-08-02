@@ -9,18 +9,18 @@
     "logs": "firebase functions:log"
   },
   "engines": {
-    "node": "10"
+    "node": "20"
   },
   "dependencies": {
     "compression": "1.7.4",
-    "firebase-admin": "7.0.0",
-    "firebase-functions": "2.3.0",
+    "firebase-admin": "12.3.0",
+    "firebase-functions": "5.0.1",
     "nodemailer": "6.2.1",
     "polka": "0.5.2",
     "sirv": "0.4.2"
   },
   "devDependencies": {
-    "firebase-functions-test": "0.1.6"
+    "firebase-functions-test": "3.3.0"
   },
   "private": true
 }

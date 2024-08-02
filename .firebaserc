@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "autism-center-osijek"
+  },
+  "targets": {
+    "autism-center-osijek": {
+      "hosting": {
+        "cms": [
+          "autism-center-osijek-cms"
+        ],
+        "website": [
+          "autism-center-osijek"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

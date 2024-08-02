@@ -3,10 +3,11 @@ import polka from 'polka';
 import compression from 'compression';
 import admin from 'firebase-admin';
 import * as sapper from '@sapper/server';
-import {json} from 'body-parser';
-import {ENV_CONFIG} from '../env-config';
+import { json } from 'body-parser';
 
-admin.initializeApp(ENV_CONFIG.firebase);
+admin.initializeApp({
+	credential: admin.credential.cert('prod.json')
+});
 
 const { PORT, NODE_ENV } = process.env;
 const dev = NODE_ENV === 'development';

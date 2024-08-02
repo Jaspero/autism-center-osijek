@@ -3,3 +3,5 @@ node_modules
 /__sapper__/
 src/node_modules
 env-config.js
+functions/__sapper__/
+prod.json
