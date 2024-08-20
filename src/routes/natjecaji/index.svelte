@@ -46,7 +46,7 @@
                             <tr><td>22.</td><td>LORENA ŠKORIĆ</td></tr>
                             <tr><td>23.</td><td>RENATA TABAK</td></tr>
                         </table>
-                        <p>Povjerenstvo za vrednovanje kandidata</p>
+                        <p style="margin-top:20px;">Povjerenstvo za vrednovanje kandidata</p>
                     `,
                 },
             ],
@@ -344,7 +344,7 @@
             {/each}
         </BlogNavigation>
     </div>
-    <div class="col-6 col-m-8 col-s-10 col-xs-12">
+    <div class="col-6 col-m-8 col-s-10 col-xs-12 natjecaj">
         {#each programs as item}
             <Title id={item.title}>{item.title}</Title>
 
@@ -362,3 +362,11 @@
     </div>
     <div class="col-3 col-m-0"></div>
 </section>
+
+<style>
+    :global(.natjecaj table th,td) {
+        border: 1px solid;
+        padding: 5px;
+        text-align: left;
+    }
+</style>
