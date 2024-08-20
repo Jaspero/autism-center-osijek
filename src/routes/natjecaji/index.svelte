@@ -8,6 +8,71 @@
 
     const programs = [
         {
+            title: `Poziv na vrednovanje i popis kandidata prijavljenih na natječaj za zasnivanje radnog odnosa - POMOĆNIK/POMOĆNICA U NASTAVI UČENICIMA S TEŠKOĆAMA U RAZVOJU`,
+            segments: [
+                {
+                    content: `
+                        <p>Na temelju članka 8. Pravilnika o načinu i postupku zapošljavanja u Centru za autizam, a vezano za objavu natječaja za zasnivanje radnog odnosa za radno mjesto Pomoćnik/pomoćnica u nastavi učenicima s teškoćama u razvoju, od 2.8.2024. (KLASA: 112-01/24-01/1 , URBROJ: 2158-52-24-49), Povjerenstvo za vrednovanje kandidata objavljuje</p>
+                        <p>Kandidate koji su podnijeli pravodobnu i potpunu prijavu na natječaj, Povjerenstvo poziva na vrednovanje</p>
+                        <p>Osoba koja nije podnijela pravodobnu i potpunu prijavu ili ne ispunjava formalne uvjete natječaja, ne smatra se kandidatom u postupku natječaja.</p>
+                        <p>Razgovor s kandidatima-intervju održat će se dana 27.8. 2024. godine (utorak) u 9:00 sati, u prostorijama Centra za autizam, Vinkovačka 3, Osijek.</p>
+                        <p>Na razgovor s kandidatima-intervju pozivaju se:</p>
+                        <table>
+                            <tr>
+                                <th>Redni broj</th>
+                                <th>Ime i prezime</th>
+                            </tr>
+                            <tr><td>1.</td><td>ANELA ĆORUŠA MANDURA</td></tr>
+                            <tr><td>2.</td><td>TAMARA ČER</td></tr>
+                            <tr><td>3.</td><td>SANJA DUGALIĆ</td></tr>
+                            <tr><td>4.</td><td>ZORA DVIZAC</td></tr>
+                            <tr><td>5.</td><td>PERO GRGIĆ</td></tr>
+                            <tr><td>6.</td><td>MILICA GUDIĆ</td></tr>
+                            <tr><td>7.</td><td>VEDRANA HUMER</td></tr>
+                            <tr><td>8.</td><td>TATJANA IVEGEŠ-WILHELM</td></tr>
+                            <tr><td>9.</td><td>ANJA KNEŽEVIĆ</td></tr>
+                            <tr><td>10.</td><td>SILVANA KOVAČ-GEIĆ</td></tr>
+                            <tr><td>11.</td><td>IVANA LOVRO</td></tr>
+                            <tr><td>12.</td><td>RADOMIR MILOVAC</td></tr>
+                            <tr><td>13.</td><td>GABRIEL MORENO MITROVIĆ</td></tr>
+                            <tr><td>14.</td><td>LUCIJA MUSTAČ</td></tr>
+                            <tr><td>15.</td><td>TIHANA ODLEŠIĆ KAČAVENDA</td></tr>
+                            <tr><td>16.</td><td>DORA PEJIĆ</td></tr>
+                            <tr><td>17.</td><td>HELGA PEJIĆ DŽOJA</td></tr>
+                            <tr><td>18.</td><td>MARIJA RIMAC</td></tr>
+                            <tr><td>19.</td><td>DRAGANA ROMIĆ</td></tr>
+                            <tr><td>20.</td><td>IVANA SLIŠKO</td></tr>
+                            <tr><td>21.</td><td>DAJANA SMILJANIĆ</td></tr>
+                            <tr><td>22.</td><td>LORENA ŠKORIĆ</td></tr>
+                            <tr><td>23.</td><td>RENATA TABAK</td></tr>
+                        </table>
+                        <p>Povjerenstvo za vrednovanje kandidata</p>
+                    `,
+                },
+            ],
+        },
+        {
+            title: `Poziv na vrednovanje i popis kandidata prijavljenih na natječaj za zasnivanje radnog odnosa - EDUKACIJSKI REHABILITATOR RANOG I PREDŠKOLSKOG ODGOJA I OBRAZOVANJA`,
+            segments: [
+                {
+                    content: `
+                        <p>Na temelju članka 8. Pravilnika o načinu i postupku zapošljavanja u Centru za autizam, a vezano za objavu natječaja za zasnivanje radnog odnosa za radno mjesto Pomoćnik/pomoćnica u nastavi učenicima s teškoćama u razvoju, od 2.8.2024. (KLASA: 112-01/24-01/1 , URBROJ: 2158-52-24-49), Povjerenstvo za vrednovanje kandidata objavljuje</p>
+                        <p>Poziv na vrednovanje i popis kandidata prijavljenih na natječaj za zasnivanje radnog odnosa - POMOĆNIK/POMOĆNICA U NASTAVI UČENICIMA S TEŠKOĆAMA U RAZVOJU</p>
+                        <p>Kandidate koji su podnijeli pravodobnu i potpunu prijavu na natječaj, Povjerenstvo poziva na vrednovanje. Osoba koja nije podnijela pravodobnu i potpunu prijavu ili ne ispunjava formalne uvjete natječaja, ne smatra se kandidatom u postupku natječaja. Razgovor s kandidatima-intervju održat će se dana 27.8. 2024. godine (utorak) u 9:00 sati, u prostorijama Centra za autizam, Vinkovačka 3, Osijek.</p>
+                        <p>Na razgovor s kandidatima-intervju pozivaju se:</p>
+                        <table>
+                            <tr>
+                                <th>Redni broj</th>
+                                <th>Ime i prezime</th>
+                            </tr>
+                            <tr><td>1.</td><td>ANELA ĆORUŠA MANDURA</td></tr>
+                            <tr><td>2.</td><td>TAMARA ČER</td></tr>
+                        </table>
+                    `,
+                },
+            ],
+        },
+        {
             title: "Edukacijski rehabilitator ranog i predškolskog odgoja i obrazovanja",
             segments: [
                 {
@@ -251,10 +316,10 @@
                         <p>Radni odnos sa školom zasnovat će se nakon provedenog postupka selekcije kandidata.</p>
                         <p>Izrazi koji se u ovom natječaju koriste za osobe u muškom rodu neutralni su i jednako se
                             odnose na muške i ženske osobe.</p>
-                    `
-                }
-            ]
-        }
+                    `,
+                },
+            ],
+        },
     ];
 </script>
 
