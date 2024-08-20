@@ -56,9 +56,9 @@
             segments: [
                 {
                     content: `
-                        <p>Na temelju članka 8. Pravilnika o načinu i postupku zapošljavanja u Centru za autizam, a vezano za objavu natječaja za zasnivanje radnog odnosa za radno mjesto Pomoćnik/pomoćnica u nastavi učenicima s teškoćama u razvoju, od 2.8.2024. (KLASA: 112-01/24-01/1 , URBROJ: 2158-52-24-49), Povjerenstvo za vrednovanje kandidata objavljuje</p>
-                        <p>Poziv na vrednovanje i popis kandidata prijavljenih na natječaj za zasnivanje radnog odnosa - POMOĆNIK/POMOĆNICA U NASTAVI UČENICIMA S TEŠKOĆAMA U RAZVOJU</p>
-                        <p>Kandidate koji su podnijeli pravodobnu i potpunu prijavu na natječaj, Povjerenstvo poziva na vrednovanje. Osoba koja nije podnijela pravodobnu i potpunu prijavu ili ne ispunjava formalne uvjete natječaja, ne smatra se kandidatom u postupku natječaja. Razgovor s kandidatima-intervju održat će se dana 27.8. 2024. godine (utorak) u 9:00 sati, u prostorijama Centra za autizam, Vinkovačka 3, Osijek.</p>
+                        <p>Na temelju članka 8. Pravilnika o načinu i postupku zapošljavanja u Centru za autizam, a vezano za objavu natječaja za zasnivanje radnog odnosa za radno mjesto Edukacijski rehabilitator ranog i predškolskog odgoja i obrazovanja od 2.8.2024. (KLASA: 112-01/24-01/1 , URBROJ: 2158- 52-24-50), Povjerenstvo za vrednovanje kandidata objavljuje</p>
+                        <p>Poziv na vrednovanje i popis kandidata prijavljenih na natječaj za zasnivanje radnog odnosa - EDUKACIJSKI REHABILITATOR RANOG I PREDŠKOLSKOG ODGOJA I OBRAZOVANJA</p>
+                        <p>Kandidate koji su podnijeli pravodobnu i potpunu prijavu na natječaj, Povjerenstvo poziva na vrednovanje. Osoba koja nije podnijela pravodobnu i potpunu prijavu ili ne ispunjava formalne uvjete natječaja, ne smatra se kandidatom u postupku natječaja. Razgovor s kandidatima-intervju održat će se dana 27.8. 2024. godine (utorak) u 8:30 sati, u prostorijama Centra za autizam, Vinkovačka 3, Osijek.</p>
                         <p>Na razgovor s kandidatima-intervju pozivaju se:</p>
                         <table>
                             <tr>
@@ -68,7 +68,7 @@
                             <tr><td>1.</td><td>KARLA MATIĆ</td></tr>
                             <tr><td>2.</td><td>TENA VINKOVIĆ</td></tr>
                         </table>
-                    `,
+                     `,
                 },
             ],
         },
