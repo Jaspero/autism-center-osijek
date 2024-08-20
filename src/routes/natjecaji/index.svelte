@@ -65,8 +65,8 @@
                                 <th>Redni broj</th>
                                 <th>Ime i prezime</th>
                             </tr>
-                            <tr><td>1.</td><td>ANELA ĆORUŠA MANDURA</td></tr>
-                            <tr><td>2.</td><td>TAMARA ČER</td></tr>
+                            <tr><td>1.</td><td>KARLA MATIĆ</td></tr>
+                            <tr><td>2.</td><td>TENA VINKOVIĆ</td></tr>
                         </table>
                     `,
                 },
