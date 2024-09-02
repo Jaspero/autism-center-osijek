@@ -8,6 +8,51 @@
 
     const programs = [
         {
+            title: `OBAVIJEST O REZULTATU NATJEČAJA za radno mjesto POMOĆNIK/POMOĆNICA U NASTAVI UČENICIMA S TEŠKOĆAMA U RAZVOJU`,
+            segments: [
+                {
+                    content: `
+                        <p>Temeljem provedenog natječaja od 2.8.2024. godine za radno mjesto</p>
+                        <p>POMOĆNIK/POMOĆNICA U NASTAVIUČENICIMA S TEŠKOĆAMA U RAZVOJU u Centru za autizam Osijek, uz prethodnu suglasnost Upravnog vijeća , od 30.8.2024. godine odlučeno je da će se zaključiti ugovori o radu na određeno vrijeme u nepunom radnom vremenu za školsku godinu 2024./2025. s kandidatima kako slijedi:/p>
+                        <p>ANELA ĆORUŠA MANDURA</p>
+                        <p>TAMARA ČER</p>
+                        <p>SANJA DUGALIĆ</p>
+                        <p>PERO GRGIĆ</p>
+                        <p>VEDRANA HUMER</p>
+                        <p>TATJANA IVEGEŠ-WILHELM</p>
+                        <p>ANJA KNEŽEVIĆ</p>
+                        <p>SILVANA KOVAČ-GEIĆ</p>
+                        <p>GABRIEL MORENO MITROVIĆ</p>
+                        <p>DORA PEJIĆ</p>
+                        <p>HELGA PEJIĆ DŽOJA</p>
+                        <p>DRAGANA ROMIĆ</p>
+                        <p>DAJANA SMILJANIĆ</p>
+                        <p>LORENA ŠKORIĆ</p>
+                        <p>RENATA TABAK</p>
+                        <p>II.</p>
+                        <p>Kandidati žalbu na odluku o izboru mogu podnijeti pismenim putem Upravnom vijeću Centra za autizam u roku od 15 dana od dana objave rezultata natječaja na web stranici Centra, osim kandidata koji se pozivaju na pravo prvenstva koji to pravo ostvaruju na način propisan zakonom.</p>
+                        <p>IV.</p>
+                        <p>Objavom rezultata natječaja na web stranici Centra smatra se da su svi kandidati obaviješteni o rezultatu natječaja.</p>
+                     `,
+                },
+            ],
+        },
+        {
+            title: `OBAVIJEST O REZULTATU NATJEČAJA za radno mjesto EDUKACIJSKI REHABILITATOR RANOG I PREDŠKOLSKOG ODGOJA I OBRAZOVANJA`,
+            segments: [
+                {
+                    content: `
+                        <p>I.</p>
+                        <p>Temeljem provedenog natječaja od 2.8.2024. godine za radno mjesto Edukacijski rehabilitator ranog i predškolskog odgoja i obrazovanja u Centru za autizam Osijek, uz prethodnu suglasnost Upravnog vijeća , od 30.8.2024. godine odlučeno je da se zaključe ugovori o radu s Karlom Matić i Tenom Vinković na određeno vrijeme (nestručna zamjena) u punom radnom vremenu./p>
+                        <p>II.</p>
+                        <p>Kandidati žalbu na odluku o izboru mogu podnijeti pismenim putem Upravnom vijeću Centra za autizam  u roku od 15 dana od dana objave rezultata natječaja na web stranici Centra, osim kandidata koji se pozivaju na pravo prvenstva koji to pravo ostvaruju na način propisan zakonom.</p>
+                        <p>IV.</p>
+                        <p>Objavom rezultata natječaja na web stranici Centra smatra se da su svi kandidati obaviješteni o rezultatu natječaja.</p>
+                     `,
+                },
+            ],
+        },
+        {
             title: `Poziv na vrednovanje i popis kandidata prijavljenih na natječaj za zasnivanje radnog odnosa - POMOĆNIK/POMOĆNICA U NASTAVI UČENICIMA S TEŠKOĆAMA U RAZVOJU`,
             segments: [
                 {
