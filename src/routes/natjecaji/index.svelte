@@ -7,6 +7,101 @@
     import Content from "../../shared/components/Content.svelte";
 
     const programs = [
+        {
+            title: `NATJEČAJ za zasnivanje radnog odnosa - POMOĆNIK/POMOĆNICA U NASTAVI UČENICIMA S TEŠKOĆAMA U RAZVOJU`,
+            segments: [
+                {
+                    content: `
+                        <p>Broj traženih radnika: 2</p>
+                        <p>Vrsta zaposlenja: Na određeno, novootvoreni poslovi</p>
+                        <p>Radno vrijeme: Minimalno 20 sati tjedno</p>
+                        <p>Smještaj: Nema smještaja</p>
+                        <p>Natječaj vrijedi od: 19.9.2024.</p>
+                        <p>Natječaj vrijedi do: 27.9.2024.</p>
+                        <p>Posloprimac : Centar za autizam, Vinkovačka 3, 31 000 Osijek</p>
+                        <p>Razina obrazovanja: Najmanje razina obrazovanja 4.2 HKO-a, Viša ili prvostupanjska Fakultet, akademija, magisterij, doktorat</p>
+                        <p>Radno iskustvo: Nije važno</p>
+                        <p>Na temelju članka 99. Zakona o odgoju i obrazovanju u osnovnoj i srednjoj školi (&#39;&#39;Narodne novine&#39;&#39; broj 87/08., 86/09., 92/10., 105/10., 90/11., 16/12., 86/12., 94/13., 152/14., 7/17., 68/18., 98/19., 64/20.,151/22., 156/23) CENTAR ZA AUTIZAM, Vinkovačka 3, Osijek objavljuje</p>
+                        <p>Natječaj</p>
+                        <p>za obavljanje posla pomoćnika u nastavi</p>
+                        <p>Predviđen je odabir i zapošljavanje osoba na poslovima pomoćnika u nastavi s ciljem povećanja socijalne uključenosti i integracije učenika s teškoćama u razvoju.</p>
+                        <p>POMOĆNIK U NASTAVI</p>
+                        <p>Broj traženih osoba 2</p>
+                        <p>Mjesto rada: Osijek</p>
+                        <p>Radno vrijeme: nepuno radno vrijeme – Minimalno 20 sati tjedno</p>
+                        <p>Vrsta ugovora: ugovor o radu na određeno vrijeme za školsku godinu 2024./2025.</p>
+                        <p>U slučaju potrebe, povećat će se i broj pomoćnika</p>
+                        <p>UVJETI:</p>
+                        <p>završen program obrazovanja odraslih (osposobljavanja) za pomoćnika u nastavi i najmanje razinu obrazovanja 4.2 HKO-a.</p>
+                        <p>uvjerenje da se protiv kandidata ne vodi kazneni postupak niti je pravomoćno osuđivan za neko od kaznenih djela</p>
+                        <p>pomoćnik u nastavi ili stručni komunikacijski posrednik ne smije biti roditelj/skrbnik niti drugi član uže obitelji učenika kojem/kojima se pruža potpora</p>
+                        <p>OPIS POSLOVA</p>
+                        <p>Osnovna zadaća pomoćnika u nastavi je omogućiti jednake uvjete obrazovanja kroz pružanje neposredne podrške učenicima s teškoćama u razvoju, pomoć u uključivanju u razredni kolektiv, savladavanje socijalno-psiholoških prepreka, senzoričkih i arhitektonskih barijera.</p>
+                        <p>DODATNA ZNANJA I VJEŠTINE</p>
+                        <p>Poštivanje različitosti, afinitet prema djeci s teškoćama u razvoju, otvorenost, odgovornost, fleksibilnost, razvijene komunikacijske vještine, podjednaka sklonost individualnom i timskom radu, točnost u izvršavanju poslova, organiziranost, emocionalna stabilnost i dosljednost.</p>
+                        <p>POŽELJNO</p>
+                        <p>iskustvo u neposrednom radu s djecom s teškoćama u razvoju (završeno osposobljavanje za pomoćnika u nastavi)</p>
+                        <p>iskustvo u volontiranju</p>
+                        <p>Odabir će se izvršiti uz pomoć stručnih metoda procjene kompetencija i osobina podnositelja zahtjeva. S kandidatima izabranim za pomoćnika u nastavi, obrazovna ustanova – škola će sklopiti pisani ugovor o radu u kojemu će biti utvrđeni poslovi, trajanje, tjedno zaduženje te međusobna prava, obveze i odgovornosti ugovornih strana. Kandidati koji se prijavljuju za izvršavanje poslova pomoćnika su osobe sa završenom najmanje srednjom stručnom spremom.</p>
+                        <p>Na natječaj se mogu javiti osobe oba spola. Uz prijavu kandidati su dužni priložiti sljedeće dokumente:</p>
+                        <p>-zamolbu za posao (vlastoručno potpisana);</p>
+                        <p>-životopis (vlastoručno potpisan, s navedenim podacima o neposrednom radu s djecom s teškoćama u razvoju ili volontiranju (naziv institucije/udruge/tvrtke gdje je ostvareno iskustvo u radu s djecom ili volontiranje, te trajanje istog);</p>
+                        <p>-dokaz o odgovarajućem stupnju obrazovanja (presliku diplome ili potvrdu o stečenoj stručnoj spremi);</p>
+                        <p>-uvjerenje da se protiv kandidata ne vodi kazneni postupak (ne starije od 6 mjeseci);</p>
+                        <p>-dokaz o hrvatskom državljanstvu;</p>
+                        <p>-uvjerenje o prebivalištu (ne starije od 6 mjeseci);</p>
+                        <p>elektronički zapis o podacima evidentiranim u matičnoj evidenciji Hrvatskog zavoda za mirovinsko osiguranje (ne stariji od dana objave ovog javnog poziva)</p>
+                        <p>dokaz o osposobljenosti za poslove pomoćnika, ukoliko ga kandidat ima;</p>
+                        <p>ukoliko kandidat ima iskustva u radu s djecom s teškoćama u razvoju potrebno je priložiti mišljenje supervizora i/ili preporuku škole/ustanove/udruge.</p>
+                        <p>Kandidati koji ostvaruju pravo prednosti pri zapošljavanju prema posebnim propisima dužni su u prijavi na javni poziv pozvati se na to pravo i ima prednost u odnosu na ostale kandidate samo pod jednakim uvjetima. Da bi ostvario pravo prednosti pri zapošljavanju, kandidat koji ispunjava uvjete za ostvarivanje toga prava, dužan je uz prijavu na javni poziv priložiti sve dokaze o ispunjavanju traženih uvjeta, kao i rješenje o priznatom statusu, odnosno potvrdu o priznatom statusu iz koje je vidljivo spomenuto pravo, dokaz iz kojeg je vidljivo na koji način je prestao radni odnos kod posljednjeg poslodavca (ugovor, rješenje, odluka i sl.) te dokaz da je nezaposlen (uvjerenje ili ovjereni evidencijski list Hrvatskog zavoda za zapošljavanje). Poveznica za stranicu Ministarstva branitelja na kojoj su navedeni dokazi potrebni za ostvarivanje prava prednosti pri zapošljavanju prema Zakonu o hrvatskim braniteljima iz Domovinskog rata i članovima njihovih obitelji („Narodne novine“ broj 121/17., 98/19. i 84/21.) je <a href= "https://branitelji.gov.hr/zaposljavanje-843/843">https://branitelji.gov.hr/zaposljavanje-843/843</a></p>
+                        <p>Sukladno odredbama Uredbe (EU) 2016/679 Europskog parlamenta i Vijeća od 27. travnja 2016. godine o zaštiti pojedinaca u svezi s obradom osobnih podataka i slobodnog kretanja takvih podataka, svi dokumenti dostavljeni na javni poziv poslani su slobodnom voljom kandidata te se smatra da je kandidat dao privolu za obradu svih podataka, a koji će se obrađivati isključivo u svrhu provođenja postupka.</p>
+                        <p>U zamolbi i životopisu obvezno navesti datum i mjesto rođenja, adresu stanovanja te kontakt broj mobitela i elektronsku poštu (e-mail). Preslike traženih priloga ne moraju biti ovjerene, a kandidati su prije sklapanja pisanog ugovora dužni dostaviti na uvid originalne dokumente.</p>
+                        <p>Prijave u pisanom obliku s dokazima o ispunjavanju uvjeta iz natječaja dostavljaju se na adresu: Centar za autizam , p.p. 85, 31001 Osijek s naznakom &#39;&#39;Natječaj – Pomoćnik u nastavi – NE OTVARATI!&#39;&#39;</p>
+                        <p>Osoba koja ne podnese pravodobnu i/ili urednu prijavu ili za koju se utvrdi da ne ispunjava formalne uvjete iz natječaja, neće se smatrati kandidatom prijavljenim na natječaj. Urednom prijavom smatra se prijava koja sadržava sve podatke i priloge navedene u natječaju.</p>
+                        <p>Natječaj će biti objavljen na internet stranici Hrvatskog zavoda za zapošljavanje, internet stranici i oglasnoj ploči Centra za autizam.</p>
+                        <p>Radni odnos sa školom zasnovat će se nakon provedenog postupka selekcije kandidata.</p>
+                        <p>Izrazi koji se u ovom natječaju koriste za osobe u muškom rodu neutralni su i jednako se odnose na muške i ženske osobe.</p>
+                        <p>Ravnatelj: Vladimir Bjelobrk, mag. educ. philol. croat. et mag. paed.</p>
+                        <p>Datum objave: 19.9.2024.</p>
+                     `,
+                },
+            ],
+        },
+                        {
+            title: `NATJEČAJ za zasnivanje radnog odnosa - STRUČNI SURADNIK LOGOPED`,
+            segments: [
+                {
+                    content: `
+                        <p>Na temelju članka 107. Zakona o odgoju i obrazovanju u osnovnoj i srednjoj školi („Narodne novine” br. 87/08., 86/09., 92/10., 105/10., 90/11., 16/12.,126/12., 94/13, 152/14., 7/17., 68/18., 98/19., 64/20.,151/22., 156/23.) članka 8. Pravilnika o radu te članaka 3. i 4. Pravilnika o načinu i postupku zapošljavanja Centra za autizam ravnatelj Centra za autizam Vinkovačka 3, Osijek, objavljuje</p>
+                        <p>NATJEČAJ za zasnivanje radnog odnosa</p>
+                        <p>STRUČNI SURADNIK LOGOPED– 1 izvršitelj, neodređeno vrijeme, puno radno vrijeme (40 sati tjedno) , mjesto rada Osijek, probni rad 180 dana.</p>
+                        <p>Na natječaj se mogu javiti osobe oba spola.</p>
+                        <p>Uvjeti za zasnivanje radnog odnosa prema Zakonu o odgoju i obrazovanju u osnovnoj i srednjoj školi („Narodne novine” br. 87/08., 86/09., 92/10., 105/10., 90/11., 16/12., 126/12., 94/13, 152/14., 7/17.,68/18., 98/19., 64/20.,151/22., 156/23.) i Pravilniku o odgovarajućoj vrsti obrazovanja učitelja i stručnih suradnika u osnovnoj školi („Narodne novine“ broj 6/2019.).</p>
+                        <p>Prijava na natječaj mora biti vlastoručno potpisana. Uz prijavu na natječaj kandidati su obvezni priložiti sljedeću dokumentaciju:</p>
+                        <p>-životopis,</p>
+                        <p>-dokaz o državljanstvu,</p>
+                        <p>-dokaz o stečenoj stručnoj spremi,</p>
+                        <p>-uvjerenje nadležnog suda kako se protiv podnositelja ne vodi kazneni postupak za neko od kaznenih djela iz članka 106. Zakona o odgoju i obrazovanju u osnovnoj i srednjoj školi ne starije od 6 mjeseci od dana objave natječaja,</p>
+                        <p>-potvrdu Hrvatskog zavoda za mirovinsko osiguranje o podacima evidentiranim u bazi podataka HZMO odnosno elektronički zapis o radno pravnom statusu (e-radna knjižica) ne starije od 6 mjeseci od dana objave natječaja.</p>
+                        <p>Kandidat koji se poziva na pravo prednosti pri zapošljavanju prema posebnom zakonu, dužan se u prijavi pozvati na to pravo i priložiti svu propisanu dokumentaciju prema posebnom zakonu, te ima prednost u odnosu na ostale kandidate samo pod jednakim uvjetima.</p>
+                        <p>Osobe koje se pozivaju na pravo prednosti sukladno članku 102. Zakona o hrvatskim braniteljima iz Domovinskog rata i članovima njihovih obitelji (Narodne novine 121/17, 98/19, 84/21), članku 48. f Zakona o zaštiti vojnih i civilnih invalida rata (Narodne novine broj 33/92, 77/92, 27/93, 58/93, 2/94, 76/94, 108/95, 108/96, 82/01, 103/03 i 148/13, 98/19), članku 9. Zakona o profesionalnoj rehabilitaciji i zapošljavanju osoba s invaliditetom (Narodne novine broj 157/13, 152/14, 39/18, 32/20) te članku 48. Zakona o civilnim stradalnicima iz Domovinskog rata (Narodne novine broj 84/21), dužne su u prijavi na javni natječaj pozvati se na to pravo i uz prijavu priložiti svu propisanu dokumentaciju prema posebnom zakonu, a imaju prednost u odnosu na ostale kandidate samo pod jednakim uvjetima.</p>
+                        <p>Osobe koje ostvaruju pravo prednosti pri zapošljavanju u skladu s člankom 102. Zakona o hrvatskim braniteljima iz Domovinskog rata i članovima njihovih obitelji (Narodne novine broj 121/17, 98/19, 84/21), uz prijavu na natječaj dužne su priložiti i dokaze propisane člankom 103. stavak 1. Zakona o hrvatskim braniteljima iz Domovinskog rata i članovima njihovih obitelji Poveznica na internetsku stranicu Ministarstva hrvatskih branitelja s popisom dokaza potrebnih za ostvarivanja prava prednosti: <a href= "https://branitelji.gov.hr/UserDocsImages//dokumenti/Nikola//popis%20dokaza%20za%20ostvarivanje%20prava%20prednosti%20pri%20zapo%C5%A1ljavanju-%20ZOHBDR%202021.pdf">https://branitelji.gov.hr/UserDocsImages//dokumenti/Nikola//popis%20dokaza%20za%20ostvarivanje%20prava%20prednosti%20pri%20zapo%C5%A1ljavanju-%20ZOHBDR%202021.pdf</a></p>
+                        <p>Osobe koje ostvaruju pravo prednosti pri zapošljavanju u skladu s člankom 48. Zakona o civilnim stradalnicima iz Domovinskog rata (Narodne novine broj 84/21), uz prijavu na natječaj dužne su u prijavi na natječaj pozvati se na to pravo i uz prijavu dostaviti i dokaze iz stavka 1. članka 49. Zakona o civilnim stradalnicima iz Domovinskog rata Poveznica na internetsku stranicu Ministarstva hrvatskih branitelja s popisom dokaza potrebnih za ostvarivanja prava prednosti: <a href= "https://branitelji.gov.hr/UserDocsImages//dokumenti/Nikola//popis%20dokaza%20za%20ostvarivanje%20prava%20prednosti%20pri%20zapo%C5%A1ljavanju-%20Zakon%20o%20civilnim%20stradalnicima%20iz%20DR.pdf">https://branitelji.gov.hr/UserDocsImages//dokumenti/Nikola//popis%20dokaza%20za%20ostvarivanje%20prava%20prednosti%20pri%20zapo%C5%A1ljavanju-%20Zakon%20o%20civilnim%20stradalnicima%20iz%20DR.pdf</a></p>
+                        <p>U prijavi na natječaj obvezno je navesti naziv radnog mjesta na koje se prijavljuje, ime i prezime, adresu prebivališta ili boravišta, broj telefona/mobitela (prema mogućnostima kandidata i e-mail adresu).</p>
+                        <p>Kandidat koji ispunjavaju formalne uvjete natječaja dužan je pristupiti procjeni odnosno testiranju prema odredbama Pravilnika o načinu i postupku zapošljavanja objavljenog na poveznici: <a href= "https://firebasestorage.googleapis.com/v0/b/autism-center-osijek.appspot.com/o/documents-tLPLNcOADO7A1fHNrRmoa-Pravilnik%20o%20nacinu%20i%20postupku%20zaposljavanja.docx?alt=media&token=40ace99a-eb13-4cee-a84d-b20bab46c98e">https://firebasestorage.googleapis.com/v0/b/autism-center-osijek.appspot.com/o/documents-tLPLNcOADO7A1fHNrRmoa-Pravilnik%20o%20nacinu%20i%20postupku%20zaposljavanja.docx?alt=media&token=40ace99a-eb13-4cee-a84d-b20bab46c98e</a></p>
+                        <p>Za kandidata koji ne pristupi procjeni/testiranju u točno određeno vrijeme smatrat će se da je odustao od daljnjeg natječajnog postupka. O vremenu i mjestu procjene odnosno testiranja kandidati će biti obaviješteni putem web stranice Centra: <a href= "https://cza-os.hr">https://cza-os.hr</a> najmanje 5 dana prije predviđene procjene odnosno testiranja.</p>
+                        <p>Isprave se prilažu u neovjerenom presliku i ne vraćaju se kandidatu. Prilikom izbora kandidat je dužan predočiti izvornike dokumentacije priložene uz prijavu na natječaj.</p>
+                        <p>Nepravodobne i nepotpune prijave neće se razmatrati. Osobe koje podnesu nepotpune i nepravodobne prijave na natječaj ne smatraju se kandidatima prijavljenima na natječaj.</p>
+                        <p>Kandidat prijavom na natječaj daje privolu za obradu osobnih podataka navedenih u svim dostavljenim prilozima odnosno ispravama za potrebe provedbe natječajnog postupka sukladno važećim propisima o zaštiti osobnih podataka.</p>
+                        <p>Prijave na natječaj dostavljaju se na adresu: Centar za autizam , p.p. 85, 31001 Osijek s naznakom “Za natječaj”</p>
+                        <p>Natječaj je objavljen na mrežnoj stranici i oglasnoj ploči Hrvatskog zavoda za zapošljavanje te mrežnoj stranici i oglasnoj ploči školske ustanove. Rok za prijavu kandidata je osam dana od dana objave natječaja.</p>
+                        <p>Obavijest o rezultatima natječaja bit će objavljena na web stranici Centra:<a href= "https://cza-os.hr">https://cza-os.hr</a></p>
+                        <p>Ravnatelj: Vladimir Bjelobrk, mag. educ. philol. croat. et mag. paed.</p>
+                        <p>Datum objave: 19.9.2024.</p>
+                     `,
+                },
+            ],
+        },
                 {
             title: `NATJEČAJ za zasnivanje radnog odnosa - PSIHOLOG`,
             segments: [
